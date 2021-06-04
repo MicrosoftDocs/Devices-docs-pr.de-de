@@ -45,7 +45,7 @@ Bevor Sie mit dem in diesem Artikel beschriebenen Verfahren beginnen, sollten Si
 > 
 > Es ist sehr wichtig, dass dieses Zertifikat an einem sicheren Ort aufbewahrt und ordnungsgemäß gesichert wird. Wenn dieses Zertifikat verloren geht oder nicht verwendet werden kann, ist es nicht möglich, die UEFI-Oberfläche zurückzusetzen, die UEFI-Einstellungen für verwaltete Oberflächen zu ändern oder Semm aus einem eingeschriebenen Surface-Gerät zu entfernen.
 
-#### Herunterladen des Microsoft Surface UEFI-Managers
+#### <a name="deploy-microsoft-surface-uefi-manager"></a>Herunterladen des Microsoft Surface UEFI-Managers
 
 Die Verwaltung von Semm mit Configuration Manager setzt die Installation von Microsoft Surface UEFI Manager auf jedem Client Oberflächengerät voraus. Sie können den Microsoft Surface UEFI-Manager (SurfaceUEFIManager.msi) über die Seite [Surface Tools für IT](https://www.microsoft.com/download/details.aspx?id=46703) im Microsoft Download Center herunterladen.
 
@@ -93,7 +93,7 @@ Nachdem die Anwendung in Configuration Manager erstellt wurde, können Sie Sie a
 
 Wenn Sie die Microsoft Surface UEFI Manager-Assemblys nicht auf Geräten installieren möchten, die nicht mit Semm verwaltet werden, können Sie den Microsoft Surface UEFI Manager als eine Abhängigkeit der Semm-Konfigurations-Manager-Skripts konfigurieren. Dieses Szenario wird im Abschnitt [Deploy Semm Configuration Manager-Skripts](#deploy-semm-configuration-manager-scripts) weiter unten in diesem Artikel behandelt.
 
-## Erstellen oder Ändern der Semm-Konfigurations-Manager-Skripts
+## <a name="create-or-modify-the-semm-configuration-manager-scripts"></a>Erstellen oder Ändern der Semm-Konfigurations-Manager-Skripts
 
 Nachdem die erforderlichen Assemblys auf den Geräten installiert wurden, erfolgt der Registriervorgang für die Geräte in Semm und das Konfigurieren des Oberflächen UEFI mit PowerShell-Skripts, die als Skriptanwendung mit Configuration Manager bereitgestellt werden. Diese Skripts können an die Anforderungen Ihrer Organisation und Umgebung angepasst werden. So können Sie beispielsweise mehrere Konfigurationen für verwaltete Surface-Geräte in verschiedenen Abteilungen oder Rollen erstellen. Sie können Beispiele der Skripts für Semm und Configuration Manager über den Link im Abschnitt [Voraussetzungen](#prerequisites) am Anfang dieses Artikels herunterladen.
 
@@ -382,14 +382,14 @@ Das folgende Codefragment, das in Zeilen 380-477 zu finden ist, wird zum Schreib
 477 }
 ```
 
-### Einstellungsnamen und IDs
+### <a name="settings-names-and-ids"></a>Einstellungsnamen und IDs
 
 Wenn Sie die Oberflächen-UEFI-Einstellungen oder-Berechtigungen für die Oberflächen-UEFI-Einstellungen konfigurieren möchten, müssen Sie entweder den Einstellungsnamen oder die Einstellungs-ID verwenden. Bei jedem neuen Update für Surface UEFI können neue Einstellungen hinzugefügt werden. Die beste Methode, um eine vollständige Liste der auf einem Surface-Gerät verfügbaren Einstellungen zusammen mit dem Einstellungsnamen und den Einstellungen-IDs abzurufen, besteht darin, das ShowSettingsOptions.ps1-Skript aus SEMM_Powershell.zip in [Surface Tools für IT-Downloads](https://www.microsoft.com/download/details.aspx?id=46703) zu verwenden. 
 
 Auf dem Computer, auf dem ShowSettingsOptions.ps1 ausgeführt wird, muss Microsoft Surface UEFI Manager installiert sein, das Skript erfordert jedoch kein Surface-Gerät.
 
 
-## Bereitstellen von Semm-Konfigurations-Manager-Skripts
+## <a name="deploy-semm-configuration-manager-scripts"></a>Bereitstellen von Semm-Konfigurations-Manager-Skripts
 
 Nachdem Ihre Skripts bereit sind, Semm auf dem Clientgerät zu konfigurieren und zu aktivieren, besteht der nächste Schritt darin, diese Skripts als Anwendung in Configuration Manager hinzuzufügen. Bevor Sie Configuration Manager öffnen, stellen Sie sicher, dass sich die folgenden Dateien in einem freigegebenen Ordner befinden, in dem keine anderen Dateien enthalten sind:
 

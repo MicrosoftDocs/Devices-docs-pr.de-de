@@ -66,7 +66,7 @@ Surface Hub-Geräte enthalten, wie alle Windows10-Geräte, **Windows Update for 
 > Sie können Microsoft InTune, Microsoft Endpoint Configuration Manager oder einen unterstützten MDM-Anbieter von Drittanbietern verwenden, um WUfB einzurichten. [Exemplarische Vorgehensweise: Konfigurieren von Windows Update for Business mit Microsoft Intune](https://docs.microsoft.com/windows/deployment/update/waas-wufb-intune)
 
 
-### Gruppieren von Surface Hub in Bereitstellungsringe
+### <a name="group-surface-hub-into-deployment-rings"></a>Gruppieren von Surface Hub in Bereitstellungsringe
 
 Verwenden Sie Bereitstellungsringe, um zu steuern, wann Updates auf Surface Hub-Geräten installiert werden, damit Sie Zeit für deren Prüfung haben. Beispielsweise können Sie einen kleinen Pool von Geräten zuerst aktualisieren, um die Qualität zu überprüfen, bevor Sie das Update umfassender für Ihr Unternehmen bereitstellen. Abhängig davon, wer die Surface Hub-Geräte in Ihrer Organisation verwaltet, sollten Sie die Integration von Surface Hub in die Bereitstellungsringe in Betracht ziehen, die Sie für andere Windows10-Geräten erstellt haben. Weitere Informationen zu Bereitstellungsringen finden Sie unter [Erstellen von Bereitstellungsringen für Windows10-Updates](https://technet.microsoft.com/itpro/windows/manage/waas-deployment-rings-windows-10-updates).
 
@@ -80,7 +80,7 @@ Beispiele für Bereitstellungs Ringe finden Sie in der folgenden Tabelle.
 | Unternehmenskritisch (z.B. Geräte Besprechungsräumen von Führungskräften) | Klein | Semi-Annual Channel |  180Tage nach der Veröffentlichung (maximale Rückstellung für Featureupdates). | 30Tage nach der Veröffentlichung (maximale Rückstellung für Qualitätsupdates). | Überwachen von Gerätenutzung und Benutzerfeedback. |
 
 
-### Konfigurieren des Zeitpunkts, an dem Surface Hub Updates empfängt
+### <a name="configure-when-surface-hub-receives-updates"></a>Konfigurieren des Zeitpunkts, an dem Surface Hub Updates empfängt
 
 Nachdem Sie Bereitstellungsringe für die Surface Hub-Geräte festgelegt haben, konfigurieren Sie für die einzelnen Ringe Rückstellungsrichtlinien für Updates:
 - Um Featureupdates zurückzustellen, legen Sie eine entsprechende [Update/DeferFeatureUpdatesPeriodInDays](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-deferfeatureupdatesperiodindays)-Richtlinie für jeden Ring fest.
@@ -98,7 +98,7 @@ Fügen Sie der Liste "zulassen" die folgenden Windows Update-URLs für vertrauen
 
 Sobald das Windows10 Team Anniversary Update installiert ist, können Sie diese Adressen entfernen, um den vorherigen Zustand Ihres Surface Hub wiederherzustellen.
 
-## Wartungsfenster
+## <a name="maintenance-window"></a>Wartungsfenster
 
 Um sicherzustellen, dass das Gerät während der Geschäftszeiten stets zur Verfügung steht, führt Surface Hub Verwaltungsfunktionen in einen angegebenen Wartungsfenster aus. Während des Wartungsfensters installiert der Surface Hub automatisch Updates über Windows Update und startet das Gerät 20 Minuten vor dem Ende des Fensters neu.
 

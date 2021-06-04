@@ -71,7 +71,7 @@ Surface integriert die folgenden Features, mit deren Hilfe Benutzer die Energiev
 
 Surface ist für eine optimierte Energieverwaltung ausgelegt, die das Erstellen benutzerdefinierter Energiepläne oder das manuelle Konfigurieren von Energieeinstellungen entfällt. Microsoft optimiert die Benutzerfreundlichkeit, indem ein einzelner Energieplan (ausgeglichen) zur Vererbung der verschiedenen Energiepläne aus standardmäßigen Windows-Builds erstellt wird.
 
-###  <a name="user-interface"></a>Benutzeroberfläche für vereinfachte Energieeinstellungen
+###  <a name="simplified-power-settings-user-interface"></a>Benutzeroberfläche für vereinfachte Energieeinstellungen
 
 Surface bietet eine vereinfachte Benutzeroberfläche in Übereinstimmung mit empfehlungen für die Energieeinstellung mit bewährten Vorgehensweisen. Im Allgemeinen wird empfohlen, nur einstellungen anzupassen, die auf der Standardbenutzerschnittstelle angezeigt werden, und die Konfiguration erweiterter Energieeinstellungen oder Gruppenrichtlinieneinstellungen zu vermeiden. Die Verwendung der Standardtimeouts für Bildschirm und Ruhezustand bei gleichzeitiger Vermeidung von maximalen Helligkeitsstufen ist die effektivste Methode für Benutzer, um eine längere Akkulaufzeit auf sich zu nehmen.
 
@@ -79,7 +79,7 @@ Surface bietet eine vereinfachte Benutzeroberfläche in Übereinstimmung mit emp
 
 Abbildung1. Vereinfachte Energie- und Ruhezustandseinstellungen
 
-### Windows-Leistungs-Power-Schieberegler
+### <a name="windows-performance-power-slider"></a>Windows-Leistungs-Power-Schieberegler
 
 Surface-Geräte, auf denen Windows 10 Build 1709 und höher ausgeführt wird, verfügen über einen Netzschieberegler, mit dem Sie bei Bedarf die Akkulaufzeit priorisieren oder die Leistung bei Bedarf bevorzugen können. Sie können über die Taskleiste auf den Netzschieberegler zugreifen, indem Sie auf das Akkusymbol klicken. Ziehen Sie für eine längere Akkulaufzeit nach links (Stromsparmodus) oder ziehen Sie nach rechts, um eine schnellere Leistung zu erzielen.
 

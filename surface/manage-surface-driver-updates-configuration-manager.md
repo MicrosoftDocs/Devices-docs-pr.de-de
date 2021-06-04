@@ -156,7 +156,7 @@ Sie können DGM-Firmware und Treiberupdates auf die gleiche Weise wie andere Upd
 
 Weitere Informationen zur Bereitstellung finden Sie unter [System Center 2012 Configuration Manager – Part7: Software Updates (Deploy)](https://blogs.technet.microsoft.com/elie/2012/05/25/system-center-2012-configuration-managerpart7-software-updates-deploy/).
 
-##  <a name="faq"></a>Häufig gestellte Fragen
+##  <a name="frequently-asked-questions-faq"></a>Häufig gestellte Fragen
 
 **Nachdem ich die in diesem Artikel beschriebenen Schritte ausgeführt habe, sind meine Oberflächen Treiber weiterhin nicht synchronisiert. Woran liegt das?**
 

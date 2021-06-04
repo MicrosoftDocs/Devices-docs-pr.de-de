@@ -37,7 +37,7 @@ Für die Verbindung externer Geräte und Anzeigen mit einem Surface Hub sind meh
 | Einschalten des Surface Hub von einem externen Windows 10-PC, Ausschalten des eingebetteten Surface Hub-Computers. Zusätzlich zu Stift- und Toucheingaben werden Daten von Kameras, Mikrofonen, Lautsprechern und anderen Peripheriegeräten an den externen PC gesendet. | [Ersatz-PC-Modus](#replacement-pc-mode) |
 
 
-## Gastmodus
+## <a name="guest-mode"></a>Gastmodus
 
 
 Der Gastmodus verwendet eine Kabelverbindung, damit Benutzer Inhalte von ihren Geräten auf dem Surface Hub anzeigen können. Ist das Quellgerät Windows-basiert ist, kann das Gerät außerdem Touchback und Inkback bereitstellen. Der interne Surface Hub-PC verarbeitet Video- und Audioinhalte des verbundenen Geräts und stellt sie auf dem Surface Hub dar. Wenn Surface Hub auf ein digitales Content Protection-Signal (HDCP) mit hoher Bandbreite stößt, wird die Quelle als schwarzes Bild angezeigt. Um Ihren Inhalt anzuzeigen, ohne gegen die HDCP-Anforderungen zu verstoßen, verwenden Sie die Zehnertastatur auf der rechten Seite des Surface Hub, um direkt die externe Quelle auszuwählen.
@@ -243,7 +243,7 @@ Ein Benutzer, der zum Verbinden eines PCs den Gastmodus verwendet, würde eine d
 
 Wenn der von Ihnen für den Gastmodus verwendete Computer nicht mit Touchback und Inkback kompatibel ist, benötigen Sie das USB-Kabel nicht.
 
-## Ersatz-PC-Modus
+## <a name="replacement-pc-mode"></a>Ersatz-PC-Modus
 
 
 Im Ersatz-PC-Modus ist der eingebettete Computer des Surface Hub ausgeschaltet, und ein externer PC ist mit dem Surface Hub verbunden. Über Verbindungen mit Ersatz-PC-Anschlüssen erhalten Sie Zugriff auf wichtige Peripheriegeräte am Surface Hub, einschließlich Bildschirm-, Stift- und Touch-Features. Dies bedeutet, dass Ihr Surface Hub nicht über die Vorteile der Windows Team-Benutzeroberfläche verfügt, Sie verfügen jedoch über die Flexibilität, die die Bereitstellung und Verwaltung eines eigenen Windows-Computers mit sich bringt.
@@ -445,7 +445,7 @@ Sie können vom Surface Hub auf den internen PC wechseln.
 3.  Schalten Sie den Surface Hub über den Netzschalter neben dem Netzkabel ein.
 
  
-## Videoausgang
+## <a name="video-out"></a>Videoausgang
  
 Der Surface Hub umfasst einen Videoausgang für die Spiegelung visueller Inhalte vom Surface Hub auf eine andere Anzeige.
 
@@ -486,7 +486,7 @@ Videoausgang am 84"-Surface Hub
 Sowohl das 55-Zoll- als auch das 84-Zoll-Surface Hub-Gerät wurden auf die Funktion mit Certified DisplayPort- und HDMI-Kabeln überprüft.  Obwohl bei Händlern auch längere Kabel erhältlich sind, die möglicherweise mit dem Surface Hub funktionieren, sind nur Kabel, die von Testlabors zertifiziert wurden, zweifelsfrei zur Verwendung mit dem Hub geeignet. DisplayPort-Kabel z.B. sind nur für eine Länge von bis zu 3m zertifiziert. Viele Händler verkaufen jedoch Kabel, die dreimal so lang sind. Wenn Sie ein langes Kabel benötigen, raten wir dringend zur Verwendung von HDMI.  HDMI bietet viele kostengünstige Lösungen zu Kabeln für große Entfernungen, z.B. die Verwendung von Repeatern. Nahezu jede DisplayPort-Quelle schaltet automatisch auf HDMI-Signalisierung um, wenn ein HDMI-Sink erkannt wird.
 
 
-## Bluetooth-Zubehör
+## <a name="bluetooth-accessories"></a>Bluetooth-Zubehör
 
 Sie können folgendes Zubehör über Bluetooth mit dem Surface Hub verbinden:
 

@@ -32,7 +32,7 @@ SdT for Business ermöglicht Ihnen insbesondere:
 - [Erhalten Sie einen detaillierten Bericht, in dem das Gerät mit der optimalen Konfiguration verglichen wird.](surface-diagnostic-toolkit-desktop-mode.md#detailed-report)
 
 
-##  <a name="primary-scenarios-and-download-resources-"></a>Primäre Szenarien und Downloadressourcen 
+##  <a name="primary-scenarios-and-download-resources"></a>Primäre Szenarien und Downloadressourcen 
 
 Laden Sie zum Ausführen von SDT for Business die in der folgenden Tabelle aufgeführten Komponenten herunter.
 
@@ -112,7 +112,7 @@ Neben der EXE-Datei installiert SDT eine JSON-Datei und eine admin.dll (modules\
 
 *Abbildung2. Von SDT installierte Dateien*
 
-## Vorbereiten des SDT-Pakets für die Verteilung
+## <a name="preparing-the-sdt-package-for-distribution"></a>Vorbereiten des SDT-Pakets für die Verteilung
 
 Durch das Erstellen eines benutzerdefinierten Pakets können Sie das Tool auf bestimmte bekannte Probleme konzentrieren.
 
