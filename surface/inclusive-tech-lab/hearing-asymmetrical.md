@@ -40,7 +40,7 @@ Hörsymmetrieunterschiede können durch dauerhafte Bedingungen oder vorübergehe
 BARRIER – Eine Person mit asymmetrischem Hörverlust muss möglicherweise die Lautstärke erhöhen. Die Ausgabe auf einer Seite ihrer Kopfhörer kann zu laut werden, damit die andere Seite richtig ist. 
 
 
-:::image type="content" source="images/hearing-symmetry-facilitator.jpg" alt-text="Das Mädel hält ein Telefon. Der Inhalt auf dem Telefon zeigt das Fenster "Audioeinstellungen" an. Das Mädel passt nur die Audioausgabelautstärke des rechten Ohrs an.":::
+:::image type="content" source="images/hearing-symmetry-facilitator.jpg" alt-text="Das Mädel hält ein Telefon. Der Inhalt auf dem Telefon zeigt das Fenster Audioeinstellungen an. Das Mädel passt nur die Audioausgabelautstärke des rechten Ohrs an.":::
 
 FACILITATOR – Die Möglichkeit, die Audioausgabe auf der linken und rechten Seite des Geräts separat anzupassen, ermöglicht es einer Person, zu wählen, was für sie am bequemsten ist. 
 

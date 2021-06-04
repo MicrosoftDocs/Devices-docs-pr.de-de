@@ -45,7 +45,7 @@ Langsame Bewegungen können durch jede Art von Bedingung verursacht werden, die 
 
 BARRIER – Aufgaben wie die Eingabe auf einer Tastatur können zeitaufwändig und anstrengend sein für jemanden, der seine Finger nicht schnell bewegen kann.
 
-:::image type="content" source="images/mobility-speed-facilitator.jpg" alt-text="Auf dem Tabletbildschirm wird eine Bildschirmtastatur angezeigt, und jemand hat "Ich bin" ohne das &quot; &quot; Apostroph eingeben.":::
+:::image type="content" source="images/mobility-speed-facilitator.jpg" alt-text="Auf dem Tabletbildschirm wird eine Bildschirmtastatur angezeigt, und jemand hat Ich bin ohne das Apostroph eingeben.":::
 
 FACILITATOR – Die Unterstützung von Features wie Vorhersagetext kann die physischen Anforderungen der Eingabe verringern und es jemandem ermöglichen, eine Aufgabe schneller auszuführen.
 

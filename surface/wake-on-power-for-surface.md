@@ -60,16 +60,16 @@ Mit dem Surface -UEFI-Konfigurator können Sie einzelne UEFI-Einstellungen in ei
 1.  Laden Sie die neueste Version von [Surface UEFI Configurator herunter.](https://www.microsoft.com/download/confirmation.aspx?id=46703)
 2.  Melden Sie sich als Administrator bei Ihrem Surface-Gerät an, öffnen Sie **den Surface UEFI-Konfigurator,** wählen Sie **"Surface Devices"** aus, und wählen Sie dann **"Weiter" aus.**
 
-    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-1.png" alt-text="Wählen Sie "Surface-Geräte" und "Weiter" aus.":::
+    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-1.png" alt-text="Wählen Sie Surface-Geräte und "Weiter" aus.":::
 3.  Wählen **Sie "Start"** und dann **"Erstellen"** unter **"Konfigurationspaket" aus.**
 
-    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-2.png" alt-text="Wählen Sie "Konfigurationspaket erstellen" aus.":::
+    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-2.png" alt-text="Wählen Sie Konfigurationspaket erstellen aus.":::
 4.  Wählen **Sie Zertifikatschutz**aus, und fügen Sie die ZERTIFIKAT-PFX-Datei hinzu. 
 5. Geben Sie Ihr Kennwort ein, wählen **Sie "Weiter",** **fügen**Sie gegebenenfalls Den Kennwortschutz hinzu, und wählen Sie dann **"Weiter" aus.**
 6.  Wählen Sie **auf der Seite "Wählen Sie aus,** welchen Surface-Typ Sie als Ziel verwenden möchten" ihre Zielgeräte aus. Wählen Sie beispielsweise Surface Pro **7 aus.**
 7.  On the **Advanced Features** page, select Wake **on Power,** set the feature to **On**, and then select **Next**.
 
-    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-3.png" alt-text="Wählen Sie "Aktivierung aktivieren" aus, und legen Sie es auf "Ein" festgelegt."::: 
+    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-3.png" alt-text="Wählen Sie Aktivierung aktivieren aus, und legen Sie es auf "Ein" festgelegt."::: 
 8.  Wählen Sie **auf der Seite "Erfolgreich"** die Option **"Ende" aus.**
 
     > [!NOTE]
@@ -91,7 +91,7 @@ Sie können das MSI-Paket mithilfe von Softwareverteilungstools wie Microsoft En
     :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-4.png" alt-text="Wählen Sie OK aus, oder deaktivieren Sie BitLocker.":::
 3.  Wählen Sie auf der Willkommensseite **"Weiter"** aus, um das Paket ausführen und die neu konfigurierte Einstellung für UEFI anzuwenden.
 
-    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-5.png" alt-text="Wählen Sie auf der Willkommensseite "Weiter" aus.":::
+    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-5.png" alt-text="Wählen Sie auf der Willkommensseite Weiter aus.":::
 4.  Starten Sie Das Gerät neu. 
 
 Wake on Power ist jetzt konfiguriert. Um die Einstellungen zu testen, schalten Sie Ihr Gerät aus, trennen Sie das Netzgerät, und verbinden Sie es erneut. Das Gerät sollte automatisch gestartet werden. 
