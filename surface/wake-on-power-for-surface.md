@@ -60,7 +60,7 @@ Mit dem Surface -UEFI-Konfigurator können Sie einzelne UEFI-Einstellungen in ei
 1.  Laden Sie die neueste Version von [Surface UEFI Configurator herunter.](https://www.microsoft.com/download/confirmation.aspx?id=46703)
 2.  Melden Sie sich als Administrator bei Ihrem Surface-Gerät an, öffnen Sie **den Surface UEFI-Konfigurator,** wählen Sie **"Surface Devices"** aus, und wählen Sie dann **"Weiter" aus.**
 
-    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-1.png" alt-text="Wählen Sie Surface-Geräte und "Weiter" aus.":::
+    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-1.png" alt-text="Wählen Sie Surface-Geräte und Weiter aus.":::
 3.  Wählen **Sie "Start"** und dann **"Erstellen"** unter **"Konfigurationspaket" aus.**
 
     :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-2.png" alt-text="Wählen Sie Konfigurationspaket erstellen aus.":::
@@ -69,7 +69,7 @@ Mit dem Surface -UEFI-Konfigurator können Sie einzelne UEFI-Einstellungen in ei
 6.  Wählen Sie **auf der Seite "Wählen Sie aus,** welchen Surface-Typ Sie als Ziel verwenden möchten" ihre Zielgeräte aus. Wählen Sie beispielsweise Surface Pro **7 aus.**
 7.  On the **Advanced Features** page, select Wake **on Power,** set the feature to **On**, and then select **Next**.
 
-    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-3.png" alt-text="Wählen Sie Aktivierung aktivieren aus, und legen Sie es auf "Ein" festgelegt."::: 
+    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-3.png" alt-text="Wählen Sie Aktivierung aktivieren aus, und legen Sie es auf Ein festgelegt."::: 
 8.  Wählen Sie **auf der Seite "Erfolgreich"** die Option **"Ende" aus.**
 
     > [!NOTE]
