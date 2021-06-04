@@ -27,7 +27,7 @@ ms.locfileid: "11326289"
 
 Surface Duo unterstützt Microsoft Startprogramm for Enterprise, eine Android-Anwendung, mit der Benutzer ihr Telefon personalisieren, unterwegs organisiert bleiben und ihre Kalender, Aufgaben, Notizen und mehr nahtlos zwischen mobilen Geräten und ihren PCs synchronisieren können. Tatsächlich ist das Surface Duo-Startfeld eine angepasste Version von Microsoft Startprogramm mit zwei Bildschirmen, die Sie anpassen können, um die bevorzugten Oberflächen auf den vollständig verwalteten Geräten für Ihre Organisation zu definieren und Benutzern einige Optionen zum Personalisieren ihrer Erfahrungen auf diesen Unternehmensgeräten zu ermöglichen. Sie können beispielsweise auswählen, welche Apps an den Startbildschirm angeheftet werden sollen, ein Markenhintergrundbild bereitstellen oder eine Suchleiste ausblenden, während Benutzer die Suchleiste bei Bedarf aktivieren können.
 
-## Microsoft Startprogramm Einstellungen
+##  <a name="microsoft-launcher-settings"></a>Microsoft Startprogramm Einstellungen
 
 Microsoft Startprogramm enthält die folgenden Einstellungen, um die Endbenutzererfahrung anzupassen:
 

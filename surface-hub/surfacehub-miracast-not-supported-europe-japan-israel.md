@@ -20,7 +20,7 @@ ms.locfileid: "10832704"
 
 In Übereinstimmung mit den regionalen behördlichen Bestimmungen unterstützen alle 5-GHz-Wireless-Geräte in Europa, Japan und Israel das NII-3-Band nicht. In Surface Hub sind die Kanäle, die mit U-NII-3 verknüpft sind, 149 bis 165. Dies umfasst Miracast-Verbindungen auf diesen Kanälen. Daher können Oberflächen Hubs, die in Europa, Japan und Israel verwendet werden, keine Kanäle 149 bis 165 für Miracast-Verbindungen verwenden.
 
-## Weitere Informationen
+##  <a name="additional-information"></a>Weitere Informationen
 
 Weitere Informationen finden Sie im Thema [U-NII](https://en.wikipedia.org/wiki/U-NII) unter Wikipedia.
 

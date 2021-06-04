@@ -21,7 +21,7 @@ ms.locfileid: "10832230"
 ---
 # Surface Book 3 GPU – technische Übersicht
 
-## Einführung
+##  <a name="introduction"></a>Einführung
 
 Surface Book 3, der leistungsstärkste noch freigegebene Surface-Laptop, integriert vollständig modernisierte Rechen-und Grafikfunktionen in seinen berühmten abnehmbaren Formfaktor.  Mit dem Quad-Core 10th gen Intel® Core™ i7 und NVIDIA® Quadro RTX™ 3000-Grafikverarbeitungseinheit (GPU) auf dem 15-Zoll-Modell wird Surface Book 3 in einer Vielzahl von Konfigurationen für Konsumenten, kreative Fachleute, Architekten, Ingenieure und Daten Wissenschaftler geführt. In diesem Artikel werden die wichtigsten Unterschiede zwischen den GPU-Konfigurationen für 13-Zoll-und 15-Zoll-Modelle von Surface Book 3 erläutert.
 
@@ -29,30 +29,30 @@ Ein signifikanter Unterschied zwischen Surface Book 3-Modellen ist die GPU-Konfi
 
 Die zusätzliche NVIDIA GPU, die in die Tastatur Basis integriert ist, bietet erweiterte Grafikwiedergabe Funktionen und ist in zwei Haupt Konfigurationen erhältlich: GeForce® GTX® 1650/1660 ti für Verbraucher oder Creative Professionals sowie Quadro RTX 3000 für kreative Fachleute, Ingenieure und andere professionelle Unternehmen, die Erweiterte Grafiken oder tiefe Lernfunktionen benötigen. In diesem Artikel wird auch beschrieben, wie Sie die APP-Nutzung von GPUs optimieren können, indem Sie angeben, welche apps das integrierte iGPU im Vergleich zur diskreten NVIDIA-GPU verwenden sollen.
 
-## Surface Book 3-GPUs
+##  <a name="surface-book-3-gpus"></a>Surface Book 3-GPUs
 
 In diesem Abschnitt werden die integrierten und diskreten GPUs in Surface Book 3-Modellen beschrieben. Informationen zu den Konfigurationsdetails aller Modelle finden Sie in [Anhang A: DGM-Buch 3-SKUs](#).
 
-### Intel IRIS™ plus-Grafiken
+###  <a name="intel-iris™-plus-graphics"></a>Intel IRIS™ plus-Grafiken
 
 Die integrierte GPU (iGPU), die in allen Surface Book 3-Modellen enthalten ist, enthält eine breitere Grafik-Engine und einen neu gestalteten Speichercontroller mit Unterstützung für LPDDR4X. Als sekundäre GPU auf den meisten Surface Book 3-Modellen installiert, fungiert die Intel IRIS plus-Grafik als singuläre GPU im Core i5, 13,5-Zoll-Modell. Obwohl es nominell das Einsteigergerät in der Surface Book 3-Reihe ist, bietet es erweiterte Grafikfunktionen, mit denen Verbraucher, Bastler und Online-Entwickler die neueste Produktivitätssoftware wie Adobe Creative Cloud ausführen oder in 1080p Gaming-Titel genießen können.  
 
-### NVIDIA GeForce GTX 1650
+###  <a name="nvidia-geforce-gtx-1650"></a>NVIDIA GeForce GTX 1650
 
 NVIDIA GeForce GTX 1650 mit Max-Q-Design bietet ein erhebliches Upgrade des Core-Streaming-Multiprozessors, um die komplexen Grafiken moderner Spiele effizienter zu verarbeiten. Die gleichzeitige Ausführung von Gleitkomma-und ganzzahligen Vorgängen steigert die Leistung bei der rechenintensiven Auslastung moderner Spiele. Eine neue Unified Memory-Architektur mit dem doppelten Cache des Vorgänger-Speichers ermöglicht eine bessere Leistung bei komplexen modernen spielen. Neue Schattierungs-Fortschritte verbessern die Leistung, verbessern die Bildqualität und bieten neue geometrische komplexitätsebenen.
 
-### NVIDIA GeForce GTX 1660 TI
+###  <a name="nvidia-geforce-gtx-1660-ti"></a>NVIDIA GeForce GTX 1660 Ti
 
 Verglichen mit der GeForce GTX 1650 bietet das schnellere GeForce GTX 1660 TI Surface Book 3 zusätzliche Leistungsverbesserungen und umfasst den neuen und aktualisierten NVIDIA-Encoder, der es für Verbraucher, Gamer, Live-Streamer und kreative Profis verbessert.
 
 Dank 6 GB GDDR6-Grafikspeicher bieten Surface Book 3-Modelle, die mit NVIDIA GeForce GTX 1660 ausgestattet sind, überragende Geschwindigkeiten bei der fortschrittlichen Produktivitätssoftware für Unternehmen und beliebten spielen, insbesondere bei der Ausführung modernster Titel oder Livestreams. Mit einem optionalen 2-TB-SSD (nur in den USA verfügbar) bietet das 15-Zoll-Modell mit GeForce GTX 1660 TI den größten Speicherplatz für alle Surface Book 3-Geräte.
 
-### NVIDIA Quadro RTX 3000
+###  <a name="nvidia-quadro-rtx-3000"></a>NVIDIA Quadro RTX 3000
 
 NVIDIA Quadro RTX 3000 entriegelt mehrere wichtige Funktionen für professionelle Benutzer: Raytracing-Rendering und AI-Beschleunigung sowie erweiterte Grafiken und Rechenleistung. Eine Kombination aus 30 RT-Kernen, 240 Tensor-Kernen und 6 GB GDDR6-Grafikspeicher ermöglicht mehrere erweiterte Arbeitslasten, darunter Al-powered Workflows, 3D-Inhaltserstellung, Erweiterte Videobearbeitung, professionelles Broadcasting und Multi-App-Workflows. Hardware-und Software Support auf Unternehmensebene integriert Bereitstellungstools, um die Verfügbarkeit zu maximieren und den IT-Support zu minimieren. Quadro-Treiber, die für die weltweit fortschrittlichste Software zertifiziert sind, sind für professionelle Anwendungen optimiert und werden optimiert, getestet und validiert, um App-Zertifizierung, Stabilität auf Unternehmensebene, Zuverlässigkeit, Verfügbarkeit und Support mit erweiterter Verfügbarkeit von Produkten zu gewährleisten.
  
 
-## Vergleichen von GPUs über DGM-Buch 3
+##  <a name="comparing-gpus-across-surface-book-3"></a>Vergleichen von GPUs über DGM-Buch 3
 
 NVIDIA-GPUs bieten Benutzern eine hervorragende Leistung für Spiele, Live-Streaming und die Erstellung von Inhalten. GeForce GTX-Produkte eignen sich hervorragend für Gamer und Content-Entwickler. Quadro RTX-Produkte sind für professionelle Benutzer vorgesehen, bieten hervorragende Leistung bei der Spiele-und Inhaltserstellung und fügen die folgenden Features hinzu:
 
@@ -100,7 +100,7 @@ NVIDIA-GPUs bieten Benutzern eine hervorragende Leistung für Spiele, Live-Strea
  1. *Empfohlen*
  2.  *Unterstützt*
 
-## Optimieren der Leistung und Leistung auf Surface Book 3
+##  <a name="optimizing-power-and-performance-on-surface-book-3"></a>Optimieren der Leistung und Leistung auf Surface Book 3
 
 Windows 10 enthält einen Energiesparmodus mit einem Leistungs Schieberegler, mit dem Sie die APP-Leistung maximieren können (indem Sie Sie nach rechts schieben) oder die Akkulaufzeit beibehalten (durch Verschieben nach links). DGM-Buch 3 implementiert diese Funktionalität algorithmisch, um die Leistung und Leistung für die folgenden Komponenten zu optimieren:
 
@@ -113,15 +113,15 @@ Wenn der Akku unter 20 Prozent sinkt, werden standardmäßig die Einstellungen e
 
 Die Verwendung von Standardeinstellungen wird für optimale Leistung empfohlen, wenn Sie als Laptop verwendet oder im Tablet-oder Studio Modus freigegeben werden. Sie können auf den Stromsparmodus zugreifen, indem Sie das Batteriesymbol ganz rechts in der Taskleiste auswählen.
 
-### Spielmodus
+###  <a name="game-mode"></a>Spielmodus
 
 DGM-Buch 3 enthält einen neuen Spielmodus, der beim Starten automatisch maximale Leistungseinstellungen auswählt.
 
-### Sicheres Trennen
+###  <a name="safe-detach"></a>Sicheres Trennen
 
 Neu in Surface Book 3: mit apps, die für sicheres trennen aktiviert sind, können Sie die Verbindung trennen, während die APP die GPU verwendet. Für unterstützte apps wie *World of Warcraft*wird Ihre Arbeit in die iGPU verschoben.
 
-### Ändern von App-Einstellungen, um immer eine bestimmte GPU zu verwenden
+###  <a name="modifying-app-settings-to-always-use-a-specific-gpu"></a>Ändern von App-Einstellungen, um immer eine bestimmte GPU zu verwenden
 
 Sie können zwischen den energiesparenden, aber dennoch fähigen integrierten Intel-Grafiken und der leistungsstärkeren diskreten NVIDIA-GPU wechseln und eine GPU mit einer bestimmten app verknüpfen. Standardmäßig wird von Windows 10 automatisch die geeignete GPU ausgewählt, und der diskreten NVIDIA-GPU werden grafisch anspruchsvolle apps zugewiesen. In den meisten Fällen ist es nicht erforderlich, diese Einstellungen manuell anzupassen. Wenn Sie die Anzeige jedoch häufig von der Tastatur Basis trennen und erneut anfügen, während Sie eine grafisch anspruchsvolle App verwenden, müssen Sie die app in der Regel vor dem Trennen schließen. Wenn Sie die APP kontinuierlich verwenden möchten, ohne Sie jedes Mal schließen zu müssen, wenn Sie die Anzeige trennen oder erneut anfügen, können Sie Sie der integrierten GPU zuweisen, allerdings mit einem gewissen Verlust der Grafikleistung.  
 
@@ -141,7 +141,7 @@ In einigen Fällen kann Windows 10 eine grafisch anspruchsvolle App als iGPU zuw
 3. Um zu überprüfen, welche GPU für jede APP verwendet wird, öffnen Sie den **Task-Manager,** wählen Sie **Leistung aus,** und zeigen Sie die Spalte **GPU-Modul** an.
 
 
-## Anhang A: DGM-Buch 3-SKUs
+##  <a name="appendix-a:-surface-book-3-skus"></a>Anhang A: DGM-Buch 3-SKUs
 
 | **Anzeige**   | **Prozessor**                     | **GPU**                                                                                              | **RAM**    | **Speicher** |
 | ------------- | --------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------- | ----------- |
@@ -159,12 +159,12 @@ In einigen Fällen kann Windows 10 eine grafisch anspruchsvolle App als iGPU zuw
 > [!NOTE]
 > 2 TB SSD nur in den USA verfügbar: Surface Book 3 15 "mit nVidia GTX 1660Ti
 
-## Zusammenfassung
+##  <a name="summary"></a>Zusammenfassung
 
 Surface Book 3 wurde für die Leistung entwickelt und umfasst verschiedene GPU-Konfigurationen, die für bestimmte Arbeits Auslastungs-und Nutzungsanforderungen optimiert sind. Eine integrierte Intel IRIS-Grafik GPU fungiert als einzige GPU auf dem Einstiegs-Core i5-Gerät und als sekundäre GPU auf allen anderen Modellen. GeForce GTX 1650 bietet ein erhebliches Upgrade des Core-Streaming-Multiprozessors, um komplexe Grafiken effizienter ausführen zu können. Das schnellere GeForce GTX 1660 ti bietet Surface Book 3 mit zusätzlichen Leistungsverbesserungen, wodurch es Verbrauchern, Spielern, Live-streamern und kreativen Profis besser geht. Quadro RTX 3000 hebt mehrere wichtige Funktionen für professionelle Benutzer auf: Raytracing-Rendering und AI-Beschleunigung sowie erweiterte Grafiken und Rechenleistung.
 
 
-## Mehr erfahren
+##  <a name="learn-more"></a>Mehr erfahren
 
 - [DGM-Buch 3 Quadro RTX 3000 – technische Übersicht](surface-book-quadro.md)
 - [Surface für Unternehmen](https://www.microsoft.com/surface/business)

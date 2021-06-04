@@ -61,7 +61,7 @@ Eingabeleistung, Standby    |   5W nominal
 > - [Lokale Verwaltung von Surface Hub-Einstellungen](local-management-surface-hub-settings.md)
 > - [SurfaceHub CSP – #A0](https://docs.microsoft.com/windows/client-management/mdm/surfacehub-csp)
 
-## Ersatz-PC-Verbindungen 
+##  <a name="replacement-pc-connections"></a>Ersatz-PC-Verbindungen 
 
 Connector und Standort | Label | Beschreibung
 --- | --- | ---
@@ -71,7 +71,7 @@ USB-Typ B, untere E/A | ![](images/usb.png) | Bietet eine USB-Verbindung für de
 USB-Typ B, untere E/A | ![](images/usb.png) | Bietet eine USB-Verbindung für integrierte Hubs.
 
 
-## Kabelgebundene Verbindungen
+##  <a name="wired-connect-connections"></a>Kabelgebundene Verbindungen
 
 Connector und Standort | Label | Beschreibung
 --- | --- | ---
@@ -81,7 +81,7 @@ VGA, untere E/A | ![](images/vga.png) | Stellt eine VGA-Eingabe für einen pc mi
 3,5 mm, untere E/A | ![](images/35mm.png) | Bietet analoge Audioeingaben.
 USB-Typ B, untere E/A | ![](images/usb.png) | Bietet eine USB-Verbindung für das Touchback für die Videoaufnahme.
 
-## Zusätzliche Verbindungen
+##  <a name="additional-connections"></a>Zusätzliche Verbindungen
 
 Connector und Standort | Label | Beschreibung
 --- | --- | ---
@@ -103,7 +103,7 @@ RJ11, untere E/A | ![](images/rj11.png) | Stellt eine Verbindung mit Raumsteueru
 
 
 
-## Diagramme von Ports und Abständen
+##  <a name="diagrams-of-ports-and-clearances"></a>Diagramme von Ports und Abständen
 
 ***Obere Ansicht des 55"-Surface Hub***
 

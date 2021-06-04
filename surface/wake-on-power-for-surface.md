@@ -48,14 +48,14 @@ Das Aktivierungsfeature ist auf den folgenden Geräten verfügbar:
 - Surface Pro X 
 
 
-## Übersicht und Voraussetzungen
+##  <a name="overview-and-prerequisites"></a>Übersicht und Voraussetzungen
 
 Mit dem Surface -UEFI-Konfigurator können Sie einzelne UEFI-Einstellungen in einem Windows Installer-MSI-Paket für die Verteilung auf Zielgeräte speichern. 
 
 > [!NOTE]
 > In diesem Artikel wird davon ausgegangen, dass Sie mit der Verwendung von SEMM wissen. Weitere Informationen finden Sie in der [Dokumentation zum Surface Enterprise Management Mode (SEMM).](surface-enterprise-management-mode.md)
 
-## So aktivieren Sie Wake on Power
+##  <a name="to-enable-wake-on-power"></a>So aktivieren Sie Wake on Power
 
 1.  Laden Sie die neueste Version von [Surface UEFI Configurator herunter.](https://www.microsoft.com/download/confirmation.aspx?id=46703)
 2.  Melden Sie sich als Administrator bei Ihrem Surface-Gerät an, öffnen Sie **den Surface UEFI-Konfigurator,** wählen Sie **"Surface Devices"** aus, und wählen Sie dann **"Weiter" aus.**
@@ -76,7 +76,7 @@ Mit dem Surface -UEFI-Konfigurator können Sie einzelne UEFI-Einstellungen in ei
     > Wenn Sie zum ersten Mal Einstellungen für Ihr Gerät bereitstellen, werden Sie aufgefordert, auch die letzten beiden Zeichen des Zertifikatfingerabdrucks ein. 
 9.  Speichern Sie das MSI-Paket. 
 
-## Anwenden des MSI-Pakets 
+##  <a name="apply-the-msi-package"></a>Anwenden des MSI-Pakets 
 
 Sie können das MSI-Paket mithilfe von Softwareverteilungstools wie Microsoft Endpoint Configuration Manager auf Geräte in Ihrem Netzwerk anwenden. Dieses Verfahren umfasst Schritte zum Installieren des Pakets auf dem lokalen Computer. 
 
@@ -96,7 +96,7 @@ Sie können das MSI-Paket mithilfe von Softwareverteilungstools wie Microsoft En
 
 Wake on Power ist jetzt konfiguriert. Um die Einstellungen zu testen, schalten Sie Ihr Gerät aus, trennen Sie das Netzgerät, und verbinden Sie es erneut. Das Gerät sollte automatisch gestartet werden. 
 
-## Verweise
+##  <a name="references"></a>Verweise
 
 Weitere Informationen finden Sie in den folgenden Artikeln. 
 

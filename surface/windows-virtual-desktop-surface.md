@@ -21,19 +21,19 @@ ms.locfileid: "11271529"
 ---
 # Windows virtueller Desktop auf Surface
 
-## Einführung
+##  <a name="introduction"></a>Einführung
 
 Mit Windows Virtual Desktop auf Surface können Sie Virtual Desktop Infrastructure (VDI) auf einem Surface-Gerät ausführen, das die Leitungen zwischen der lokalen Desktopumgebung und dem virtuellen Desktop verschwommen macht, wobei touch-, stift-, freihand- und biometrische Authentifizierung sowohl physische als auch virtuelle Umgebungen umfasst. Windows Virtual Desktop auf Surface 1 stellt einen weiteren Meilenstein in der Computerentwicklung dar und kombiniert Microsoft 365 – virtualisiert in der Azure Cloud – mit den erweiterten Sicherheitsvorkehrungen, verwaltbarkeit auf Unternehmensebene und erweiterten <a href="#1"><sup> </sup></a> Produktivitätstools von Windows 10 auf Surface.  Diese Fusion von Premiumformfaktoren und virtueller Desktopinfrastruktur in Azure bietet einen hervorragenden Kundenwert für die gesamte Benutzererfahrung, Portabilität, Sicherheit, Geschäftskontinuität und moderne Verwaltung.
 
-### Windows Virtual Desktop
+###  <a name="windows-virtual-desktop"></a>Windows Virtual Desktop
 
 Windows Virtual Desktop (WVD) ist ein umfassender Desktop- und App-Virtualisierungsdienst, der in der Azure Cloud ausgeführt wird. Es ist die einzige virtuelle Desktopinfrastruktur, die eine vereinfachte Verwaltung, Windows 10 mit mehreren Sitzungen, Optimierungen für Office 365 ProPlus und Unterstützung für Remotedesktopdienste (RDS)-Umgebungen bietet. Mit WVD können Sie schnell Windows-Desktops und -Apps in Azure bereitstellen und skalieren und integrierte Sicherheits- und Compliancefeatures nutzen.
 
-### Integrationen von Windows Virtual Desktop-Partnern
+###  <a name="windows-virtual-desktop-partner-integrations"></a>Integrationen von Windows Virtual Desktop-Partnern
 
 Eine Liste der genehmigten Partneranbieter und unabhängigen Softwareanbieter für Windows Virtual Desktop finden Sie unter [Windows Virtual Desktop-Partnerintegrationen.](https://docs.microsoft.com/azure/virtual-desktop/partners) Einige Partner stellen auch Virtual Desktop as a Service (DaaS) zur Verfügung. DaaS ersennen Sie keine eigenen virtuellen Computer (VMs), indem sie einen vollständig verwalteten, schlüsselfertigen Desktop- und Virtualisierungsdienst bereitstellen. Die Möglichkeit, benutzerdefinierte Desktops an Benutzer überall auf der Welt zu liefern, ermöglicht Es Unternehmen, sich schnell an sich ändernde Marktbedingungen anzupassen, indem Sie Clouddesktops bei Bedarf drehen – wann und wo sie benötigt werden.
  
-## Microsoft Surface Geräte
+##  <a name="microsoft-surface-devices"></a>Microsoft Surface Geräte
 
 Surface Engineering hat lange zeit neue Standards für Innovationen festgelegt, indem es über Tastatur und Maus hinaus geht, um sich natürlichere Interaktionen mit Geräten vorzustellen, sei es per Toucheingabe, Spracheingabe, Freihandeingabe oder Surface Dial. Und mit der Chip-zu-Cloud-Integration von Microsoft 365 und der Sicherheit und Verwaltbarkeit von Windows 10 Pro stellt Surface verbundene Hardware, Software, Apps und Dienste wie vorgesehen zur Verfügung. Obwohl es möglich ist, WVD von Windows-Geräten, die auf Windows 7 zurücklaufen, Microsoft Surface bieten Microsoft Surface einzigartige Vorteile, einschließlich der Unterstützung für:
 
@@ -41,11 +41,11 @@ Surface Engineering hat lange zeit neue Standards für Innovationen festgelegt, 
 - **Dauerhafte, Bedarfs- und Just-in-Time-Arbeitsszenarien** – mit Offline- und Gerätezugriff für produktivere Erfahrungen.
 - Sicherheit und Verwaltbarkeit moderner Windows **10-Geräte** – bietet die Flexibilität, überall produktiv zu sein.
 
-## Flexible Formfaktoren und Premium-Benutzererfahrung
+##  <a name="flexible-form-factors-and-premium-user-experience"></a>Flexible Formfaktoren und Premium-Benutzererfahrung
 
 Die Microsoft Surface for Business umfasst ein vielfältiges Portfolio von Formfaktoren, einschließlich herkömmlicher Laptops, All-in-One-Computer und 2-in-1-Geräte. Surface-Geräte bieten Erfahrungen, die Menschen mit der Auswahl und Flexibilität, die sie benötigen, um an ihren Begriffen zu arbeiten.
 
-### Der moderne virtuelle Desktopendpunkt
+###  <a name="the-modern-virtual-desktop-endpoint"></a>Der moderne virtuelle Desktopendpunkt
 
 Surface 2-in-1-Geräte, einschließlich [Surface Go 2](https://www.microsoft.com/p/surface-go-2) (10,5"), [Surface Pro+ (12")](https://www.microsoft.com/surface/business/surface-pro-7-plus) und [Surface Pro X](https://www.microsoft.com/p/surface-pro-x/) (13), bieten Benutzern den idealen Clouddesktop-Endpunkt, der ein optimales Gleichgewicht aus Portabilität, Flexibilität, Energie und Akku für den ganzen Tag bietet. Von Standorttechnikern, die Surface Go 2 im Tablet-Modus verwenden, bis hin zu Finanzberatern, die Surface Pro 7 an ein Dock und mehrere Monitore anfügen, bieten 2-in-1-Geräte die Flexibilität, die zum Definieren des modernen Arbeitsplatzes gekommen ist.
 
@@ -61,15 +61,15 @@ Surface 2-in-1-Geräte, einschließlich [Surface Go 2](https://www.microsoft.com
 - Unterstützung für eine Vielzahl von Peripheriegeräten wie Standarddrucker, 3D-Drucker, Kameras, Kreditkartenleser, Strichcodescanner und viele andere. Ein großes Ökosystem von Designed for Surface-Partnern bietet lizenziertes und zertifiziertes Surface-Zubehör.
 - Breites Spektrum an Unterstützung für die Geräteumleitung.
 
-### Unterstützung der Geräteumleitung
+###  <a name="device-redirection-support"></a>Unterstützung der Geräteumleitung
 
 Die oben aufgeführten Surface-zentrierten Produktivitätsumgebungen werden in Windows Virtual Desktop-Umgebungen noch ansprechender, indem Sie die Geräteumleitungsfunktionen mit Windows 10 nutzen. Surface bietet eine breite Palette von Unterstützung für die Geräteumleitung, insbesondere im Vergleich zu OEM Thin Clients und festen Anschlüssen, Android, iOS/macOS und webbasiertem Zugriff. Die Clients Windows Inbox (MSTSC) und Windows Desktop (MSRDC) bieten die meisten Geräteumleitungsfunktionen, einschließlich Eingabeumleitung (Tastatur, Maus, Stift und Touch), Portumleitung (seriell und USB) und andere Umleitungen (Kameras, Zwischenablage, lokales Laufwerk/Speicher, Standort, Mikrofone, Drucker, Scanner, Smartcards und Lautsprecher). Einen ausführlichen Vergleich der Geräteumleitungsunterstützung finden Sie in der [Geräteumleitungsdokumentation.](https://docs.microsoft.com/windows-server/remote/remote-desktop-services/clients/remote-desktop-app-compare#redirection-support)
 
-### Vertraute Desktoperfahrung
+###  <a name="familiar-desktop-experience"></a>Vertraute Desktoperfahrung
 
 Die Ausführung des Windows-Desktopclients auf Surface-Geräten bietet Benutzern nicht nur eine breite Palette von Geräteumleitungsfunktionen, sondern ermöglicht es allen Benutzern, Apps auf vertraute Weise zu starten – direkt über das Startmenü oder die Suchleiste.
 
-### Dauerhafte, Bedarfs- und Just-in-Time-Arbeitsszenarien
+###  <a name="persistent,-on-demand-and-just-in-time-work-scenarios"></a>Dauerhafte, Bedarfs- und Just-in-Time-Arbeitsszenarien
 
 Windows Virtual Desktop auf Surface unterstützt Kunden bei der Erfüllung zunehmend komplexer Geschäfts- und Sicherheitsanforderungen in Branchen, Mitarbeiterrollen und Arbeitsumgebungen. Dazu gehören:
 
@@ -80,13 +80,13 @@ Windows Virtual Desktop auf Surface unterstützt Kunden bei der Erfüllung zuneh
 - Möglichkeit zur Unterstützung spezieller, prozessorintensiver Workloads.
 - Ausfallsicherheit für die Unterstützung von Vorgängen während Unterbrechungen.
 
-### Tabelle1. Windows Virtual Desktop - Geschäftsunterhaltungen
+###  <a name="surface-hub-2-fingerprint-reader-tech-specs"></a>Tabelle1. Windows Virtual Desktop - Geschäftsunterhaltungen
 
 | Sicherheits- & A0                                | Flexible Mitarbeiter                                                            | Arbeitsrollen                                                        | Spezielle Workloads                                                            | Geschäftskontinuität                                  |
 | ---------------------------------------------------- | ---------------------------------------------------------------------------- | ----------------------------------------------------------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------- |
 | - Finanzdienstleistungen<br>– Gesundheitswesen<br>– Government | – Übernahme & Fusion<br>- Kurzfristige Mitarbeiter<br>– Auftragnehmer & Partner | - BYOD & Mobile<br>– Kundensupport/-dienst<br>- Zweigstellenmitarbeiter | - Design & Engineering<br>– Unterstützung für ältere Apps<br>– Softwareentwicklungstest & Test | – Bei Bedarf<br>- Just-in-Time (JIT)<br>- Work @ Home |
 
-### Offline- und Gerätezugriff für produktivere Erfahrungen
+###  <a name="offline-and-on-device-access-for-more-productive-experiences"></a>Offline- und Gerätezugriff für produktivere Erfahrungen
 
 Traditionell funktionieren VDI-Lösungen nur, wenn der Endpunkt mit dem Internet verbunden ist. Was geschieht jedoch, wenn das Internet oder die Stromversorgung aus irgendeinem Grund nicht verfügbar ist (aufgrund der Mobilität, des Flugzeugs oder stromausfallens, und so weiter)?
  
@@ -96,7 +96,7 @@ Zusätzlich zur Unterstützung des Offlinezugriffs auf Apps und Dateien wurden d
  
 Eine Alternative zur lokalen Installation herkömmlicher Anwendungen besteht in der Nutzung der neuesten Version von Microsoft Edge, die Unterstützung für Progressive Web Apps (PWA) bietet. PWAs sind nur Websites, die schrittweise erweitert werden, um wie systemeigene Apps auf unterstützenden Plattformen zu funktionieren. Die Qualitäten einer PWA kombinieren das Beste aus dem Web und nativen Apps durch zusätzliche Features, z. B. Pushbenachrichtigungen, Hintergrunddatenaktualisierung, Offlineunterstützung und vieles mehr.
 
-### Virtuelle GPUs
+###  <a name="virtual-gpus"></a>Virtuelle GPUs
 
 GPUs eignen sich ideal für RECHEN- und grafikintensive Workloads, mit denen Kunden Innovationen durch Szenarien wie High-End-Remotevisualisierung, Deep Learning und Vorhersageanalysen fördern können.  Dies ist jedoch nicht ideal für Experten, die remote oder unterwegs arbeiten müssen, da unterschiedliche Grad an interner GPU-Leistung an die physischen Geräte gebunden sind, wodurch Die Mobilität und Flexibilität eingeschränkt werden.
  
@@ -104,7 +104,7 @@ Um dies zu lösen, bietet Azure die N-Serie von virtuellen Computern mit NVIDIA-
  
 Azure N-series bringt diese Funktionen auf Ihrem Surface-Gerät zum Leben, sodass Sie auf beliebige Weise arbeiten können, ganz gleich, wo Sie hingehen.  [Erfahren Sie mehr über die von Azure N-Series und GPU optimierten Virtuellen Computergrößen.](https://docs.microsoft.com/azure/virtual-machines/sizes-gpu)
 
-## Microsoft 365 und Surface
+##  <a name="microsoft-365-and-surface"></a>Microsoft 365 und Surface
 
 Selbst in einer virtualisierten Desktopumgebung bieten Microsoft 365 und Surface die von Mitarbeitern gerne verwendeten Erfahrungen, die von den Schutzorganisationen verlangten und flexibilität für Teams, um ihre Arbeit zu unterstützen. Forrester Research: <a href="#4"><sup> 4</sup></a>
 
@@ -112,7 +112,7 @@ Selbst in einer virtualisierten Desktopumgebung bieten Microsoft 365 und Surface
 - 75 Prozent stimmen zu, dass Microsoft 365-geräte mit Surface zur Verbesserung der Mitarbeiterzufriedenheit und -aufbewahrung beitragen
 - zustimmen, dass Microsoft 365- betriebene Surface-Geräte zur Verbesserung der Mitarbeiterzufriedenheit und -aufbewahrung beigetragen haben.
 
-### Sicherheit und Verwaltung
+###  <a name="security-and-management"></a>Sicherheit und Verwaltung
 
 Von Chip bis Cloud hilft Microsoft 365 und Surface Organisationen, geschützt und auf dem neuesten Stand zu bleiben.
 Da Sowohl Surface-Hardware als auch Software von Microsoft entworfen, erstellt und getestet wurde, können Benutzer sicher sein, dass sie produktiv sind und durch führende Technologien vom Chip bis zur Cloud geschützt sind.  Mit einer erhöhten Anzahl von Benutzern, die remote arbeiten, wird der Schutz von Unternehmensdaten und geistigem Eigentum wichtiger denn je. Windows Virtual Desktop auf Surface ist auf ein sicherheitsloses Sicherheitsmodell ausgelegt, bei dem jede Zugriffsanforderung stark authentifiziert, innerhalb von Richtlinieneinschränkungen autorisiert und vor dem Gewähren des Zugriffs auf Anomalien überprüft wird.
@@ -132,15 +132,15 @@ Zu den Sicherheits- und Verwaltungsfeatures von Windows Virtual Desktop auf Surf
 - **Brücke für ältere Windows 7-Workloads:** Für Lösungsszenarien, die von älteren Windows -Betriebssystemumgebungen abhängig sind, können Unternehmen in Azure ausgeführte VDI-Instanzen von Windows 7 verwenden. Dies ermöglicht die Unterstützung auf modernen Geräten wie Surface, ohne sich auf ältere Windows 7-Computer verlassen zu müssen, die nicht mehr die neuesten Sicherheitsupdates erhalten.  Zusätzlich zu diesen Vorteilen der "zukünftigen Korrekturhilfen" wird die Migration von älteren Workloads erheblich vereinfacht, wenn die moderne Windows 10-Hardware bereits bereitgestellt ist.
 - **Zero-Touch-Bereitstellung** : Autopilot ist die empfohlene moderne Verwaltungsbereitstellungsoption für Surface-Geräte. Windows Autopilot auf Surface ist eine cloudbasierte Bereitstellungstechnologie in Windows 10. Sie können Windows Autopilot auf Surface verwenden, um Geräte remote in einem Zero-Touch-Prozess direkt im Einsatz zu bereitstellen und zu konfigurieren. Von Windows Autopilot registrierte Geräte werden beim ersten Start über das Internet durch eine eindeutige Gerätesignatur identifiziert, die als Hardwarehash bezeichnet wird. Sie werden automatisch mithilfe moderner Verwaltungslösungen wie Azure Active Directory (Azure AD) und verwaltung mobiler Geräte registriert und konfiguriert.
 
-### Surface-Geräte: Minimieren der Auswirkungen auf die Umgebung
+###  <a name="surface-devices:-minimizing-environmental-impacts"></a>Surface-Geräte: Minimieren der Auswirkungen auf die Umgebung
 
 Surface führt Lebenszyklusbewertungen durch, um die Auswirkungen von Geräten auf die Umgebung über wichtige Phasen des Produktlebenszyklus hinweg zu berechnen, sodass Microsoft diese Auswirkungen minimieren kann. Jedes Surface-Produkt verfügt über ein ÖKOSYSTEM-Profil, das Details zu den energieverbrauchsrelevanten Energieverbrauchs- und Materialzusammensetzungsdaten, Verpackung, Recycling und zugehörigen Kriterien enthält. Informationen zum Herunterladen von Profilen für jedes Surface-Gerät finden Sie unter ["ÖKOSYSTEM-Profile"](https://www.microsoft.com/download/details.aspx?id=55974) im Microsoft Download Center.
 
-## Zusammenfassung
+##  <a name="summary"></a>Zusammenfassung
 
 Windows Virtual Desktop auf Surface bietet Organisationen mehr Flexibilität und Resilienz, um die unterschiedlichen Anforderungen von Benutzern, Beteiligten und Kunden zu erfüllen. Das Ausführen von Windows Virtual Desktop-Lösungen auf Surface-Geräten bietet gegenüber der fortgesetzten Abhängigkeit von älteren Geräten eindeutige Vorteile.  Flexible Formfaktoren wie Surface Go 2 und Surface Pro 7+, die mit der Cloud (oder offline) verbunden sind, ermöglichen Benutzern, jederzeit von überall aus produktiv zu sein. Unabhängig davon, ob Mitarbeiter in permanenten, bedarfs- oder just-in-time-Szenarien arbeiten, bietet Windows Virtual Desktop auf Surface Unternehmen die Flexibilität, die Produktivität bei Unterbrechungen von öffentlichen Gesundheitsnotfällen oder anderen unvorhergesehenen Ereignissen zu unterstützen. Mithilfe der integrierten, mehrschichtigen Sicherheit und der modernen Verwaltbarkeit von Windows 10 können Unternehmen ein erweitertes Ökosystem cloudbasierter Dienste nutzen, um Windows-Desktops und -Apps schnell bereitstellen und skalieren zu können. Einfach ausgedrückt: Windows Virtual Desktop auf Surface bietet Organisationen und Unternehmen jeder Größe kritisch benötigte Technologien.
 
-## Mehr erfahren
+##  <a name="learn-more"></a>Mehr erfahren
 
 Weitere Informationen finden Sie in den folgenden Ressourcen:
 

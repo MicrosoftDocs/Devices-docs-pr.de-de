@@ -36,7 +36,7 @@ Allgemeine Probleme sowie Ursachen und mögliche Problembehebungen sind in der f
 
 In diesem Abschnitt werden Ursachen und Behebungen für Probleme aufgeführt, die beim Einrichten von Microsoft Surface Hub auftreten können.
 
-### Gerätebezogen
+###  <a name="on-device"></a>Gerätebezogen
 
 Mögliche Behebungen für Probleme mit Surface Hub, nachdem Sie das Programm für die Erstausführung abgeschlossen haben.
 
@@ -143,7 +143,7 @@ Mögliche Behebungen für Probleme mit Surface Hub, nachdem Sie das Programm fü
 </table>
  
 
-### Erstausführung
+###  <a name="first-run"></a>Erstausführung
 
 Mögliche Behebungen für Probleme mit dem Programm für die Erstausführung des Surface Hub.
 
@@ -212,7 +212,7 @@ Mögliche Behebungen für Probleme mit dem Programm für die Erstausführung des
 
  
 
-### Seite „Gerätekonto“, Probleme bei bestehenden Kontoeinstellungen
+###  <a name="device-account-page,-issues-for-existing-account-settings"></a>Seite „Gerätekonto“, Probleme bei bestehenden Kontoeinstellungen
 
 <table>
 <tr>
@@ -372,7 +372,7 @@ Mögliche Behebungen für Probleme mit dem Programm für die Erstausführung des
 
  
 
-### Erstausführung, Exchange-Server-Seite
+###  <a name="first-run,-exchange-server-page"></a>Erstausführung, Exchange-Server-Seite
 
 <table>
 <colgroup>
@@ -607,13 +607,13 @@ In diesem Abschnitt werden Statuscodes, Zuordnung, Benutzermeldungen und Maßnah
 </tbody>
 </table>
 
-## Support kontaktieren
+##  <a name="contact-support"></a>Support kontaktieren
 
 Wenn Sie Fragen haben oder Hilfe benötigen, können Sie [eine Supportanfrage erstellen](https://support.microsoft.com/supportforbusiness/productselection).
 
 
  
-## Verwandte Themen
+##  <a name="related-content"></a>Verwandte Themen
 
 - [Problembehandlung bei Miracast-Verbindung mit dem Surface Hub](https://docs.microsoft.com/surface-hub/miracast-troubleshooting)
  

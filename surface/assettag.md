@@ -21,13 +21,13 @@ ms.locfileid: "10832578"
 
 Surface-Ressourcen-Tag ist ein Befehlszeilen-Interface-Dienstprogramm, mit dem Sie einen zugewiesenen Ressourcen-Tag-Wert für Surface-Geräte anzeigen, zuweisen und ändern können. Es funktioniert auf Surface pro 3 und auf allen neueren Surface-Geräten.
 
-## Systemanforderungen
+##  <a name="system-requirements"></a>Systemanforderungen
 
 - Surface pro 3 oder höher
 
 - UEFI-Firmwareversion 3.9.150.0 oder höher
 
-## Verwenden der Surface-Ressourcenkategorie 
+##  <a name="using-surface-asset-tag-"></a>Verwenden der Surface-Ressourcenkategorie 
 
 So führen Sie eine DGM-Anlagen Kategorie aus:
 
@@ -40,7 +40,7 @@ So führen Sie eine DGM-Anlagen Kategorie aus:
 
 3.  Oberfläche neu starten
 
-### Befehle für das Element-Tag-Tool   
+###  <a name="asset-tag-tool-commands"></a>Befehle für das Element-Tag-Tool   
 In den folgenden Beispielen wird AssetTag.exe in einem Verzeichnis auf einem lokalen Computer (C:\assets) gespeichert. 
 
 Führen Sie AssetTag-g aus, um die vorgeschlagene Inventar Kategorie zu erhalten.
@@ -70,7 +70,7 @@ C:\assets\AssetTag.exe -s testassettag12
 >Der Wert für das Elementtag muss zwischen 1 und 36 Zeichen enthalten. Gültige Zeichen sind a-z, a-z, 0-9, Punkt (.) und Bindestrich (-).
 
 
-## Verwalten von Inventar Kategorien
+##  <a name="managing-asset-tags"></a>Verwalten von Inventar Kategorien
 
 Sie können die vorhandene Objektkategorie in den UEFI-Einstellungen unter Geräteinformationen anzeigen (**Systemsteuerung > Wiederherstellung > Advanced Startup > jetzt neu starten**.)
 
@@ -91,7 +91,7 @@ Alternativ können Sie mithilfe von WMI die vorhandene Objektkategorie auf einem
 C:\Windows\System32> (Get-WmiObject -query “Select * from Win32_SystemEnclosure”)
   ```
   
-### Mithilfe von PowerShell
+###  <a name="using-powershell"></a>Mithilfe von PowerShell
 
 Mit dem folgenden Skript können Sie den vorgeschlagenen Wert abrufen und Fehler interpretieren.
 

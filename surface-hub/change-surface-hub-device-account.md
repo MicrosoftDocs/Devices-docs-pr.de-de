@@ -24,7 +24,7 @@ ms.locfileid: "10834081"
 
 Sie können das Gerätekonto unter „Einstellungen“ ändern, indem Sie entweder ein Konto hinzufügen, wenn es noch nicht bereitgestellt wurde, oder die Eigenschaften eines bereits bereitgestellten Kontos ändern.
 
-## Details
+##  <a name="details"></a>Details
 
 
 <table>
@@ -72,7 +72,7 @@ Sie können das Gerätekonto unter „Einstellungen“ ändern, indem Sie entwed
 
  
 
-## Folgendes passiert:
+##  <a name="what-happened"></a>Folgendes passiert:
 
 
 Der Benutzerprinzipalname und das Kennwort werden zur Überprüfung des Kontos in AD oder Azure AD verwendet. Schlägt die Überprüfung fehl, müssen Sie möglicherweise die Domäne und den Benutzernamen bereitstellen.
@@ -81,7 +81,7 @@ Mithilfe der bereitgestellten Anmeldeinformationen versuchen wir, die SIP-Adress
 
 Die Exchange Server-Adresse muss angegeben werden, wenn das Gerät keinen den Anmeldeinformationen zugeordneten Server findet. Microsoft Surface Hub verwendet den Exchange-Server für die Kommunikation mit ActiveSync, wodurch mehrere wichtige Features auf dem Gerät aktiviert werden.
 
-## Verwandte Themen
+##  <a name="related-content"></a>Verwandte Themen
 
 
 [Verwalten von Microsoft Surface Hub](manage-surface-hub.md)

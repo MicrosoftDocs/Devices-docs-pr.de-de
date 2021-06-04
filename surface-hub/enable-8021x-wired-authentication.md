@@ -25,7 +25,7 @@ Die Erzwingung und Aktivierung der 802.1x kabelgebundenen Authentifizierung auf 
 
 Die primäre Konfiguration ist auf die Richtlinie **LanProfile** festgelegt. Je nach ausgewählter Authentifizierungsmethode sind andere Richtlinien möglicherweise erforderlich, entweder die **EapUserData**-Richtlinie oder die MDM-Richtlinien für das Hinzufügen von Benutzer- oder Computerzertifikaten (z.B. [ClientCertificateInstall](https://docs.microsoft.com/windows/client-management/mdm/clientcertificateinstall-csp) für Benutzer/Gerätezertifikate oder [RootCATrustedCertificates](https://docs.microsoft.com/windows/client-management/mdm/rootcacertificates-csp) für Gerätezertifikate). 
 
-## LanProfile-Richtlinienelement
+##  <a name="lanprofile-policy-element"></a>LanProfile-Richtlinienelement
 
 Um Surface Hub zum Verwenden der unterstützten 802.1 x-Authentifizierungsmethoden zu konfigurieren, verwenden Sie die folgende OMA-URI. 
 
@@ -49,7 +49,7 @@ Profile File Name: .\Ethernet.xml
 1 profile(s) were exported successfully.
 ```
 
-## EapUserData-Richtlinienelement
+##  <a name="eapuserdata-policy-element"></a>EapUserData-Richtlinienelement
 
 Wenn die ausgewählte Authentifizierungsmethode einen Benutzernamen und Kennwort im Gegensatz zu einem Zertifikat erfordert, können Sie das **EapUserData**-Elements zur Angabe der Anmeldeinformationen für das Gerät verwenden, um sich beim Netzwerk zu authentifizieren. 
 
@@ -61,7 +61,7 @@ Dieser OMA-URI-Knoten verwendet eine XML-Textzeichenfolge als Parameter. Der als
 
 
 
-## Hinzufügen von Zertifikaten
+##  <a name="adding-certificates"></a>Hinzufügen von Zertifikaten
 
 Wenn die ausgewählte Authentifizierungsmethode Zertifikat basiert ist, müssen Sie [ein Bereitstellungspaket erstellen](provisioning-packages-for-surface-hub.md), [MDM verwenden](https://docs.microsoft.com/windows/client-management/mdm/clientcertificateinstall-csp)oder ein Zertifikat aus den Einstellungen (**Einstellungen**  >  **aktualisieren und Sicherheits**  >  **Zertifikate**) importieren, um diese Zertifikate auf dem Surface Hub-Gerät im entsprechenden Zertifikatspeicher bereitzustellen. Wenn Sie ein Zertifikat hinzufügen möchten, muss jeder PFX nur ein Zertifikat enthalten (PFX kann nicht mehrere Zertifikate enthalten).
 

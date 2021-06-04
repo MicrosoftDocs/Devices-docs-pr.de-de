@@ -44,14 +44,14 @@ In diesem Artikel werden die Szenarien vorgestellt, die bei der Bereitstellung u
 
  
 
-## Szenario 1: Drahtlosnetzwerke und die Konfiguration der Windows-Willkommensseite mit MDT 2013
+##  <a name="scenario-1:-wireless-networking-in-oobe-with-mdt-2013"></a>Szenario 1: Drahtlosnetzwerke und die Konfiguration der Windows-Willkommensseite mit MDT 2013
 
 
 Wenn ein Drahtlosnetzwerkadapter vorhanden ist, wird während der Konfiguration der Windows-Willkommensseite die Option **Einem Drahtlosnetzwerk beitreten** angezeigt. Der Benutzer wird aufgefordert, eine Verbindung mit einem Drahtlosnetzwerk herzustellen. Diese Seite wird nicht automatisch von Bereitstellungstechnologien wie MDT 2013 ausgeblendet. Sie wird daher auch angezeigt, wenn die Bereitstellung als vollständig automatisiert konfiguriert ist.
 
 Um sicherzustellen, dass eine automatisierte Bereitstellung von dieser Seite nicht angehalten wird, müssen Sie die Seite ausblenden, indem Sie eine zusätzliche Einstellung in der Antwortdatei konfigurieren: **HideWirelessSetupInOOBE**. Weitere Informationen zur Einstellung **HideWirelessSetupInOOBE** finden Sie unter [Referenz für das unbeaufsichtigte Windows Setup](https://technet.microsoft.com/library/ff716213.aspx).
 
-## Szenario 2: Koppeln mit dem Surface-Stift auf der Windows-Willkommensseite
+##  <a name="scenario-2:-surface-pen-pairing-in-oobe"></a>Szenario 2: Koppeln mit dem Surface-Stift auf der Windows-Willkommensseite
 
 
 Wenn Sie ein Surface Pro 3, Surface Pro 4, Surface Book oder Surface Studio zum ersten Mal auspacken und starten, wird bei der ersten Ausführung des Standardimages eine Meldung mit der Aufforderung angezeigt, den im Paket enthaltenen Surface-Stift mit dem Gerät zu koppeln. Diese Aufforderung wird zwar in dem mit dem Gerät gelieferten Standardimage angezeigt, nicht aber in anderen Bereitstellungsimages, wie etwa den Windows Enterprise-Installationsmedien, die im Volume Licensing Service Center zum Download bereitstehen. Die Kopplung des Bluetooth-Surface-Stifts außerhalb der Konfiguration der Windows-Willkommensseite macht es erforderlich, die Systemsteuerungseinstellungen bzw. die PC-Einstellungen einzugeben und die Kopplung mit einem Bluetooth-Gerät manuell durchzuführen. Aus diesem Grund kann es sinnvoll sein, den Kopplungsvorgang über diese Aufforderung von dem Benutzer oder einem Techniker durchführen zu lassen.

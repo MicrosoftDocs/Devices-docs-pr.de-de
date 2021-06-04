@@ -25,7 +25,7 @@ Zum Ausführen des Surface Diagnostic Toolkit (SDT) an einer Eingabeaufforderung
 >[!NOTE]
 >Um SDT mithilfe von Befehlen auszuführen, müssen Sie beim Administratorkonto oder bei einem Konto angemeldet sein, das Mitglied der Administratorgruppe auf Ihrem Surface Gerät ist.
 
-## Ausführen der SDT-App-Konsole
+##  <a name="running-sdt-app-console"></a>Ausführen der SDT-App-Konsole
 
 Laden Sie die SDT-App-Konsole von der Downloadseite der [Surface Tools für IT herunter, und installieren Sie sie.](https://www.microsoft.com/download/details.aspx?id=46703) Sie können die Windows-Eingabeaufforderung (cmd.exe) oder Windows PowerShell verwenden: 
 
@@ -49,7 +49,7 @@ Befehl | Anmerkungen
 >[!NOTE]
 >Um die SDT-App-Konsole remote auf Zielgeräten ausführen zu können, können Sie ein Konfigurationsverwaltungstool wie Microsoft Endpoint Configuration Manager verwenden. Alternativ können Sie eine ZIP-Datei mit der Konsolen-App und den entsprechenden Konsolenbefehlen erstellen und entsprechend den Softwareverteilungsprozessen Ihrer Organisation bereitstellen. 
 
-## Ausführen von Best Practice Analyzer 
+##  <a name="running-best-practice-analyzer"></a>Ausführen von Best Practice Analyzer 
 
 Sie können BPA-Tests für wichtige Komponenten wie BitLocker, secure Boot und Trusted Platform Module (TPM) ausführen und die Ergebnisse dann in eine freigabefähige Datei ausgibt. Das Tool generiert eine Reihe von Tabellen mit farblich codierten Überschriften und Bedingungsbeschreibungen sowie Anleitungen zur Lösung des Problems. 
 
@@ -57,7 +57,7 @@ Sie können BPA-Tests für wichtige Komponenten wie BitLocker, secure Boot und T
 - Orange gibt an, dass die Komponente nicht in einem optimalen Zustand ausgeführt wird (nicht optimal).
 - Rot gibt an, dass sich die Komponente in einem anormalen Zustand befindet. 
 
-### Beispielausgabe für BPA-Ergebnisse
+###  <a name="sample-bpa-results-output"></a>Beispielausgabe für BPA-Ergebnisse
 
 <table>
 <tr><th colspan="2"><font color="00ff00">BitLocker</font></th></tr>

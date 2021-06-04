@@ -24,12 +24,12 @@ ms.locfileid: "10832584"
 
 Microsoft Surface Hub bietet zwei Optionen für die Netzwerkverbindung mit Ihrem Unternehmensnetzwerk und dem Internet: drahtlos und kabelgebunden. Beide Optionen bieten Netzwerkzugriff, es wird jedoch empfohlen, eine Kabelverbindung zu verwenden.
 
-## Ändern, Hinzufügen oder Überprüfen einer Netzwerkverbindung
+##  <a name="modifying,-adding,-or-reviewing-a-network-connection"></a>Ändern, Hinzufügen oder Überprüfen einer Netzwerkverbindung
 
 
 Wenn keine kabelgebundene Netzwerkverbindung verfügbar ist, kann Surface Hub ein Drahtlosnetzwerk für den Internetzugriff verwenden. Ein ordnungsgemäß verbundener und konfigurierter WLAN-Zugriffspunkt muss verfügbar sein und sich innerhalb der Reichweite des Surface Hub befinden.
 
-### Auswählen eines Drahtloszugriffspunkts
+###  <a name="choose-a-wireless-access-point"></a>Auswählen eines Drahtloszugriffspunkts
 
 1.  Öffnen Sie **Einstellungen** auf Surface Hub, und geben Sie Ihre Administratoranmeldeinformationen ein.
 2.  Klicken Sie auf **Netzwerk und Internet**. Wählen Sie unter **WLAN** einen Zugriffspunkt aus. Wenn Surface Hub mit diesem Zugriffspunkt automatisch eine Verbindung herstellen soll, klicken Sie auf **Automatisch verbinden**. Klicken Sie auf **Verbinden**.
@@ -40,7 +40,7 @@ Wenn keine kabelgebundene Netzwerkverbindung verfügbar ist, kann Surface Hub ei
 
     ![Abbildung mit Aufforderung zur Eingabe des Sicherheitsschlüssels und Kennworts für die geschützte WLAN-Verbindung](images/networkmgtwireless-02.png)
 
-### Überprüfen von Drahtloseinstellungen
+###  <a name="review-wireless-settings"></a>Überprüfen von Drahtloseinstellungen
 
 1.  Öffnen Sie **Einstellungen** im Surface Hub, und geben Sie Ihre Administratoranmeldeinformationen ein.
 2.  Klicken Sie auf System, dann auf **Netzwerk und Internet**, auf **Wi-Fi** und dann auf **Erweiterte Optionen**.
@@ -48,7 +48,7 @@ Wenn keine kabelgebundene Netzwerkverbindung verfügbar ist, kann Surface Hub ei
 
     ![Abbildung der Eigenschaften für WLAN-Verbindung](images/networkmgtwireless-04.png)
 
-### Überprüfen kabelgebundener Einstellungen
+###  <a name="review-wired-settings"></a>Überprüfen kabelgebundener Einstellungen
 
 1.  Öffnen Sie **Einstellungen** auf Surface Hub, und geben Sie Ihre Administratoranmeldeinformationen ein.
 2.  Klicken Sie auf **System**, auf **Netzwerk und Internet**, und klicken Sie dann auf das Netzwerk unter Ethernet.
@@ -59,7 +59,7 @@ Wenn keine kabelgebundene Netzwerkverbindung verfügbar ist, kann Surface Hub ei
 
     ![Abbildung der Eigenschaften für die Ethernet-Verbindung](images/networkmgtwired-02.png)
 
-## Verwandte Themen
+##  <a name="related-content"></a>Verwandte Themen
 
 
 [Verwalten von Microsoft Surface Hub](manage-surface-hub.md)

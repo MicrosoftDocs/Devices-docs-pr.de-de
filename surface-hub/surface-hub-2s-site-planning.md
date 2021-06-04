@@ -20,11 +20,11 @@ ms.locfileid: "10832956"
 ---
 # Surface Hub 2S-Websiteplanung
 
-## Einführung
+##  <a name="introduction"></a>Einführung
 
 Surface Hub 2S wurde für die Zusammenarbeit im Team entwickelt und kann Ihre Arbeitsweise transformieren – nicht nur in den Konferenzräumen, sondern an jedem Ort, an dem Sie arbeiten möchten. Einer der größten Vorteile von Surface Hub 2S ist die Möglichkeit, es von einem Raum in einen anderen zu verschieben, wenn es mit dem mobilen Steelcase Mobile-Standfuß und der mobilen Batterie verwendet wird. Surface Hub 2S kann in fast jeden Arbeitsbereich integriert werden und bietet Unplugged, ununterbrochene Teamarbeits Funktionen.
 
-## Überlegungen zum Raum
+##  <a name="room-considerations"></a>Überlegungen zum Raum
 
 Surface Hub 2S, das für die interaktive Verwendung in kleineren Konferenzräumen und drängenden Räumen konzipiert wurde, bietet eine 4K-Kamera, ein Mikrofonarray, kristallklare Lautsprecher und eine brillante 4K +-Auflösung. Für die Optimierung der Benutzerfreundlichkeit in größeren Räumen mit mehr Personen, die weiter vom Display entfernt sind, können Peripheriegeräte wie eine zusätzliche Kamera-, Mikrofon-oder Raumsystem Lösung wie Microsoft Teams-Räume erforderlich sein.
 
@@ -43,6 +43,6 @@ Unabhängig davon, ob Sie an einer Wand montiert oder auf dem mobilen Standfuß 
 
 Eine detaillierte Anleitung zur Raumplanung und weitere Informationen zu Microsoft Teams-Räumen finden Sie unter [Planen von Microsoft Teams-Räumen.](https://docs.microsoft.com/MicrosoftTeams/room-systems/skype-room-systems-v2-0)
 
-## Verwalten des Surface Hub 2S-Standorts
+##  <a name="managing-surface-hub-2s-location"></a>Verwalten des Surface Hub 2S-Standorts
 
 Wenn Sie beabsichtigen, Surface Hub 2S auf einem mobilen Standfuß zu verwenden, können Sie Lösungen von Drittanbietern erkunden, mit denen Standortdienste aktiviert werden. Mit aktiven RFID-Systemen können beispielsweise in komplexen Office-oder Industrieräumen Echtzeit-Nachverfolgungen bereitgestellt werden. Weitere Informationen finden Sie in Ihrem A/V-Anbieter oder in einer anderen Fachkompetenz von Drittanbietern.

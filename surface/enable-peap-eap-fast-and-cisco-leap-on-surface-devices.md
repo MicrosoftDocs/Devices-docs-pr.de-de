@@ -34,7 +34,7 @@ Sie können Unterstützung für diese Protokolle bereitstellen, indem Sie ein kl
 
 Sie können die MSI-Installationsdateien für PEAP, EAP-FAST oder Cisco LEAP in einer einzelnen ZIP-Archivdatei aus dem Microsoft Download Center herunterladen. Um diese Datei herunterzuladen, besuchen Sie die Seite [Surface Tools for IT](https://www.microsoft.com/download/details.aspx?id=46703) (Surface-Tools für IT-Experten) im Microsoft Download Center, klicken Sie auf **Download**, und wählen Sie dann die Datei **Cisco EAP-Supplicant Installer.zip** aus.
 
-## Bereitstellen von PEAP, EAP-FAST oder Cisco LEAP mit MDT
+##  <a name="deploy-peap,-eap-fast,-or-cisco-leap-with-mdt"></a>Bereitstellen von PEAP, EAP-FAST oder Cisco LEAP mit MDT
 
 
 Wenn Sie in Ihrer Organisation bereits Windows auf Surface-Geräten bereitstellen, können Sie die Installationsdateien für die Protokolle einfach zur Bereitstellungsfreigabe hinzufügen und während der Bereitstellung die automatische Installation konfigurieren. Sie können sogar eine Tasksequenz konfigurieren, die zuvor bereitgestellte Surface-Geräte aktualisiert, damit für diese Protokolle auf die gleiche Weise Unterstützung bereitgestellt werden kann.
@@ -83,7 +83,7 @@ Wenn Sie die Protokolle explizit angeben möchten, gehen Sie wie folgt vor:
 
 6.  Wiederholen Sie die Schritte 2 bis 5 für jedes gewünschte Protokoll.
 
-## Bereitstellen von PEAP, EAP-FAST oder Cisco LEAP mit Configuration Manager
+##  <a name="deploy-peap,-eap-fast,-or-cisco-leap-with-configuration-manager"></a>Bereitstellen von PEAP, EAP-FAST oder Cisco LEAP mit Configuration Manager
 
 
 Für Unternehmen, die Surface-Geräte mit Configuration Manager verwalten, ist es noch einfacher, Unterstützung für PEAP, EAP-FAST oder Cisco LEAP auf Surface-Geräten bereitzustellen. Importieren Sie lediglich jede MSI-Datei als Anwendung aus der Softwarebibliothek, und konfigurieren Sie die Bereitstellung auf Ihren Surface-Geräten.

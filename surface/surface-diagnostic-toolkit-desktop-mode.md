@@ -67,7 +67,7 @@ Durch das erfolgreiche Ausführen von "mit" können Sie schnell feststellen, ob 
 
 <span id="multiple" />
 
-## Ausführen mehrerer Hardwaretests zur Behebung von Problemen
+##  <a name="running-multiple-hardware-tests-to-troubleshoot-issues"></a>Ausführen mehrerer Hardwaretests zur Behebung von Problemen
 
 Sie ist als interaktives Tool konzipiert, das eine Reihe von Tests ausführt. Bei jedem Test bietet Ihnen das Unternehmen eine Anleitung, in der die Art des Tests zusammengefasst wird und welche Benutzer erwarten sollten, damit der Test erfolgreich ist. Wenn Sie beispielsweise diagnostizieren möchten, ob die Anzeigehelligkeit ordnungsgemäß funktioniert, beginnt die Helligkeits Anzeige mit 0 (null) und erhöht die Helligkeit auf 100 Prozent **Yes** , und **No** die Benutzer werden aufgefordert, zu bestätigen, dass die Helligkeit wie erwartet funktioniert, wie in Abbildung 4 zu sehen ist. 
 
@@ -81,7 +81,7 @@ Wenn die Funktionalität für jeden Test nicht erwartungsgemäß funktioniert un
 3. Führen Sie die Benutzer durch die restlichen Tests nach Bedarf. Nach Abschluss des Vorgangs stellt das Unternehmen automatisch eine Zusammenfassung des Berichts auf hoher Ebene bereit, einschließlich der möglichen Ursachen für Hardwareprobleme zusammen mit Anleitungen für die Lösung.
 
 
-### Reparieren von Anwendungen
+###  <a name="repairing-applications"></a>Reparieren von Anwendungen
 
 Mit "mit" können Sie Anwendungen diagnostizieren und reparieren, die möglicherweise Probleme verursachen, wie in Abbildung 5 zu sehen ist.
 
@@ -89,7 +89,7 @@ Mit "mit" können Sie Anwendungen diagnostizieren und reparieren, die möglicher
  *Abbildung 5. Ausführen von Reparaturen*
 <span id="logs" />
 
-### Generieren von Protokollen zum Analysieren von Problemen 
+###  <a name="generating-logs-for-analyzing-issues-"></a>Generieren von Protokollen zum Analysieren von Problemen 
 
 In Abbildung 6 wird die umfassende Protokollierungs fähige Diagnoseunterstützung für Anwendungen, Treiber, Hardware und Betriebssystemprobleme bereitgestellt.
 
@@ -98,11 +98,11 @@ In Abbildung 6 wird die umfassende Protokollierungs fähige Diagnoseunterstützu
 
 <span id="detailed-report" />
 
-### Generieren eines detaillierten Berichts, der die Geräte-vs. optimale Konfiguration vergleicht
+###  <a name="generating-detailed-report-comparing-device-vs.-optimal-configuration"></a>Generieren eines detaillierten Berichts, der die Geräte-vs. optimale Konfiguration vergleicht
 
 Basierend auf den Protokollen generiert Sie einen Bericht für Software-und Firmware-basierte Probleme, die Sie an einem bevorzugten Speicherort speichern können.
 
-## Verwandte Themen
+##  <a name="related-content"></a>Verwandte Themen
 
 - [Ausführen von Surface-Diagnosetoolkit für Unternehmen mithilfe von Befehlen](surface-diagnostic-toolkit-command-line.md)
 

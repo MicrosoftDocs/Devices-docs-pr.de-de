@@ -25,7 +25,7 @@ Hier ist Surface Hub-Techniker Jordanien Marchese bei der Präsentation von Upda
 
 Windows10, Version1703 (auch als das Creators Update bezeichnet) führt die folgenden Änderungen für Microsoft Surface Hub ein.
 
-## Neue Einstellungen
+##  <a name="new-settings"></a>Neue Einstellungen
 
 Der Verwaltung mobiler Geräte (Mobile Device Management, MDM) und den Konfigurationsdienstanbietern (Configuration Service Providers, CSPs) wurden zur Erweiterung der Surface Hub-Verwaltungsfunktionen Einstellungen hinzugefügt. [Die neuen Einstellungen umfassen](manage-settings-with-mdm-for-surface-hub.md):
 
@@ -44,17 +44,17 @@ Der Verwaltung mobiler Geräte (Mobile Device Management, MDM) und den Konfigura
 Sowie Einstellungen, basierend auf der neuen [NetworkQoSPolicy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/networkqospolicy-csp) und [NetworkProxy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/networkproxy-csp).
 </br>
 
-## Bereitstellungs-Assistent
+##  <a name="provisioning-wizard"></a>Bereitstellungs-Assistent
 
 Ein benutzerfreundlicher Assistent unterstützt Sie beim schnellen Erstellen von Bereitstellungspaketen, die Sie auf mehrere Surface Hub-Geräte anwenden können. Darüber hinaus umfasst er Massenbeitritt zu Azure Active Directory. [Hier erfahren Sie, wie Sie ein Bereitstellungspaket für Surface Hub erstellen können.](provisioning-packages-for-certificates-surface-hub.md)
 
 ![Schritte beim Bereitstellungsassistenten für Surface Hub-Geräte](images/wcd-wizard.png)
     
-## Miracast auf Ihren vorhandenen Funknetzwerken oder LAN 
+##  <a name="miracast-on-your-existing-wireless-network-or-lan"></a>Miracast auf Ihren vorhandenen Funknetzwerken oder LAN 
 
 Microsoft hat Microsoft die Möglichkeit erweitert, [einen Miracast-Datenstrom über ein lokales Netzwerk](miracast-over-infrastructure.md) anstatt über eine direkte drahtlose Verbindung zu senden. 
     
-## Cloud-Wiederherstellung
+##  <a name="cloud-recovery"></a>Cloud-Wiederherstellung
 
 Beim Zurücksetzen eines Surface Hub-Geräts besteht jetzt die Möglichkeit, einen Werksbuild des Betriebssystems aus der Cloud herunterzuladen und zu installieren. [Hier erfahren Sie mehr über die Cloud-Wiederherstellung.](device-reset-surface-hub.md#cloud-recovery)
 
@@ -63,7 +63,7 @@ Beim Zurücksetzen eines Surface Hub-Geräts besteht jetzt die Möglichkeit, ein
     
 ![Neuinstallation](images/reinstall.png)
     
-## Sitzung beenden
+##  <a name="end-session"></a>Sitzung beenden
 
 **Fertig** ist jetzt **Sitzung beenden**. [Hier erfahren Sie, wie Sie „Sitzung beenden” verwenden können.](finishing-your-surface-hub-meeting.md) 
 

@@ -29,7 +29,7 @@ Die folgende Abbildung zeigt die Position von Anschlüssen und physikalischen Sc
 
  ![Front-und unter Ansicht von e/a-Verbindungen und physikalischen Schaltflächen](images/hub2s-schematic.png)
 
-## Referenz für Port-und Keypad-Komponenten
+##  <a name="port-and-keypad-component-reference"></a>Referenz für Port-und Keypad-Komponenten
 
 |**Schlüssel**|**Komponente**|**Beschreibung**|**Schlüsselparameter**|
 |:--- |:--------- |:----------- |:-------------- |

@@ -24,22 +24,22 @@ ms.locfileid: "11114693"
 ---
 # Sichere Surface Dock 2-Anschlüsse mit Surface Enterprise Management Mode (Semm)
 
-## Einführung
+##  <a name="introduction"></a>Einführung
 
 Surface Enterprise Management Mode (Semm) ermöglicht IT-Administratoren das Sichern und Verwalten von Surface Dock 2-Anschlüssen durch Konfigurieren von UEFI-Einstellungen in einem Windows Installer-Konfigurationspaket (. MSI-Datei), die für kompatible Surface-Geräte in einer Unternehmensumgebung bereitgestellt wird.
 
-### Unterstützte Geräte
+###  <a name="supported-devices"></a>Unterstützte Geräte
 
 Das Verwalten von Surface Dock 2 mit Semm ist für Docks verfügbar, die mit Surface Book 3, Surface Laptop 3, Surface Laptop go, Surface pro 7 und Surface pro X verbunden sind. Diese kompatiblen Surface-Geräte werden gemeinhin als **Host-Devices**bezeichnet. Ein Paket wird auf Hostgeräte angewendet, basierend auf, wenn ein Host Gerät **authentifiziert** oder nicht **authentifiziert**ist. Die konfigurierten Einstellungen befinden sich auf der UEFI-Ebene auf Hostgeräten, sodass Sie – der IT-Administrator – das Surface Dock 2 genauso wie jedes andere integrierte Peripheriegerät wie die Kamera verwalten können.
 
 >[!NOTE]
 >Sie können Surface Dock 2-Anschlüsse nur verwalten, wenn das Dock mit einem der folgenden kompatiblen Geräte verbunden ist: Surface Book 3, Surface Laptop 3 und Surface pro 7. Jedes Gerät, das die Einstellungen für UEFI-authentifizierte Richtlinien nicht erhält, ist inhärent ein nicht authentifiziertes Gerät.
 
-### Szenarien
+###  <a name="scenarios"></a>Szenarien
 
 Wenn Sie das Surface Dock 2 auf autorisierte Personen beschränken, die bei einem Firmen-Host-Gerät angemeldet sind, erhalten Sie eine weitere Datenschutzebene. Diese Möglichkeit zum Sperren von Surface Dock 2 ist für bestimmte Kunden in äußerst sicheren Umgebungen von entscheidender Bedeutung, die die Funktionalität und Produktivitätsvorteile des Docks nutzen möchten, wobei die Einhaltung strenger Sicherheitsprotokolle gewährleistet ist. Wir gehen davon aus, dass Semm, das mit Surface Dock 2 verwendet wird, besonders für Kunden, die USB-Ports aus Sicherheitsgründen sperren möchten, besonders nützlich für offene Büros und freigegebene Räume sind. Eine Video Demo finden Sie unter [Semm für Surface Dock 2](https://youtu.be/VLV19ISvq_s).
 
-## Konfigurieren und Bereitstellen von UEFI-Einstellungen für Surface Dock 2
+##  <a name="configuring-and-deploying-uefi-settings-for-surface-dock-2"></a>Konfigurieren und Bereitstellen von UEFI-Einstellungen für Surface Dock 2
 
 In diesem Abschnitt finden Sie Schritt-für-Schritt-Anleitungen für die folgenden Aufgaben:
 
@@ -54,29 +54,29 @@ In diesem Abschnitt finden Sie Schritt-für-Schritt-Anleitungen für die folgend
 >[!NOTE]
 >Bei der **Zufallszahl (RN)** handelt es sich um eine eindeutige 16-stellige Hex-Code Kennung, die im Werk bereitgestellt und auf der Unterseite des Docks in kleinem Format gedruckt wird. Die RN unterscheidet sich von den meisten Seriennummern dadurch, dass Sie nicht elektronisch gelesen werden können. Dadurch wird sichergestellt, dass der Besitznachweis in erster Linie nur durchlesen des RN beim physikalischen Zugriff auf das Gerät festgelegt wird. Das RN kann auch während der Kauftransaktion abgerufen und in Microsoft Inventory Systems aufgezeichnet werden.
 
-### Installieren von Semm und Surface UEFI Configurator
+###  <a name="install-semm-and-surface-uefi-configurator"></a>Installieren von Semm und Surface UEFI Configurator
 
 Installieren Sie Semm, indem Sie **SurfaceUEFI_Configurator_v2.71.139.0.msi**ausführen. Hierbei handelt es sich um einen eigenständigen Installer, der alles enthält, was Sie zum Erstellen und Verteilen von Konfigurationspaketen für Surface Dock 2 benötigen.
 
 - Laden Sie den **Surface UEFI Configurator** von [Surface Tools](https://www.microsoft.com/en-us/download/details.aspx?id=46703)herunter.
 
-## Erstellen von Zertifikaten für öffentliche Schlüssel
+##  <a name="create-public-key-certificates"></a>Erstellen von Zertifikaten für öffentliche Schlüssel
 
 Dieser Abschnitt enthält Spezifikationen zum Erstellen der Zertifikate, die zum Verwalten von Ports für Surface Dock 2 erforderlich sind.
 
-### Voraussetzungen
+###  <a name="prerequisites"></a>Voraussetzungen
 
 In diesem Artikel wird davon ausgegangen, dass Sie entweder Zertifikate von einem Drittanbieter erhalten oder dass Sie bereits über Expertenwissen in PKI-Zertifikatdiensten verfügen und wissen, wie Sie eigene Zertifikate erstellen können.  Mit einer Ausnahme sollten Sie sich mit den allgemeinen Empfehlungen zum Erstellen von Zertifikaten vertraut machen, wie Sie in der Dokumentation zum [Surface Enterprise Management Mode (Semm)](https://docs.microsoft.com/surface/surface-enterprise-management-mode) beschrieben sind. Die auf dieser Seite dokumentierten Zertifikate erfordern Ablaufzeiten von 30 Jahren für die **Dock-Zertifizierungsstelle**und 20 Jahre für das **Host Authentifizierungszertifikat**.
 
 Weitere Informationen finden Sie unter Dokumentation zur [Zertifikatsdienste-Architektur](https://docs.microsoft.com/windows/win32/seccrypto/certificate-services-architecture) und Überprüfen der entsprechenden Kapitel in [Windows Server 2019 Inside Out](https://www.microsoftpressstore.com/store/windows-server-2019-inside-out-9780135492277)oder [Windows Server 2008 PKI und Zertifikatsicherheit](https://www.microsoftpressstore.com/store/windows-server-2008-pki-and-certificate-security-9780735640788) , die von Microsoft Press zur Verfügung stehen.
 
-### Stamm-und Host Zertifikatanforderungen
+###  <a name="root-and-host-certificate-requirements"></a>Stamm-und Host Zertifikatanforderungen
 
 Vor dem Erstellen des Konfigurationspakets müssen Sie Zertifikate mit öffentlichen Schlüsseln vorbereiten, die den Besitz von Surface Dock 2 authentifizieren und spätere Änderungen des Besitzers während des Gerätelebenszyklus vereinfachen. Für das Host-und Bereitstellungszertifikat ist die Eingabe von EKU-IDs erforderlich, die auch als Objekt-IDs **(Enhanced Key Usage, EKU) der Client Authentifizierung**bezeichnet werden.
 
 Die erforderlichen EKU-Werte sind in Tabelle 1 und Tabelle 2 aufgeführt.
 
-#### Tabelle1. Zertifikatanforderungen für root und Dock
+####  <a name="surface-hub-2-fingerprint-reader-tech-specs"></a>Tabelle1. Zertifikatanforderungen für root und Dock
 
 |Zertifikat|Algorithmus|Beschreibung|Ablauf|EKU-OID|
 |---|---|---|---|---|
@@ -86,7 +86,7 @@ Die erforderlichen EKU-Werte sind in Tabelle 1 und Tabelle 2 aufgeführt.
    >[!NOTE]
    >Die Dock-Zertifizierungsstelle muss als P7B-Datei exportiert werden.
 
-### Bereitstellungszertifikat Anforderungen
+###  <a name="provisioning-administration-certificate-requirements"></a>Bereitstellungszertifikat Anforderungen
 
 Jedes Host-Gerät muss die doc-Zertifizierungsstelle und zwei Zertifikate aufweisen, wie in Tabelle 2 zu sehen ist.
 
@@ -100,7 +100,7 @@ Jedes Host-Gerät muss die doc-Zertifizierungsstelle und zwei Zertifikate aufwei
    >[!NOTE]
    >Die Host Authentifizierungs-und Bereitstellungszertifikate müssen als PFX-Dateien exportiert werden.
 
-### Konfigurationspaket erstellen
+###  <a name="create-configuration-package"></a>Konfigurationspaket erstellen
 
 Wenn Sie die Zertifikate erhalten oder erstellt haben, können Sie das MSI-Konfigurationspaket erstellen, das auf Ziel Oberflächen Geräte angewendet wird.
 
@@ -131,16 +131,16 @@ Wenn Sie die Zertifikate erhalten oder erstellt haben, können Sie das MSI-Konfi
 
 1. Wählen Sie **Erstellen** aus, um das Paket wie angegeben zu erstellen.
 
-### Anwenden des Konfigurationspakets auf ein Surface Dock 2
+###  <a name="apply-the-configuration-package-to-a-surface-dock-2"></a>Anwenden des Konfigurationspakets auf ein Surface Dock 2
 
 1. Übernehmen Sie die MSI-Datei, die vom Surface UEFI-Konfigurator generiert wurde, und installieren Sie Sie auf einem Surface-Host-Gerät. Kompatible Hostgeräte sind Surface Book 3, Surface Laptop 3 oder Surface pro 7.
 1. Verbinden Sie das Host-Gerät mit dem Surface Dock 2. Wenn Sie die Dock-UEFI-Richtlinieneinstellungen verbinden, werden diese übernommen.
 
-## Überprüfen des verwalteten Zustands mithilfe der Surface-App
+##  <a name="verify-managed-state-using-the-surface-app"></a>Überprüfen des verwalteten Zustands mithilfe der Surface-App
 
 Nachdem Sie das Konfigurationspaket angewendet haben, können Sie den resultierenden Richtlinienzustand des Docks direkt aus der Surface-APP überprüfen, die standardmäßig auf allen Surface-Geräten installiert ist. Wenn die Surface-App auf dem Gerät nicht vorhanden ist, können Sie Sie aus dem Microsoft Store herunterladen und installieren.
 
-### Test Szenario
+###  <a name="test-scenario"></a>Test Szenario
 
 Ziel: Konfigurieren Sie Richtlinieneinstellungen so, dass der Port Zugriff nur von authentifizierten Benutzern zugelassen wird.
 
@@ -165,7 +165,7 @@ Ziel: Konfigurieren Sie Richtlinieneinstellungen so, dass der Port Zugriff nur v
 
 Herzlichen Glückwunsch. Sie haben erfolgreich Surface Dock 2-Ports auf zielgerichteten Hostgeräten verwaltet.
 
-## Mehr erfahren
+##  <a name="learn-more"></a>Mehr erfahren
 
 - [Dokumentation zu Surface Enterprise Management Mode (Semm)](https://docs.microsoft.com/surface/surface-enterprise-management-mode)
 - [Architektur der Zertifikatdienste](https://docs.microsoft.com/windows/win32/seccrypto/certificate-services-architecture)

@@ -26,7 +26,7 @@ Sie können andere Geräte mit Ihrem Microsoft Surface Hub verbinden, um Inhalte
 >[!NOTE]
 >Surface Hub verwendet die Video Eingabe, die Sie auswählen, bis eine neue Verbindung hergestellt wird, die vorhandene Verbindung unterbrochen wird oder die Connect-app geschlossen ist.
 
-## Welche Methode soll ich auswählen?
+##  <a name="which-method-should-i-choose"></a>Welche Methode soll ich auswählen?
 
 Für die Verbindung externer Geräte und Anzeigen mit einem Surface Hub sind mehrere Optionen verfügbar. Welche Methode Sie verwenden, hängt von Ihrem Szenario und Ihren Anforderungen ab. 
 
@@ -45,7 +45,7 @@ Der Gastmodus verwendet eine Kabelverbindung, damit Benutzer Inhalte von ihren G
 >[!NOTE]
 >Wenn eine HDCP-Datenquelle verbunden ist, verwenden Sie das seitliche Tastenfeld zum Ändern von Quelleingaben.
 
-### Anschlüsse
+###  <a name="ports"></a>Anschlüsse
 
 Verwenden Sie diese Anschlüsse auf dem Surface Hub für den Gastmodus.
 
@@ -116,7 +116,7 @@ Verwenden Sie diese Anschlüsse auf dem Surface Hub für den Gastmodus.
 
  
 
-### Anschlusspositionen
+###  <a name="port-locations"></a>Anschlusspositionen
 
 Hierbei handelt es sich um die Anschlussverbindungen, die für den Gastmodus auf dem 55"- und 84"-Surface Hub verwendet werden.
 
@@ -128,7 +128,7 @@ Kabelanschlüsse am 55"-Surface Hub
 
 Kabelanschlüsse am 84"-Surface Hub
 
-### Anschlussaufzählung
+###  <a name="port-enumeration"></a>Anschlussaufzählung
 
 Wenn ein Surface Hub per Kabel über den USB-Anschluss mit dem Gastcomputer verbunden ist, werden einige USB-Geräte erkannt und konfiguriert. Diese Peripheriegeräte werden für Touchback und Inkback erstellt. Die Peripheriegeräte können im Geräte-Manager angezeigt werden. Der Geräte-Manager zeigt für einige Geräte doppelte Namen an.
 
@@ -162,7 +162,7 @@ Wenn ein Surface Hub per Kabel über den USB-Anschluss mit dem Gastcomputer verb
 
 -   USB-Verbundgerät
 
-### Gastmodus-Konnektivität
+###  <a name="guest-mode-connectivity"></a>Gastmodus-Konnektivität
 
 Die Wahl des Videokabels hängt von der verfügbaren Eingangsquelle ab. Der Surface Hub verfügt über drei Videoeingänge: DisplayPort, HDMI und VGA. Die verfügbaren Auflösungen können Sie dem folgenden Diagramm entnehmen.
 
@@ -248,15 +248,15 @@ Wenn der von Ihnen für den Gastmodus verwendete Computer nicht mit Touchback un
 
 Im Ersatz-PC-Modus ist der eingebettete Computer des Surface Hub ausgeschaltet, und ein externer PC ist mit dem Surface Hub verbunden. Über Verbindungen mit Ersatz-PC-Anschlüssen erhalten Sie Zugriff auf wichtige Peripheriegeräte am Surface Hub, einschließlich Bildschirm-, Stift- und Touch-Features. Dies bedeutet, dass Ihr Surface Hub nicht über die Vorteile der Windows Team-Benutzeroberfläche verfügt, Sie verfügen jedoch über die Flexibilität, die die Bereitstellung und Verwaltung eines eigenen Windows-Computers mit sich bringt.
 
-### Softwareanforderungen
+###  <a name="software-requirements"></a>Softwareanforderungen
 
 Sie können den Surface Hub im Ersatz-PC-Modus mit 64-Bit-Versionen von Windows10 Home, Windows10 Pro und Windows10 Enterprise ausführen. Sie können das [Surface Hub-Ersatz-PC Treiberpaket](https://www.microsoft.com/download/details.aspx?id=52210) aus dem Microsoft Download Center herunterladen. Es wird empfohlen, dass Sie diese Treiber auf einem beliebigen Computer installieren, den Sie als Ersatz-PC verwenden möchten.
 
-### Hardwareanforderungen
+###  <a name="hardware-requirements"></a>Hardwareanforderungen
 
 Surface Hub ist mit unterschiedlicher Hardware kompatibel. Wählen Sie die Prozessor- und Speicher-Bestätigung für Ihren Ersatz-PC, sodass er die von Ihnen verwendeten Programme unterstützt. Die Ersatz-PC-Hardware muss 64-Bit-Versionen von Windows10 unterstützen.
 
-### Grafikkarte
+###  <a name="graphics-adapter"></a>Grafikkarte
 
 Im Ersatz-PC-Modus unterstützt der Surface Hub alle Grafikkarten, die ein DisplayPort-Signal erzeugen können. Sie können die Leistung mit einer Grafikkarte verbessern, die auf die Auflösung und Aktualisierungsrate des Surface Hub abgestimmt ist. Die beste und empfohlene Ersatz-PC-Leistung auf dem Surface Hub wird beispielsweise mit einem Videosignal von 120Hz erreicht.
 
@@ -295,7 +295,7 @@ Fragen Sie direkt beim Anbieter nach den neuesten Treibern für die Grafikkarte.
 
  
 
-### Anschlüsse
+###  <a name="ports"></a>Anschlüsse
 
 Ersatz-PC-Anschlüsse am 55"-Surface Hub.
 
@@ -411,7 +411,7 @@ Ersatz-PC-Anschlüsse am 84"-Surface Hub
 
  
 
-### Anweisungen zum Einrichten des Ersatz-PCs
+###  <a name="replacement-pc-setup-instructions"></a>Anweisungen zum Einrichten des Ersatz-PCs
 
 **So verwenden Sie den Ersatz-PC-Modus**
 
@@ -449,7 +449,7 @@ Sie können vom Surface Hub auf den internen PC wechseln.
  
 Der Surface Hub umfasst einen Videoausgang für die Spiegelung visueller Inhalte vom Surface Hub auf eine andere Anzeige.
 
-### Anschlüsse
+###  <a name="ports"></a>Anschlüsse
 
 Videoausgang am 55"-Surface Hub
 
@@ -481,7 +481,7 @@ Videoausgang am 84"-Surface Hub
 </tbody>
 </table>
 
-## Kabel
+##  <a name="cables"></a>Kabel
 
 Sowohl das 55-Zoll- als auch das 84-Zoll-Surface Hub-Gerät wurden auf die Funktion mit Certified DisplayPort- und HDMI-Kabeln überprüft.  Obwohl bei Händlern auch längere Kabel erhältlich sind, die möglicherweise mit dem Surface Hub funktionieren, sind nur Kabel, die von Testlabors zertifiziert wurden, zweifelsfrei zur Verwendung mit dem Hub geeignet. DisplayPort-Kabel z.B. sind nur für eine Länge von bis zu 3m zertifiziert. Viele Händler verkaufen jedoch Kabel, die dreimal so lang sind. Wenn Sie ein langes Kabel benötigen, raten wir dringend zur Verwendung von HDMI.  HDMI bietet viele kostengünstige Lösungen zu Kabeln für große Entfernungen, z.B. die Verwendung von Repeatern. Nahezu jede DisplayPort-Quelle schaltet automatisch auf HDMI-Signalisierung um, wenn ein HDMI-Sink erkannt wird.
 

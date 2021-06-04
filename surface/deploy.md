@@ -23,7 +23,7 @@ ms.locfileid: "10832851"
 
 Erfahren Sie mehr über die Bereitstellung von Arm-und Intel-basierten Surface-Geräten.
 
-## Bereitstellen von ARM-basierten Geräten
+##  <a name="deploying-arm-based-devices"></a>Bereitstellen von ARM-basierten Geräten
 
 | Thema | Beschreibung |
 | --- | --- |
@@ -32,7 +32,7 @@ Erfahren Sie mehr über die Bereitstellung von Arm-und Intel-basierten Surface-G
 | [Windows 10 ARM-basierte PC-APP-Kompatibilität](surface-pro-arm-app-performance.md) | Überprüfen Sie die APP-Kompatibilitäts Anleitung für Surface pro X. |
 
 
-## Bereitstellen von Intel-basierten Geräten 
+##  <a name="deploying-intel-based-devices"></a>Bereitstellen von Intel-basierten Geräten 
 
 | Thema | Beschreibung |
 | --- | --- |
@@ -45,7 +45,7 @@ Erfahren Sie mehr über die Bereitstellung von Arm-und Intel-basierten Surface-G
 | [Surface Deployment Accelerator](microsoft-surface-deployment-accelerator.md)| Sehen Sie sich an, wie Microsoft Surface Deployment Accelerator einen schnellen und einfachen Bereitstellungsmechanismus für Organisationen zum umbilden von Oberflächen Geräten bietet. |
 [Einstellungen für Akkulimit](battery-limit.md) | Hier erfahren Sie, wie Sie Battery Limit verwenden, eine UEFI-Einstellung, die ändert, wie der Akku des Surface-Geräts aufgeladen wird und seine Langlebigkeit verlängern kann.
 
-## Verwandte Themen
+##  <a name="related-content"></a>Verwandte Themen
 
 [Surface IT Pro Blog](https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/bg-p/SurfaceITPro)
 

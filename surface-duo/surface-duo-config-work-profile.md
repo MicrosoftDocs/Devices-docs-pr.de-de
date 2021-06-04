@@ -27,7 +27,7 @@ ms.locfileid: "11326175"
 
 Arbeitsprofile, die auf die Bereitstellung von BYOD ausgerichtet sind, bieten auf Duo einen separaten Platz für Arbeits-Apps und -Daten, damit Organisationen die vollständige Kontrolle über ihre Daten, Apps und Sicherheitsrichtlinien haben, ohne dass Mitarbeiter ihr Gerät für persönliche Apps und Daten verwenden können.
 
-### Einrichten des Android Enterprise-Arbeitsprofils
+###  <a name="set-up-android-enterprise-work-profile"></a>Einrichten des Android Enterprise-Arbeitsprofils
 
 Verwenden Sie Arbeitsprofile zum Verwalten von Unternehmensdaten und Apps auf Geräten im Besitz des Benutzers. Standardmäßig ist die Registrierung von persönlichen Arbeitsprofilgeräten aktiviert und erfordert keine weitere Administratorkonfiguration.  
 
@@ -64,7 +64,7 @@ Verwenden Sie Arbeitsprofile zum Verwalten von Unternehmensdaten und Apps auf Ge
      ![Select continue to complete setup](images/duo-wp-8.png)<br><br>
      ![Abschließen des Setups](images/duo-wp-9.png)<br><br>
 
-## Weitere Informationen
+##  <a name="additional-information"></a>Weitere Informationen
 
 - [Einrichten der Registrierung von Android Enterprise-Arbeitsprofilgeräten](https://docs.microsoft.com/mem/intune/enrollment/android-work-profile-enroll)
 

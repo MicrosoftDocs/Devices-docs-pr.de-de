@@ -29,7 +29,7 @@ ms.locfileid: "10893077"
 
 Dies sind die Microsoft-Support Lösungen für häufige Probleme, die bei der Verwendung von Surface-Geräten in einem Unternehmen auftreten können. Wenn Ihr Problem hier nicht aufgeführt ist, [wenden Sie sich an den Surface-Support](contact-surface-support.md?tabs=online).
 
-## Oberflächen Treiber und Firmware
+##  <a name="surface-drivers-and-firmware"></a>Oberflächen Treiber und Firmware
 
 Microsoft veröffentlicht regelmäßig Updates und Lösungen für Surface-Geräte. Um sicherzustellen, dass Ihre Geräte zukünftige Updates einschließlich der Sicherheitsupdates erhalten, ist es wichtig, Ihre Surface-Geräte auf dem neuesten Stand zu halten.
 
@@ -40,34 +40,34 @@ Microsoft veröffentlicht regelmäßig Updates und Lösungen für Surface-Gerät
 - [Verwalten von Treiber- und Firmwareupdates für Surface](https://docs.microsoft.com/surface/manage-surface-pro-3-firmware-updates)
 - [Verwalten von Oberflächen Treiberupdates in Configuration Manager](https://support.microsoft.com/help/4098906)
 
-## Probleme mit dem Surface Dock
+##  <a name="surface-dock-issues"></a>Probleme mit dem Surface Dock
 
 - [Problembehandlung bei Surface Dock und Dockingstations](https://support.microsoft.com/help/4023468/surface-troubleshoot-surface-dock-and-docking-stations)
 - [Problembehandlung beim Verbinden der Oberfläche mit einem zweiten Bildschirm](https://support.microsoft.com/help/4023496)
 - [Firmware-Update für Microsoft Surface Dock](https://docs.microsoft.com/surface/surface-dock-updater)
 
-## Probleme mit dem Cover oder der Tastatur des Geräts
+##  <a name="device-cover-or-keyboard-issues"></a>Probleme mit dem Cover oder der Tastatur des Geräts
 
 - [Problembehandlung für Ihr Surface Type Cover oder die Tastatur](https://www.microsoft.com/surface/support/hardware-and-drivers/troubleshoot-surface-keyboards)
 
-## Probleme mit zerbrochenem oder zerkratztem Bildschirm
+##  <a name="screen-cracked-or-scratched-issues"></a>Probleme mit zerbrochenem oder zerkratztem Bildschirm
 
 - [Surface-Support kontaktieren](contact-surface-support.md?tabs=online)
 
-## Probleme mit der Oberfläche oder Batterie
+##  <a name="surface-power-or-battery-issues"></a>Probleme mit der Oberfläche oder Batterie
 
 - [Laden der Oberfläche (DGM-PSU-Informationen)](https://support.microsoft.com/help/4023496)
 - [Die Oberfläche des Akkus wird nicht aufgeladen oder die Oberfläche läuft nicht auf dem Akku](https://support.microsoft.com/help/4023536)
 - [Surface lässt sich nicht einschalten oder wird nicht aus dem Standbymodus reaktiviert](https://support.microsoft.com/help/4023537)
 - [Maximieren der Surface-Akkulaufzeit](https://support.microsoft.com/help/4483194)
 
-## Gerät zurücksetzen
+##  <a name="reset-device"></a>Gerät zurücksetzen
 
 - [Erstellen und Verwenden eines USB-Wiederherstellungs Laufwerks für Surface](https://support.microsoft.com/help/4023512)
 - [Häufig gestellte Fragen: Schützen Ihrer Daten, wenn Sie die Oberfläche für den Service senden](https://support.microsoft.com/help/4023508)
 - [Microsoft Surface Data Eraser](https://docs.microsoft.com/surface/microsoft-surface-data-eraser)
 
-## Bereitstellungsprobleme
+##  <a name="deployment-issues"></a>Bereitstellungsprobleme
 
 - [Disk0 nicht gefunden, wenn Sie Windows auf Surface pro Modell 1796 oder Surface Laptop bereitstellen](https://support.microsoft.com/help/4046108)
 - [Surface pro-Modell 1796 und Surface Laptop 1TB-Display zwei Laufwerke](https://support.microsoft.com/help/4046105)

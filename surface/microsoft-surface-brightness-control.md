@@ -38,7 +38,7 @@ Das Tool verdunkelt den Bildschirm automatisch, wenn es nicht verwendet wird, un
 
 - Installieren Sie surfacebrightnesscontrol.msi auf dem Zielgerät, und die Oberfläche für die Helligkeitssteuerung wird sofort gestartet.
 
-## Konfigurieren der Oberflächen Helligkeitssteuerung
+##  <a name="configuring-surface-brightness-control"></a>Konfigurieren der Oberflächen Helligkeitssteuerung
 
 Sie können die Standardwerte über die Windows-Registrierung anpassen. Weitere Informationen zur Verwendung der Windows-Registrierung finden Sie in der [Registrierungs Dokumentation](https://docs.microsoft.com/windows/desktop/sysinfo/registry).
 
@@ -60,18 +60,18 @@ Vollständige Helligkeit   | Standard: 100  <br>Option: Bereich von 0-100 Prozen
 | Zeitüberschreitung nach Inaktivität| Standard: 30 Sekunden <br>Option: beliebiger numerischer Wert  <br>Datentyp: Ganzzahl  <br> Geben Sie Folgendes ein: REG_DWORD | Mit dieser Einstellung können Sie den Zeitraum der Inaktivität vor dem Dimmen des Geräts verwalten. Wenn Sie diese Einstellung nicht konfigurieren, beträgt das Timeout für die Inaktivität 30 Sekunden.|
 | Telemetrie aktiviert | Standard: 01 <br>Option: 01, 00 <br> Geben Sie Folgendes ein: REG_BINARY  | Mit dieser Einstellung können Sie die Freigabe von Informationen zur APP-Nutzung verwalten, um die Software zu verbessern und eine bessere Benutzererfahrung bereitzustellen. Um die Telemetrie zu deaktivieren, setzen Sie den Wert auf 00. Wenn Sie diese Einstellung nicht konfigurieren, werden Telemetrie-Informationen in Übereinstimmung mit den [Microsoft-Datenschutzbestimmungen](https://privacy.microsoft.com/privacystatement)für Microsoft freigegeben. |
 
-## Änderungen und Updates
+##  <a name="changes-and-updates"></a>Änderungen und Updates
 
-### Version 1.16.137<br>
+###  <a name="version-1.16.137"></a>Version 1.16.137<br>
 *Veröffentlichungsdatum: 22 Oktober 2019*<br>
 Diese Version der Oberflächen Helligkeitssteuerung bietet Unterstützung für die folgenden Optionen:-neu kompiliert für x86, Hinzufügen von Unterstützung für Surface pro 7, Surface pro X und Surface Laptop 3. 
 
-### Version 1.12.239.0
+###  <a name="version-1.12.239.0"></a>Version 1.12.239.0
 *Veröffentlichungsdatum: 26 April 2019*<br>
 Diese Version der Oberflächen Helligkeitssteuerung bietet folgende Unterstützung:
 - Touch Delay-Korrekturen.
 
 
-## Verwandte Themen
+##  <a name="related-content"></a>Verwandte Themen
 
 - [Einstellung der Batterie Grenze](battery-limit.md)

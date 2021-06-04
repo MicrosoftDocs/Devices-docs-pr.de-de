@@ -20,7 +20,7 @@ ms.locfileid: "10833577"
 ---
 # Entpacken des Surface Hub 2S
 
-## Entpacken des Surface Hub 2S
+##  <a name="unpacking-the-surface-hub-2s"></a>Entpacken des Surface Hub 2S
 
 Bevor Sie Surface Hub 2S aus dem Feld entfernen, stellen Sie sicher, dass Sie Ihre Befestigungslösung zusammengestellt haben und jemand zur Verfügung steht, der Ihnen helfen kann.
 
@@ -33,7 +33,7 @@ Bevor Sie Surface Hub 2S aus dem Feld entfernen, stellen Sie sicher, dass Sie Ih
 7. Richten Sie die installierte Hardware an den Steckplätzen auf der Halterung aus, damit Sie fest sitzt.
 8. Befolgen Sie alle weiteren Anweisungen, die mit ihrer Befestigungslösung geliefert wurden.
 
-## Installieren von Stift und Kamera
+##  <a name="install-pen-and-camera"></a>Installieren von Stift und Kamera
 
 1. Packen Sie den Surface Hub 2-Stift aus, und fügen Sie ihn magnetisch an Ihre bevorzugte Seite des Geräts an.
 2. Entfernen Sie das Objektiv, das sich an der Kamera klammert, und schließen Sie es an den USB-C-Anschluss oben auf dem Surface Hub 2S an.

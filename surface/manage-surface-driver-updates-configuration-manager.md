@@ -23,11 +23,11 @@ ms.locfileid: "10897073"
 ---
 # Verwalten von Surface-Treiberupdates im Konfigurations-Manager
 
-## Zusammenfassung
+##  <a name="summary"></a>Zusammenfassung
 
 Ab [Microsoft System Center Configuration Manager, Version 1710](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1710#software-updates), können Sie die Microsoft Surface-Firmware und Treiberupdates direkt über den Configuration Manager-Client synchronisieren und bereitstellen. Der Prozess ähnelt dem Bereitstellen regulärer Updates. Einige zusätzliche Konfigurationen sind jedoch erforderlich, um die Oberflächen Treiberaktualisierungen in Ihrem Katalog zu erhalten.
 
-## Voraussetzungen
+##  <a name="prerequisites"></a>Voraussetzungen
 
 Zum Verwalten von Oberflächen Treiberupdates müssen die folgenden Voraussetzungen erfüllt sein:
 
@@ -37,7 +37,7 @@ Zum Verwalten von Oberflächen Treiberupdates müssen die folgenden Voraussetzun
 > [!NOTE]
 > Wenn Ihre Umgebung die Voraussetzungen nicht erfüllt, finden Sie im Abschnitt [häufig gestellte Fragen](#frequently-asked-questions-faq) die [alternativen Methoden](https://support.microsoft.com/help/4098906/manage-surface-driver-updates-in-configuration-manager#1) zum Bereitstellen von Oberflächen Treiber-und Firmware-Updates.
 
-## Nützliche Protokolldateien
+##  <a name="useful-log-files"></a>Nützliche Protokolldateien
 
 Die folgenden Protokolle sind besonders nützlich, wenn Sie Oberflächen Treiberupdates verwalten.
 
@@ -49,7 +49,7 @@ Die folgenden Protokolle sind besonders nützlich, wenn Sie Oberflächen Treiber
 Diese Protokolle befinden sich auf dem Website Server, der den SUP verwaltet, oder auf dem SUP selbst, wenn er direkt auf einem Website Server installiert ist.
 Eine vollständige Liste der Configuration Manager-Protokolle finden Sie unter [Protokolldateien in System Center Configuration Manager](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/log-files).
 
-## Aktivieren der Verwaltung von Oberflächen Treiberupdates
+##  <a name="enabling-surface-driver-updates-management"></a>Aktivieren der Verwaltung von Oberflächen Treiberupdates
 
 Führen Sie die folgenden Schritte aus, um die Verwaltung von Oberflächen Treiberupdates in Configuration Manager zu aktivieren:
 
@@ -83,7 +83,7 @@ Führen Sie die folgenden Schritte aus, um die Verwaltung von Oberflächen Treib
    > [!NOTE]
    > Die meisten Oberflächen Treiber gehören mehreren Windows 10-Produktgruppen an. Sie müssen möglicherweise nicht alle Produkte auswählen, die hier aufgelistet sind. Um die Anzahl der Produkte zu verringern, die ihren Update Katalog füllen, empfehlen wir, dass Sie nur die Produkte auswählen, die für Ihre Umgebung für die Synchronisierung erforderlich sind.
 
-## Überprüfen der Konfiguration
+##  <a name="verifying-the-configuration"></a>Überprüfen der Konfiguration
 
 Führen Sie die folgenden Schritte aus, um zu überprüfen, ob der SUP richtig konfiguriert ist:
 
@@ -123,7 +123,7 @@ Führen Sie die folgenden Schritte aus, um zu überprüfen, ob der SUP richtig k
 
    ![Alle Suchergebnisse für Software Updates](images/manage-surface-driver-updates-4.png)
 
-## Manuelle Synchronisierung
+##  <a name="manual-synchronization"></a>Manuelle Synchronisierung
 
 Wenn Sie nicht bis zur nächsten Synchronisierung warten möchten, führen Sie die folgenden Schritte aus, um eine Synchronisierung zu starten:
 
@@ -150,13 +150,13 @@ Wenn Sie nicht bis zur nächsten Synchronisierung warten möchten, führen Sie d
    Synchronizing update 74102899-0a49-48cf-97e6-05bde18a27ff - Microsoft driver update for Surface UEFI
    ```
 
-## Bereitstellen von Surface-Firmware und Treiberupdates
+##  <a name="deploying-surface-firmware-and-driver-updates"></a>Bereitstellen von Surface-Firmware und Treiberupdates
 
 Sie können DGM-Firmware und Treiberupdates auf die gleiche Weise wie andere Updates bereitstellen.
 
 Weitere Informationen zur Bereitstellung finden Sie unter [System Center 2012 Configuration Manager – Part7: Software Updates (Deploy)](https://blogs.technet.microsoft.com/elie/2012/05/25/system-center-2012-configuration-managerpart7-software-updates-deploy/).
 
-## Häufig gestellte Fragen
+##  <a name="faq"></a>Häufig gestellte Fragen
 
 **Nachdem ich die in diesem Artikel beschriebenen Schritte ausgeführt habe, sind meine Oberflächen Treiber weiterhin nicht synchronisiert. Woran liegt das?**
 
@@ -176,7 +176,7 @@ Nein. Auch wenn das Update in WSUS importiert wurde, wird das Update nicht in di
 
 Informationen zum Bereitstellen von Oberflächen Treiber-und Firmware-Updates über alternative Kanäle finden Sie unter [Verwalten von Oberflächen Treiber-und Firmware-Updates](manage-surface-driver-and-firmware-updates.md). Wenn Sie die MSI-oder exe-Datei herunterladen und dann über herkömmliche Software Bereitstellungskanäle bereitstellen möchten, lesen Sie [Aktualisieren der Surface-Firmware mit Configuration Manager](https://docs.microsoft.com/archive/blogs/thejoncallahan/keeping-surface-firmware-updated-with-configuration-manager).
 
-## Weitere Informationen
+##  <a name="additional-information"></a>Weitere Informationen
 
 Weitere Informationen zu Oberflächen Treiber-und Firmware-Updates finden Sie in den folgenden Artikeln:
 

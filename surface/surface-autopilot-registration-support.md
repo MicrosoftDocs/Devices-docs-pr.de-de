@@ -41,13 +41,13 @@ In der folgenden Tabelle finden Sie Details zu den Informationen, die Sie sammel
 
  
 
-## Übermitteln von Supportanfragen
+##  <a name="submit-support-requests"></a>Übermitteln von Supportanfragen
 
   [![Get Autopilot Registration Support for Surface](images/autopilot-reg-support-surface.png)](https://prod.support.services.microsoft.com/supportrequestform/0d8bf192-cab7-6d39-143d-5a17840b9f5f)
  
  
  
-## Weitere Informationen
+##  <a name="additional-information"></a>Weitere Informationen
 
 - [Windows Autopilot und Surface-Geräte](windows-autopilot-and-surface-devices.md)
 - [Registrieren von Windows-Geräten in Intune mit Windows Autopilot](https://docs.microsoft.com/mem/autopilot/enrollment-autopilot)

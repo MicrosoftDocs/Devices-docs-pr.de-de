@@ -28,7 +28,7 @@ ms.locfileid: "11271539"
 ---
 # Surface Support
 
-### Bevor Sie sich an uns wenden:  
+###  <a name="before-you-contact-us"></a>Bevor Sie sich an uns wenden:  
 
 Führen Sie [das Surface Diagnostic Toolkit for Business](https://docs.microsoft.com/surface/surface-diagnostic-toolkit-business) (SDT) aus. Das SDT ermöglicht es IT-Administratoren, Hardware-, Software- und Firmwareprobleme mit Surface-Geräten schnell zu untersuchen, zu behandeln und zu beheben. Sie können eine Reihe von Diagnosetests und Softwarereparaturen ausführen, zusätzlich zum Abrufen von Einblicken in die Geräteintegdaten und Anleitungen zur Behebung von Problemen. 
 
@@ -52,7 +52,7 @@ Für Microsoft Premier-Kunden: [Übermitteln Sie Ihre Serviceanfrage auf dem Ser
 
 ## [In-Store-Unterstützung](#tab/instore)
 
-## China, Indien
+##  <a name="china,-india"></a>China, Indien
 
 Vereinbaren Sie einen Termin in einem Surface Walk-In Center, um Das Problem zu beheben:
 

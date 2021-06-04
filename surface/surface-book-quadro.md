@@ -27,7 +27,7 @@ DGM-Buch 3 für Unternehmen, angetrieben durch die NVIDIA® Quadro RTX™ 3000 G
 - **Künstliche Intelligenz** – entfernen Sie redundante, mühsame Aufgaben, und berechnen Sie intensive Arbeit mit 240 Tensor-Kernen für GPU-beschleunigte AI.
 - **Erweiterte Grafik-und Compute-Technologie** – erleben Sie erstaunliche Geschwindigkeit und Interaktivität während der meisten belastenden Grafiken und rechenlasten mit 1.920 CUDA-Kernen und 6 GB GDDR6-Speicher.
 
-## Enterprise-Grade-Lösung
+##  <a name="enterprise-grade-solution"></a>Enterprise-Grade-Lösung
 
 Quadro RTX 3000 ist für kommerzielle Kunden von größter Bedeutung und bietet eine vollständig professionelle Lösung, die eine beschleunigte Raytracing-und Deep-Learning-Funktion mit einer integrierten Management-und Support-Lösung auf Unternehmensebene kombiniert. Quadro-Treiber werden von führenden ISVs für mehr als 100 Professional-Anwendungen getestet und zertifiziert, wodurch eine zusätzliche Ebene der Qualitätssicherung zur Überprüfung von Stabilität, Zuverlässigkeit und Leistung bereitgestellt wird.
  
@@ -36,7 +36,7 @@ Quadro umfasst dedizierte Enterprise-Tools für die Remoteverwaltung von Surface
 NVIDIA entwickelt und pflegt Quadro optimal Drivers for Enterprise (Ode), die optimiert, getestet und validiert sind, um Stabilität, Zuverlässigkeit, Verfügbarkeit und Support auf Unternehmensebene mit erweiterter Produktverfügbarkeit zu gewährleisten. Jede Treiberversion umfasst mehr als 2.000 Arbeitstage für Tests mit professionellen Anwendungen, Test Suites und Test Cases sowie WHQL-Zertifizierung. Sicherheitsbedrohungen werden kontinuierlich überwacht, und es werden regelmäßige Sicherheitsupdates veröffentlicht, um vor neu entdeckten Sicherheitsanfälligkeiten zu schützen. Darüber hinaus unterziehen sich Quadro-Treiber einer zusätzlichen Testphase durch Surface Engineering, bevor Sie über Windows Update veröffentlicht werden.
  
 
-## Für rechenintensive Arbeitslasten entwickelt
+##  <a name="built-for-compute-intensive-workloads"></a>Für rechenintensive Arbeitslasten entwickelt
 
 Das DGM-Buch 3 mit Quadro RTX 3000 bietet die beste Grafikleistung eines beliebigen Surface-Laptops, sodass erfahrene Experten von überall aus arbeiten können.
  
@@ -89,7 +89,7 @@ Das DGM-Buch 3 mit Quadro RTX 3000 bietet die beste Grafikleistung eines beliebi
 | NVIDIA Optimus                                             | Ja             |
 
  
-## ISV-Test &-App-Beschleunigung
+##  <a name="isv-testing-&-app-acceleration"></a>ISV-Test &-App-Beschleunigung
 
 Wie in Tabelle 3 zu sehen ist, wird Surface Book 3 mit Quadro RTX 3000 von führenden ISVs getestet und genehmigt und bietet für professionelle Anwendungen eine deutlich schnellere Beschleunigung. SPECview perf 13-Benchmark-Testergebnisse vergleichen das Surface Book 3 15-inch mit NVIDIA Quadro RTX 3000 im Vergleich zum Surface Book 2 15-inch mit NVIDIA GeForce GTX 1060-Geräten.
 
@@ -125,7 +125,7 @@ Wie in Tabelle 3 zu sehen ist, wird Surface Book 3 mit Quadro RTX 3000 von führ
 
 
 
-## SKUs
+##  <a name="skus"></a>SKUs
 
 **Tabelle4. DGM-Buch 3 mit Quadro RTX 3000 SKUs**
 
@@ -134,7 +134,7 @@ Wie in Tabelle 3 zu sehen ist, wird Surface Book 3 mit Quadro RTX 3000 von führ
 | 15 Zoll | Quadcore-Core i7-1065G7 | Intel IRIS™ plus-Grafiken<br>NVIDIA Quadro RTX 3000. Max-Q-Design mit 6 GB GDDR6-Grafikspeicher | 32 LPDDR4x | 512 GB      |
 | 15 Zoll | Quadcore-Core i7-1065G7 | Intel IRIS™ plus-Grafiken<br>NVIDIA Quadro RTX 3000. Max-Q-Design mit 6 GB GDDR6-Grafikspeicher | 32 LPDDR4x | 1 TB        |
 
-## Zusammenfassung
+##  <a name="summary"></a>Zusammenfassung
 
 Das Surface Book 3 mit Quadro RTX 3000 bietet die beste Grafikleistung eines beliebigen Surface-Laptops und bietet Architekten, Ingenieuren, Entwicklern und Daten Wissenschaftlern die Tools, die Sie benötigen, um von überall aus effizient zu arbeiten:
  
@@ -142,7 +142,7 @@ Das Surface Book 3 mit Quadro RTX 3000 bietet die beste Grafikleistung eines bel
 - Leistung auf Desktop-Niveau in einem mobilen Formfaktor.
 - Funktionen der Unternehmensklasse, Zuverlässigkeit und Unterstützung für unternehmenskritische Projekte.
 
-## Mehr erfahren
+##  <a name="learn-more"></a>Mehr erfahren
 
 - [Surface Book 3 GPU – Technische Übersicht](surface-book-GPU-overview.md)
 - [Surface für Unternehmen](https://www.microsoft.com/surface/business)

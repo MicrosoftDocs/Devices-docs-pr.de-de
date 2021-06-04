@@ -28,7 +28,7 @@ Dieser Artikel enthält Anleitungen und Antworten, die Ihnen bei der Durchführu
 
 Die Netzwerkbereitstellung auf Surface-Geräten kann für Systemadministratoren eine Herausforderung darstellen. Da Surface-Geräte keine systemeigenen Ethernet-Adapter haben, müssen Sie die Konnektivität über einen austauschbaren Ethernet-Adapter herstellen.
 
-## Auswählen eines Ethernet-Adapters für Surface-Geräte
+##  <a name="select-an-ethernet-adapter-for-surface-devices"></a>Auswählen eines Ethernet-Adapters für Surface-Geräte
 
 
 Bevor Sie entscheiden, wie Sie in der Bereitstellungsumgebung starten oder wie die Geräte von der Bereitstellungslösung erkannt werden, müssen Sie einen Adapter für Kabelnetzwerke verwenden.
@@ -53,7 +53,7 @@ Die folgenden Ethernet-Geräte werden für den Netzwerkstart auf Surface-Geräte
 
 Ethernet-Adapter von Drittanbietern werden auch für die Netzwerkbereitstellung unterstützt, bieten aber keine Unterstützung für den PXE-Start. Um einen Ethernet-Adapter eines Drittanbieters zu verwenden, müssen Sie die Treiber in das Startimage für die Bereitstellung laden und das Startimage von einem separaten Speichergerät, z.B. einem USB-Stick, starten.
 
-## Starten von Surface-Geräten vom Netzwerk
+##  <a name="boot-surface-devices-from-the-network"></a>Starten von Surface-Geräten vom Netzwerk
 
 Um vom Netzwerk oder einem angeschlossenen USB-Stick zu starten, müssen Sie das Surface-Gerät dazu anweisen, von einem alternativen Startgerät zu starten. Sie können die Startreihenfolge in der Systemfirmware ändern, um USB-Startgeräten den Vorrang zu geben, oder aber Sie weisen das Gerät während des Systemstarts an, von einem alternativen Startgerät zu starten.
 

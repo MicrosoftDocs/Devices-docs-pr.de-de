@@ -22,7 +22,7 @@ ms.locfileid: "10833283"
 
 Sie können zusätzliche apps installieren, um den Anforderungen Ihres Teams oder Ihrer Organisation zu entsprechen.
 
-## Richtlinien für Entwickler
+##  <a name="developer-guidelines"></a>Richtlinien für Entwickler
 
 - Surface Hub führt ausschließlich [Apps für die universelle Windows-Plattform (UWP)](https://msdn.microsoft.com/windows/uwp/get-started/whats-a-uwp) aus. Apps, die mit [Desktop App Converter](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-run-desktop-app-converter) erstellt wurden, führen Surface Hub nicht aus.
 - Die Apps müssen für die [universelle Gerätefamilie](https://msdn.microsoft.com/library/windows/apps/dn894631) oder die Windows Team-Gerätefamilie entwickelt worden sein.
@@ -31,7 +31,7 @@ Sie können zusätzliche apps installieren, um den Anforderungen Ihres Teams ode
 - Beim entwickeln und Übermitteln von apps an den Microsoft Store legen Sie die Optionen für die Verfügbarkeit von Gerätefamilien und die organisatorische Lizenzierung fest, um sicherzustellen, dass Apps für die Ausführung auf Surface Hub verfügbar sind.
 - Sie benötigen Administratoranmeldeinformationen, um apps auf Surface Hub zu installieren. Surface Hub wurde für die Verwendung in Besprechungsräumen und anderen freigegebenen Räumen entwickelt und verhindert, dass reguläre Benutzer auf den Microsoft Store zugreifen, um apps herunterzuladen und zu installieren.
 
-## Bereitstellungsrichtlinien
+##  <a name="deployment-guidelines"></a>Bereitstellungsrichtlinien
 
 Sie können UWP-Apps (universelle Windows-Plattform) für die Oberfläche von Hub 2S mithilfe von InTune bereitstellen, um die APP-Bereitstellung auf Geräten zu vereinfachen.
 

@@ -35,7 +35,7 @@ Es gibt verschiedene Möglichkeiten, den BitLocker-Schlüssel auf dem Surface Hu
 3.  Wenn Sie ein lokales Administratorkonto zum Verwalten des Geräts verwenden, können Sie den BitLocker-Schlüssel speichern, indem Sie zur **Einstellungs** -App wechseln und zur **Aktualisierung & Sicherheits** &gt; **Wiederherstellung**navigieren. Schließen Sie ein USB-Laufwerk an, und wählen Sie die Option zum Speichern des BitLocker-Schlüssels aus. Der Schlüssel wird in einer Textdatei auf dem USB-Laufwerk gespeichert.
 
 
-## Verwandte Themen
+##  <a name="related-content"></a>Verwandte Themen
 
 [Verwalten von Microsoft Surface Hub](manage-surface-hub.md)
 

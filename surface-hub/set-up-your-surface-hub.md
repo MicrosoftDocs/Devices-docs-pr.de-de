@@ -26,7 +26,7 @@ Die Anleitung für die Einrichtung von Surface Hub umfasst ein Setup-Arbeitsblat
 
 Bevor Sie Microsoft Surface Hub zum ersten Mal einschalten, stellen Sie sicher, dass Sie die Prüfliste am Ende des Abschnitts [Vorbereiten der Umgebung für Surface Hub](prepare-your-environment-for-surface-hub.md) abgeschlossen und alle im [Setup-Arbeitsblatt](setup-worksheet-surface-hub.md) aufgeführten Informationen zur Hand haben. Nach dem Einschalten des Geräts durchlaufen Sie eine Reihe von Setup-Bildschirmen. Wenn Sie die Umgebung noch nicht ordnungsgemäß eingerichtet oder die erforderlichen Informationen nicht zur Hand haben, müssen Sie im Anschluss zusätzliche Arbeit aufwenden, um die Einstellungen zu überprüfen.
 
-## Inhalt dieses Abschnitts
+##  <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
 
 <table>

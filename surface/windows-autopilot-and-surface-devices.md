@@ -37,36 +37,36 @@ Windows Autopilot ermöglicht Ihnen:
 - Aktivieren sie die vollständige Gerätekonfiguration mit Intune.
 - Setzen Sie Geräte remote zurück oder starten Sie sie neu.
 
-## Funktionsweise
+##  <a name="how-it-works"></a>Funktionsweise
 
 Windows Autopilot-registrierte Geräte werden beim ersten Start über das Internet durch eine eindeutige Gerätesignatur identifiziert, die als *Hardwarehash bezeichnet wird.* Sie werden automatisch mithilfe moderner Verwaltungslösungen wie Azure Active Directory (Azure AD) und verwaltung mobiler Geräte registriert und konfiguriert.
 
 Sie können die Geräte von Surface zum Zeitpunkt des Kaufs bei einem Surface-Partner registrieren, der für Windows Autopilot aktiviert ist. Diese Partner können neue Geräte direkt an Ihre Benutzer versenden. Die Geräte werden automatisch registriert und konfiguriert, wenn sie zum ersten Mal aktiviert werden. Bei diesem Prozess wird das Reimaging während der Bereitstellung verhindert, wodurch Sie neue, agile Methoden zur Geräteverwaltung und -verteilung implementieren können.
 
-## Moderne Verwaltung
+##  <a name="modern-management"></a>Moderne Verwaltung
 
 Autopilot ist die empfohlene Bereitstellungsoption für Surface-Geräte, einschließlich Surface Pro 7+, Surface Laptop 3, Surface Pro 7 und Surface Pro X, die speziell für die Bereitstellung über Autopilot entwickelt wurde.
 
  Am besten registrieren Sie Ihre Surface-Geräte mithilfe eines Microsoft Cloud-Lösungsanbieters. In diesem Schritt können Sie die UEFI-Firmwareeinstellungen auf Surface direkt über Intune verwalten. Es entfällt die Notwendigkeit, Geräte für die Zertifikatverwaltung physisch zu berühren. Weitere [Informationen finden Sie unter Intune-Verwaltung von Surface-UEFI-Einstellungen.](surface-manage-dfci-guide.md)
 
-## Überlegungen zur Windows-Version
+##  <a name="windows-version-considerations"></a>Überlegungen zur Windows-Version
 
 Die umfassende Bereitstellung von Surface-Geräten über Windows Autopilot, einschließlich der Registrierung durch Surface-Partner zum Zeitpunkt des Kaufs, erfordert Windows 10 Version 1709 (Fall Creators Update) oder höher.
 
 Diese #A0 unterstützen einen Hashwert von 4.000 Byte (4.000 Byte), der Geräte für Windows Autopilot eindeutig identifiziert, was für Bereitstellungen im großen Maßstab erforderlich ist. Alle neuen Surface-Geräte, einschließlich Surface Pro 7+, Surface Pro X und Surface Laptop 3, sind mit Windows 10 Version 1903 oder höher erhältlich.
 
-## Exchange auf Surface-Geräten, die repariert oder ersetzt werden müssen
+##  <a name="exchange-experience-on-surface-devices-in-need-of-repair-or-replacement"></a>Exchange auf Surface-Geräten, die repariert oder ersetzt werden müssen
 
 Microsoft überprüft jedes Surface automatisch auf die Registrierung von Autopilot und entfernt die Registrierung des Geräts vom Mandanten des Kunden.  Microsoft stellt sicher, dass das Ersatzgerät bei Windows Autopilot registriert ist, sobald ein Ersatz an den Kunden zurück versendet wird. Dieser Dienst ist für alle Geräteaustauschdienstbestellungen direkt bei Microsoft verfügbar.
 
 > [!NOTE]
 > Wenn Kunden einen Partner zum Zurückgeben von Geräten verwenden, ist der Partner für die Verwaltung des Austauschprozesses verantwortlich, einschließlich der Deregistrierung und Registrierung von Geräten bei Windows Autopilot.
 
-## Registrierung des Microsoft -Support
+##  <a name="microsoft-support-registration"></a>Registrierung des Microsoft -Support
 
 Kunden und Microsoft Cloud Solution Providers (CSPs) haben die Möglichkeit, Surface Geräte zu registrieren, indem Sie Anforderungen an den Microsoft Support senden. Weitere Informationen finden Sie unter [Surface Registration Support für Windows Autopilot](surface-autopilot-registration-support.md).
 
-## Für Windows Autopilot aktivierte Surface-Partner
+##  <a name="surface-partners-enabled-for-windows-autopilot"></a>Für Windows Autopilot aktivierte Surface-Partner
 
 Select Surface partners can enroll Surface devices in Windows Autopilot for you at the time of purchase. Sie können registrierte Geräte auch direkt an Ihre Benutzer versenden. Die Geräte können vollständig über einen Zero-Touch-Prozess mithilfe von Windows Autopilot, Azure AD und der Verwaltung mobiler Geräte konfiguriert werden.
 
@@ -82,7 +82,7 @@ Surface-Partner, die für Windows Autopilot aktiviert sind, sind:
 | * [F1](https://www.functiononeit.com/#empower)  |   |  |
 | * [Geschützte Vertrauensstellung](https://go.microsoft.com/fwlink/p/?LinkID=2129005) | | | 
 
-## Mehr erfahren
+##  <a name="learn-more"></a>Mehr erfahren
 
 Weitere Informationen zu Windows Autopilot finden Sie unter:
 - [Übersicht über Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)

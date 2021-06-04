@@ -20,7 +20,7 @@ ms.locfileid: "10833019"
 ---
 # Schnellstart: Surface Hub 2S
 
-## Entpacken des Surface Hub 2S
+##  <a name="unpacking-the-surface-hub-2s"></a>Entpacken des Surface Hub 2S
 
 1. Verwenden Sie die Ziehpunkte auf jeder Seite des Felds, um Sie in den Bereich zu verschieben, in dem Sie Sie einrichten.
 2. Entfernen Sie vor dem Öffnen die Clips (4) auf der Vorder-und Rückseite, und heben Sie die Oberfläche mit den Ziehpunkten vom Feld ab.
@@ -29,7 +29,7 @@ ms.locfileid: "10833019"
 
 In diesem Video finden Sie weitere Informationen zum [Unboxing und einrichten](https://youtu.be/fCrxdNXvru4).
 
-## Installieren und Anpassen des Stifts
+##  <a name="install-and-adjust-pen"></a>Installieren und Anpassen des Stifts
 
 1. Legen Sie den Surface Hub 2-Stift magnetisch an Ihre bevorzugte Geräteseite an.
 
@@ -39,11 +39,11 @@ In diesem Video finden Sie weitere Informationen zum [Unboxing und einrichten](h
 
 ![* Anpassen des Schiebereglers, um den Stiftdruck zu ändern *](images/sh2-pen-pressure.png) <br>
 
-## Kamera installieren
+##  <a name="install-camera"></a>Kamera installieren
 
 Entfernen Sie das Objektiv, das sich an der Kamera klammert, und schließen Sie es an den USB-C-Anschluss oben auf dem Surface Hub 2S an.
 
-## Surface Hub 2S starten
+##  <a name="start-surface-hub-2s"></a>Surface Hub 2S starten
 
 1. Stecken Sie das Netzkabel in die Rückseite des Geräts ein, und schließen Sie es an eine Steckdose an. Führen Sie das Kabel über alle Kabelführungen an ihrer Befestigungslösung und entfernen Sie den Bildschirm.
 2. Drücken Sie zunächst die Power-Taste unten rechts.

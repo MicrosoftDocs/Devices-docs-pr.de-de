@@ -21,7 +21,7 @@ ms.locfileid: "10833343"
 
 Diese Seite enthält eine umfassende Schulung für Surface Hub 2S, die bei Bedarf verfügbar ist.
 
-## Kapitel 1 – Übersicht über Schulungen
+##  <a name="chapter-1---training-overview"></a>Kapitel 1 – Übersicht über Schulungen
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46Jud] 
 
@@ -33,7 +33,7 @@ Diese Seite enthält eine umfassende Schulung für Surface Hub 2S, die bei Bedar
 - Übersicht über Schulungsdienste
 - Bewährte Methoden für die Schulung
 
-## Kapitel 2 – erste Schritte mit Surface Hub
+##  <a name="chapter-2---getting-started-with-surface-hub"></a>Kapitel 2 – erste Schritte mit Surface Hub
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46Ejt] 
 
@@ -44,7 +44,7 @@ Diese Seite enthält eine umfassende Schulung für Surface Hub 2S, die bei Bedar
 - Erste Schritte mit Surface Hub
 - Erwartungen sammeln
 
-## Kapitel 3 – Navigieren in Surface Hub
+##  <a name="chapter-3---navigating-surface-hub"></a>Kapitel 3 – Navigieren in Surface Hub
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46OFW] 
 
@@ -56,7 +56,7 @@ Diese Seite enthält eine umfassende Schulung für Surface Hub 2S, die bei Bedar
 - Teams/Skype
 - Sitzung beenden
 
-## Kapitel 4 – Whiteboards und Zusammenarbeit
+##  <a name="chapter-4---whiteboarding-and-collaboration"></a>Kapitel 4 – Whiteboards und Zusammenarbeit
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46M4v] 
 
@@ -68,7 +68,7 @@ Diese Seite enthält eine umfassende Schulung für Surface Hub 2S, die bei Bedar
 - Freigeben des Whiteboards
 - Exportieren des Whiteboards 
  
-## Kapitel 5 – erkunden von Surface Hub-apps
+##  <a name="chapter-5---exploring-surface-hub-apps"></a>Kapitel 5 – erkunden von Surface Hub-apps
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46Ejz] 
 
@@ -78,7 +78,7 @@ Diese Seite enthält eine umfassende Schulung für Surface Hub 2S, die bei Bedar
 - Microsoft Excel
 - Microsoft Edge
 
-## Kapitel 6 – erweiterte apps und Office 365
+##  <a name="chapter-6---advanced-apps-and-office-365"></a>Kapitel 6 – erweiterte apps und Office 365
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46EjA] 
 
@@ -90,7 +90,7 @@ Diese Seite enthält eine umfassende Schulung für Surface Hub 2S, die bei Bedar
 - OneDrive
 - Gemeinsame Dokumenterstellung
 
-## Kapitel 7 – Verbinden von Geräten
+##  <a name="chapter-7---connecting-devices"></a>Kapitel 7 – Verbinden von Geräten
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46M4w] 
 
@@ -101,7 +101,7 @@ Diese Seite enthält eine umfassende Schulung für Surface Hub 2S, die bei Bedar
 - Branchen-App-Workflows
 - Problembehandlung bei Miracast und kabelgebundener Verbindung    
  
-## Kapitel 8 – Skype for Business-Besprechungen
+##  <a name="chapter-8---skype-for-business-meetings"></a>Kapitel 8 – Skype for Business-Besprechungen
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46M4x] 
 
@@ -112,7 +112,7 @@ Diese Seite enthält eine umfassende Schulung für Surface Hub 2S, die bei Bedar
 - Verwalten einer Skype for Business-Besprechung
 - Präsentieren von Inhalten
     
-## Kapitel 9 – Microsoft Teams-Besprechungen
+##  <a name="chapter-9---microsoft-teams-meetings"></a>Kapitel 9 – Microsoft Teams-Besprechungen
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46OFZ] 
 
@@ -125,7 +125,7 @@ Diese Seite enthält eine umfassende Schulung für Surface Hub 2S, die bei Bedar
 - Präsentieren von Inhalten
 - Fazit
 
-## Kapitel 10 – grundlegende Problembehandlung
+##  <a name="chapter-10---basic-troubleshooting"></a>Kapitel 10 – grundlegende Problembehandlung
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46z65] 
 

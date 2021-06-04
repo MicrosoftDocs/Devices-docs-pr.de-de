@@ -25,11 +25,11 @@ ms.locfileid: "11105410"
 
 Mit dem Gewährleistungs-und Service Antragsformular können Sie mehrere Ansprüche in einer Service Anfrage für Microsoft Surface, Microsoft Surface Hub, Microsoft HoloLens 2 und Microsoft Azure Kinect-Produkte einreichen.
 
-## Verwendung dieses Formulars
+##  <a name="when-to-use-this-form"></a>Verwendung dieses Formulars
 
 Verwenden Sie das Gewährleistungs-und Service Reklamationsformular, wenn Sie einen Hardware Gewährleistungsantrag einreichen oder eine Anpassung Ihrer Garantie anfordern müssen.  
 
-## So verwenden Sie das Formular
+##  <a name="how-to-use-the-form"></a>So verwenden Sie das Formular
 
 1.  Laden Sie das Formular herunter, und wählen Sie aktivieren aus.
 2.  Geben Sie die Produktinformationen ein:
@@ -67,13 +67,13 @@ Verwenden Sie das Gewährleistungs-und Service Reklamationsformular, wenn Sie ei
         1. Wenn Sie eine Garantie Anpassung anfordern, geben Sie eine Anweisung an, die die Anforderung umreißt. Wenn Sie keine Garantie Anpassung anfordern, lassen Sie dieses Feld leer.
         2. Um den Vorgang zu beschleunigen, laden Sie den Garantie-oder Hardware Nachweis des Kaufs zusammen mit Ihrer Anfrage hoch.
 
-## Servicegebühren außerhalb des Gewährleistungszeitraums
+##  <a name="out-of-warranty-service-fees"></a>Servicegebühren außerhalb des Gewährleistungszeitraums
 
 Support-Unterstützer werden die Gewährleistungs Gebühren für Surface Hub-, HoloLens-und Azure Kinect-Produkte übermitteln.
 
 Weitere Informationen zu Servicegebühren außerhalb des Gewährleistungszeitraums finden Sie unter [wie viel kostet der Service außerhalb des Garantiezeitraums für Ihr Surface-Gerät oder Zubehör?](https://support.microsoft.com/help/4563717)
 
-## Weitere Informationen
+##  <a name="additional-information"></a>Weitere Informationen
 
 Weitere Informationen zum Dienst für Surface finden Sie unter [Abrufen des Diensts für Surface](https://support.microsoft.com/help/4023527/surface-how-to-get-service-for-surface).
 

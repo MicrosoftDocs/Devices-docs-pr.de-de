@@ -32,7 +32,7 @@ Das Open Source-skriptgesteuerte SDA-Tool nutzt das Windows Assessment and Deplo
 
 Das resultierende Bild entspricht in engem Zusammenhang mit der Konfiguration von grundlegendem (Bare Metal Recovery)-Bildern ohne vorinstallierte Anwendungen wie Microsoft Office oder die Surface UWP-Anwendung.
 
-## Anforderungen
+##  <a name="requirements"></a>Anforderungen
 
 1. Ein USB-Stick mit einer Größe von mindestens 16 GB. Das USB-Laufwerk wird formatiert.
 2. Eine ISO-Datei mit Windows 10 pro oder Windows 10 Enterprise. Das Medien Erstellungstool kann zum Herunterladen von Windows 10 und zum Erstellen einer ISO-Datei verwendet werden. Weitere Informationen finden Sie unter [Herunterladen von Windows 10](https://www.microsoft.com/software-download/windows10).
@@ -40,7 +40,7 @@ Das resultierende Bild entspricht in engem Zusammenhang mit der Konfiguration vo
 
 Eine detaillierte Liste der Anforderungen finden Sie im Abschnitt [Voraussetzungen](https://github.com/microsoft/SurfaceDeploymentAccelerator/blob/master/README.md#prerequisites) des Readme-Dokuments.
 
-## Ausführen des SDA
+##  <a name="how-to-run-the-sda"></a>Ausführen des SDA
 
 **So führen Sie SDA aus:**
 
@@ -75,7 +75,7 @@ Eine detaillierte Liste der Anforderungen finden Sie im Abschnitt [Voraussetzung
 > [!IMPORTANT]
 > Das Booten vom USB-Laufwerk beginnt sofort mit der Installation von Windows 10. Stellen Sie sicher, dass Ihr Gerät bereit ist, bevor Sie den USB-Anschluss einfügen und neu starten. 
 
-## Verwandte Links
+##  <a name="related-links"></a>Verwandte Links
 
  - [Open-Source-Image-Bereitstellungstool auf GitHub veröffentlicht](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/open-source-image-deployment-tool-released-on-github/ba-p/1314115)
  - [Herunterladen und Installieren des Windows ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install)

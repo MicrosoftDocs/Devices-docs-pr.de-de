@@ -43,11 +43,11 @@ Verwenden Sie den Microsoft Surface UEFI-Konfigurator, um die folgenden UEFI-Ein
     - Start
     - Datum/Uhrzeit
 
-## Erstellen eines UEFI-Konfigurations Bilds
+##  <a name="create-uefi-configuration-image"></a>Erstellen eines UEFI-Konfigurations Bilds
 
 Im Gegensatz zu anderen Surface-Geräten können Sie keine MSI-Datei oder ein Win PE-Bild verwenden, um diese Einstellungen auf Surface Hub 2S anzuwenden. Stattdessen müssen Sie ein USB-Bild erstellen, das in das Gerät geladen werden soll. Laden Sie die neueste Version des Microsoft Surface UEFI-Konfigurators auf der Seite [Surface Tools für IT](https://www.microsoft.com/download/details.aspx?id=46703) im Microsoft Download Center herunter, und installieren Sie die aktuelle Version des Microsoft Surface UEFI-Konfigurators, um ein DGM-UEFI-Konfigurationsbild zu erstellen. Weitere Informationen zur Verwendung von UEFI und Semm finden Sie unter [Microsoft Surface Enterprise-Verwaltungsmodus](https://docs.microsoft.com/surface/surface-enterprise-management-mode).
 
-## So konfigurieren Sie UEFI auf Surface Hub 2S
+##  <a name="to-configure-uefi-on-surface-hub-2s"></a>So konfigurieren Sie UEFI auf Surface Hub 2S
 
 1. Starten Sie den UEFI-Konfigurator, und wählen Sie auf dem ersten Bildschirm **Konfigurationspaket**aus.<br><br>
 ![* Starten Sie den UEFI-Konfigurator und wählen Sie das Konfigurationspaket *](images/sh2-uefi1.png) <br> <br>
@@ -68,6 +68,6 @@ Im Gegensatz zu anderen Surface-Geräten können Sie keine MSI-Datei oder ein Wi
 9. Nach erfolgreicher Erstellung des Pakets werden im Konfigurator die letzten beiden Zeichen des Fingerabdrucks des Zertifikats angezeigt. Sie benötigen diese Zeichen beim Importieren in die Konfiguration in Surface Hub 2S.<br>
 ![* Erfolgreiche Konfiguration des Pakets *](images/sh2-uefi10.png) <br>
 
-## So starten Sie in UEFI
+##  <a name="to-boot-into-uefi"></a>So starten Sie in UEFI
 
 Deaktivieren Sie Surface Hub 2S. Drücken Sie die **Lautstärke** Taste und halten Sie sie gedrückt, und drücken Sie die **Power** -Taste. Halten Sie die Lautstärketaste gedrückt, bis das UEFI-Menü angezeigt wird.

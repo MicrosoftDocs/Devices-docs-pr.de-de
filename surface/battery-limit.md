@@ -24,26 +24,26 @@ ms.locfileid: "11271142"
 
 Die Option "Akkulimit" ist eine UEFI-Einstellung, die ändert, wie der Akku des Surface-Geräts aufgeladen wird und die Lebensdauer verlängern kann. Diese Einstellung wird in Fällen empfohlen, in denen das Gerät ständig an die Stromversorgung angeschlossen ist, z. B. wenn Geräte in Kiosklösungen integriert sind.  
 
-## Funktionsweise des Akkugrenzwerts
+##  <a name="how-battery-limit-works"></a>Funktionsweise des Akkugrenzwerts
 
 Wenn Sie das Gerät auf "Akkulimit" festlegen, wird das Protokoll zum Aufladen des Geräteakku geändert. Wenn der Akkugrenzwert aktiviert ist, ist der Akkustand auf 50 % der maximalen Kapazität beschränkt. Die in Windows gemeldete Gebührenstufe spiegelt diesen Grenzwert wider. Daher wird gezeigt, dass der Akku bis zu 50 % aufgeladen wird und nicht über diesen Grenzwert hinaus aufgeladen wird. Wenn Sie den Akkugrenzwert aktivieren, während das Gerät über 50 % aufgeladen ist, zeigt das Symbol "Akku" an, dass das Gerät eingesteckt ist, aber entladen wird, bis das Gerät 50 % seiner maximalen Ladekapazität erreicht.  
 
-## Unterstützte Geräte
+##  <a name="supported-devices"></a>Unterstützte Geräte
 
 Die Einstellung "Battery Limit UEFI" ist in die neuesten Surface-Geräte, einschließlich Surface Pro 7+, Surface Pro 7 und Surface Laptop 3, integrierte. Frühere Geräte erfordern ein [Surface UEFI-Firmwareupdate,](manage-surface-driver-and-firmware-updates.md)das über Windows Update oder die MSI-Treiber- und Firmwarepakete auf der [Surface Support-Website verfügbar ist.](https://support.microsoft.com/help/4023482/surface-download-drivers-and-firmware-for-surface) Aktivieren [Sie "Akkulimit" für Surface-Geräte,](https://support.microsoft.com/help/4464941) die für die spezifische Surface -UEFI-Version, die für jedes unterstützte Gerät erforderlich ist, über einen längeren Zeitraum angeschlossen werden müssen. 
 
-## Aktivieren des Akkugrenzwerts auf Surface UEFI (Surface Pro 4 und höher)
+##  <a name="enabling-battery-limit-in-surface-uefi-(surface-pro-4-and-later)"></a>Aktivieren des Akkugrenzwerts auf Surface UEFI (Surface Pro 4 und höher)
 
 Die Einstellung für den Surface -UEFI-Akkugrenzwert kann durch Starten auf Surface UEFI konfiguriert werden (**Ein- und** Aufladen beim Einschalten des Geräts). Wählen **Sie die Startkonfiguration**aus, und schalten Sie dann unter **"Erweiterte**Optionen" den Akkugrenzmodus aktivieren **auf** **"Ein" um.**  
 
 ![Erweiterte Optionen für den Akkugrenzwert](images/enable-bl.png) 
 
-## Aktivieren des Akkulimits auf Surface Go und Surface Go 2
+##  <a name="enabling-battery-limit-on-surface-go-and-surface-go-2"></a>Aktivieren des Akkulimits auf Surface Go und Surface Go 2
 Die Einstellung "Surface Battery Limit" kann durch Starten von Surface UEFI **(Power + Vol Up** beim Einschalten des Geräts) konfiguriert werden. Wählen **Sie die Startkonfiguration**aus, und verschieben Sie dann unter **Kioskmodus**den Schieberegler nach rechts, um den Akkugrenzwert auf **"Aktiviert" festzulegen.**  
 
 ![Akkugrenzwert des Kioskmodus auf Surface Go](images/go-batterylimit.png) 
 
-## Aktivieren des Akkugrenzwerts auf Surface UEFI (Surface Pro 3)
+##  <a name="enabling-battery-limit-in-surface-uefi-(surface-pro-3)"></a>Aktivieren des Akkugrenzwerts auf Surface UEFI (Surface Pro 3)
 
 Die Einstellung für den Surface -UEFI-Akkugrenzwert kann durch Starten auf Surface UEFI konfiguriert werden (**Ein- und** Aufladen beim Einschalten des Geräts). Wählen **Sie "Kioskmodus",** **"Akkulimit"** und dann "Aktiviert" **aus.**
 
@@ -51,7 +51,7 @@ Die Einstellung für den Surface -UEFI-Akkugrenzwert kann durch Starten auf Surf
 
 ![Erweiterte Optionen](images/enable-bl-sp3-2.png) 
 
-## Aktivieren des Akkulimits mithilfe von Surface Enterprise Management Mode (SEMM) oder Surface Pro 3 Firmware-PowerShell-Skripts
+##  <a name="enabling-battery-limit-using-surface-enterprise-management-mode-(semm)-or-surface-pro-3-firmware-powershell-scripts"></a>Aktivieren des Akkulimits mithilfe von Surface Enterprise Management Mode (SEMM) oder Surface Pro 3 Firmware-PowerShell-Skripts
 
 Der Surface -UEFI-Akkugrenzwert ist auch für die Konfiguration über die folgenden Methoden verfügbar:
 
@@ -61,13 +61,13 @@ Der Surface -UEFI-Akkugrenzwert ist auch für die Konfiguration über die folgen
 - Surface Pro 3 
     - [SP3_Firmware_Powershell_Scripts.zip](https://www.microsoft.com/download/details.aspx?id=46703)
 
-### Verwenden Microsoft Surface UEFI Configurator
+###  <a name="using-microsoft-surface-uefi-configurator"></a>Verwenden Microsoft Surface UEFI Configurator
 
 Um den Akkugrenzmodus zu konfigurieren, legen Sie die Einstellung "Außerkraftsetzungen für **Kiosk"** auf der Konfigurationsseite "Erweiterte **Einstellungen"** in SEMM (Surface Pro 4 und höher) ein.
 
 ![Screenshot der erweiterten Einstellungen](images/semm-bl.png)
 
-### Verwenden von Surface UEFI Manager -PowerShell-Skripts
+###  <a name="using-surface-uefi-manager-powershell-scripts"></a>Verwenden von Surface UEFI Manager -PowerShell-Skripts
 
 Die Funktion für den Akkugrenzwert wird über die folgende Einstellung gesteuert:  
 
@@ -79,7 +79,7 @@ Die Funktion für den Akkugrenzwert wird über die folgende Einstellung gesteuer
 
 Legen Sie diese Option `1` so ein, dass der Akkugrenzwert aktiviert wird.
 
-### Verwenden Surface Pro 3 Firmwaretools
+###  <a name="using-surface-pro-3-firmware-tools"></a>Verwenden Surface Pro 3 Firmwaretools
 
 Die Funktion für den Akkugrenzwert wird über die folgende Einstellung gesteuert:  
 

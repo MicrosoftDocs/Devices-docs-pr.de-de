@@ -44,7 +44,7 @@ In diesem Abschnitt wird beschrieben, wie Sie das Firmwareupdate manuell install
 
 2. Trennen Sie das #A0 von Surface Dock, warten Sie ca. 5 Sekunden, und stellen Sie dann erneut eine Verbindung her. Das Surface Dock Firmware Update aktualisiert das Dock automatisch im Hintergrund. Der Vorgang kann einige Minuten dauern und wird auch dann fortgesetzt, wenn er unterbrochen wird. 
 
-## Überwachen des Surface Dock-Firmwareupdates
+##  <a name="monitor-the-surface-dock-firmware-update"></a>Überwachen des Surface Dock-Firmwareupdates
 
 Dieser Abschnitt ist optional und bietet eine Übersicht über die Überwachung der Installation des Firmwareupdates. 
 
@@ -77,7 +77,7 @@ Weitere Informationen finden Sie in den folgenden Abschnitten in diesem Artikel:
   - [Hinweise zur Problembehandlung](#troubleshooting-tips)
   - [Versionsreferenz](#versions-reference)
 
-## Netzwerkbereitstellung
+##  <a name="network-deployment"></a>Netzwerkbereitstellung
 
 Sie können Windows Installer-Befehle (Msiexec.exe) verwenden, um Surface Dock Firmware Update auf mehreren Geräten in Ihrem Netzwerk bereitstellen. Wenn Sie Microsoft Endpoint Configuration Manager oder ein anderes Bereitstellungstool verwenden, geben Sie die folgende Syntax ein, um sicherzustellen, dass die Installation automatisch ist:
 
@@ -97,7 +97,7 @@ Weitere Informationen finden Sie in der [Dokumentation zu Befehlszeilenoptionen.
 > [!IMPORTANT]
 > Wenn Sie Surface Dock mit einer anderen Methode aktualisieren möchten, finden Sie weitere Informationen unter ["Aktualisieren](https://support.microsoft.com/help/4023478/surface-update-your-surface-dock) von Surface Dock".
 
-## Bereitstellung von Intune
+##  <a name="intune-deployment"></a>Bereitstellung von Intune
 
 Sie können Intune verwenden, um Surface Dock Firmware Update auf Ihre Geräte zu verteilen. Zuerst müssen Sie die MSI-Datei in das .intunewin-Format konvertieren, wie in der folgenden Dokumentation beschrieben: [Intune Eigenständig – Win32-App-Verwaltung.](https://docs.microsoft.com/intune/apps/apps-win32-app-management)
 
@@ -165,7 +165,7 @@ Ereignisse werden im Anwendungsereignisprotokoll protokolliert.  Hinweis: In fr�
 >[!NOTE]
 >Die Installationsdatei wird im folgenden Namensformat veröffentlicht: **Surface_Dock_FwUpdate_X.XX.XXX_Win10_XXXXX_XX.XXX.XXXXX_X.MSI** (z. B. Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.31680_0.msi) und wird standardmäßig unter "C:\Programme\SurfaceUpdate" installiert.
 
-### Version 1.53.139.0
+###  <a name="version-1.53.139.0"></a>Version 1.53.139.0
 *Veröffentlichungsdatum: 4. August 2020*
 
 Diese Version des Surface #A0 enthält Fehlerbehebungen und Unterstützung für:
@@ -180,7 +180,7 @@ Die Registrierungswerte, die den Status von Firmwareupdates angeben, sind gegen�
 - Component10CurrentFwVersion wurde auf **4ac3970 aktualisiert.**
 - Component20CurrentFwVersion wurde auf **4a1d570 aktualisiert.**
  
-### Version 1.42.139 
+###  <a name="version-1.42.139"></a>Version 1.42.139 
 *Veröffentlichungsdatum: 18. September 2019*
 
 Diese version, contained in Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.31680_0.MSI, updates firmware in the background. 
@@ -192,9 +192,9 @@ Diese version, contained in Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.31
 
 Es bietet Unterstützung für Surface Pro 7 und Surface Laptop 3.
 
-## Legacyversionen
+##  <a name="legacy-versions"></a>Legacyversionen
 
-### Version 2.23.139.0
+###  <a name="version-2.23.139.0"></a>Version 2.23.139.0
 *Veröffentlichungsdatum: 10. Oktober 2018*
 
 Diese Version von Surface Dock Updater fügt Unterstützung für Folgendes hinzu:
@@ -203,7 +203,7 @@ Diese Version von Surface Dock Updater fügt Unterstützung für Folgendes hinzu
 - Hinzufügen von Unterstützung für Surface Laptop 2
 
 
-### Version 2.22.139.0
+###  <a name="version-2.22.139.0"></a>Version 2.22.139.0
 *Veröffentlichungsdatum: 26. Juli 2018*
 
 Diese Version von Surface Dock Updater fügt Unterstützung für Folgendes hinzu:
@@ -211,7 +211,7 @@ Diese Version von Surface Dock Updater fügt Unterstützung für Folgendes hinzu
 - Erhöhen der Updatezuverlässigkeit
 - Hinzufügen von Unterstützung für Surface Go
 
-### Version2.12.136.0
+###  <a name="version-2.12.136.0"></a>Version2.12.136.0
 *Veröffentlichungsdatum: 29.Januar2018*
 
 Diese Version von Surface Dock Updater fügt Unterstützung für Folgendes hinzu:
@@ -224,7 +224,7 @@ Darüber hinaus umfasst die Installation dieser Version von Surface Dock Updater
 * Neue Unterstützung für Surface Dock Firmware-Updates mit Verbesserungen für Surface Book-Geräte
 
 
-### Version2.9.136.0
+###  <a name="version-2.9.136.0"></a>Version2.9.136.0
 *Veröffentlichungsdatum: 3. November2017*
 
 Diese Version von Surface Dock Updater fügt Unterstützung für Folgendes hinzu:
@@ -232,7 +232,7 @@ Diese Version von Surface Dock Updater fügt Unterstützung für Folgendes hinzu
 * Update für Surface Dock DisplayPort-Firmware
 * Behebt ein Problem bei der Audiowiedergabe über passive Anzeigeport-Adapter
 
-### Version2.1.15.0
+###  <a name="version-2.1.15.0"></a>Version2.1.15.0
 *Veröffentlichungsdatum: 19.06.2017*
 
 Diese Version von Surface Dock Updater fügt Unterstützung für Folgendes hinzu:
@@ -240,7 +240,7 @@ Diese Version von Surface Dock Updater fügt Unterstützung für Folgendes hinzu
 * Surface Laptop
 * Surface Pro
 
-### Version2.1.6.0
+###  <a name="version-2.1.6.0"></a>Version2.1.6.0
 *Veröffentlichungsdatum: 7.April2017*
 
 Diese Version von Surface Dock Updater fügt Unterstützung für Folgendes hinzu:
@@ -248,7 +248,7 @@ Diese Version von Surface Dock Updater fügt Unterstützung für Folgendes hinzu
 * Update für Surface Dock DisplayPort-Firmware
 * Erfordert Windows10
 
-### Version2.0.22.0
+###  <a name="version-2.0.22.0"></a>Version2.0.22.0
 *Veröffentlichungsdatum: 21.Oktober2016*
 
 Diese Version von Surface Dock Updater fügt Unterstützung für Folgendes hinzu:
@@ -256,7 +256,7 @@ Diese Version von Surface Dock Updater fügt Unterstützung für Folgendes hinzu
 * Update für SurfaceDock-USB-Firmware
 * Verbesserte Zuverlässigkeit von Ethernet-, Audio- und USB-Anschlüssen
 
-### Version1.0.8.0
+###  <a name="version-1.0.8.0"></a>Version1.0.8.0
 *Veröffentlichungsdatum: 26.April2016*
 
 Diese Version von Surface Dock Updater fügt Unterstützung für Folgendes hinzu:

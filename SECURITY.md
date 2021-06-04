@@ -8,13 +8,13 @@ ms.locfileid: "10832410"
 ---
 <!-- BEGIN MICROSOFT SECURITY.MD V0.0.5 BLOCK -->
 
-## Sicherheit
+##  <a name="security"></a>Sicherheit
 
 Microsoft nimmt die Sicherheit unserer Softwareprodukte und-Dienste Ernst, und umfasst alle Quell Code Repositories, die über unsere GitHub-Organisationen verwaltet werden, darunter [Microsoft](https://github.com/Microsoft), [Azure](https://github.com/Azure), [dotnet](https://github.com/dotnet), [ASPNET](https://github.com/aspnet), [Xamarin](https://github.com/xamarin)und [unsere GitHub-Organisationen](https://opensource.microsoft.com/).
 
 Wenn Sie der Meinung sind, dass Sie eine Sicherheitsanfälligkeit in einem Microsoft-Repository gefunden haben, das die [Definition einer Sicherheitsanfälligkeit durch Microsoft](https://docs.microsoft.com/en-us/previous-versions/tn-archive/cc751383(v=technet.10))erfüllt, melden Sie uns dies bitte wie weiter unten beschrieben.
 
-## Melden von Sicherheitsproblemen
+##  <a name="reporting-security-issues"></a>Melden von Sicherheitsproblemen
 
 **Bitte melden Sie keine Sicherheitslücken über öffentliche GitHub-Probleme.**
 
@@ -38,11 +38,11 @@ Diese Informationen werden uns helfen, ihren Bericht schneller zu selektieren.
 
 Wenn Sie für eine Fehler Prämie Berichten, können vollständige Berichte zu einem höheren Bounty-Preis beitragen. Weitere Informationen zu unseren aktiven Programmen finden Sie auf der Seite [Microsoft-Programm für Fehler-Bounty](https://microsoft.com/msrc/bounty) .
 
-## Bevorzugte Sprachen
+##  <a name="preferred-languages"></a>Bevorzugte Sprachen
 
 Wir möchten, dass alle Kommunikationen in Englisch erfolgen.
 
-## Richtlinie
+##  <a name="policy"></a>Richtlinie
 
 Microsoft folgt dem Prinzip einer [koordinierten Schwachstellen-Enthüllung](https://www.microsoft.com/en-us/msrc/cvd).
 

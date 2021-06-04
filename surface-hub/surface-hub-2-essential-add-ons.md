@@ -26,11 +26,11 @@ ms.locfileid: "11030422"
 
 Wenn Sie von Windows 10-Team zu Windows 10 pro oder Enterprise auf Surface Hub 2 migriert haben, können Sie aus einer Vielzahl von Zubehörteilen wählen, die über USB-C, USB-a, HDMI oder Bluetooth verbunden sind. 
 
-## Surface Hub 2-Fingerabdruckleser
+##  <a name="surface-hub-2-fingerprint-reader"></a>Surface Hub 2-Fingerabdruckleser
 
 Wenn Sie mit Windows 10 pro oder Windows 10 Enterprise auf Surface Hub 2 arbeiten, können Sie sich mit dem optionalen Surface Hub 2-Fingerabdruckleser, einer biometrischen Authentifizierungsoption, die [Windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello)verwendet, anmelden.
 
-### Bestellung
+###  <a name="ordering"></a>Bestellung
 
 Kommerzielle Kunden können Bestellungen über ihre autorisierten Geräte Händler tätigen.
 
@@ -45,7 +45,7 @@ Weitere Informationen zum Konfigurieren des Fingerabdrucklesers zur Anmeldung mi
 - [Windows Hello Biometrie im Unternehmen](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-biometrics-in-enterprise).
 
   
-### Tabelle1. Surface Hub 2-Fingerabdruckleser-Technische Daten
+###  <a name="surface-hub-2-fingerprint-reader-tech-specs"></a>Tabelle1. Surface Hub 2-Fingerabdruckleser-Technische Daten
 
 
 | Komponente                       | Beschreibung                                                                                                                          |
@@ -60,12 +60,12 @@ Weitere Informationen zum Konfigurieren des Fingerabdrucklesers zur Anmeldung mi
 > [!NOTE]
 > Das Windows 10-Team, das auf Surface Hub 2S ausgeführt wird, unterstützt nicht den Surface Hub 2-Fingerabdruckleser. Dies liegt daran, dass das Windows 10-Team dafür ausgelegt ist, mehreren Benutzern die Interaktion mit dem Gerät in einer Konferenzraum Umgebung zu ermöglichen. 
  
-## Windows Hello-Face-Erkennung
+##  <a name="windows-hello-face-recognition"></a>Windows Hello-Face-Erkennung
 
 Windows 10 pro und Enterprise auf Surface Hub 2 unterstützt Windows Hello für die Authentifizierung und erfordert ein Windows Hello Certified-Kamera Zubehör. Beachten Sie, dass die integrierte Kamera für Surface Hub 2S nicht für die Authentifizierung vorgesehen ist und Windows Hello nicht unterstützt. Weitere Informationen finden Sie unter [Windows Hello.](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello)
 
 
-## Audio-und Video Zubehör
+##  <a name="audio-and-video-accessories"></a>Audio-und Video Zubehör
 
 Mit den USB-C-oder USB-A-Anschlüssen können Sie die Audio-und Videofunktionen von Surface Hub 2 mit Audio-und Kamera-Peripheriegeräten erweitern.
 
@@ -76,7 +76,7 @@ Informationen zu empfohlenen Zubehörteilen finden Sie unter:
 
 
 
-## Sonstiges Zubehör
+##  <a name="other-accessories"></a>Sonstiges Zubehör
 Surface Hub 2 umfasst die folgenden Anschlüsse zum Verbinden einer Vielzahl von Geräten. 
 
 - 1 USB-Anschluss am Compute-Modul (hinter Display)
@@ -89,6 +89,6 @@ Surface Hub 2 umfasst die folgenden Anschlüsse zum Verbinden einer Vielzahl von
 Weitere Informationen finden Sie unter [Surface Hub 2S-Ports und Tastaturübersicht](surface-hub-2s-port-keypad-overview.md)
 
 
-## Mehr erfahren
+##  <a name="learn-more"></a>Mehr erfahren
 
 - [Konfigurieren Sie Windows 10 pro oder Enterprise auf Surface Hub 2](surface-hub-2-post-install.md).

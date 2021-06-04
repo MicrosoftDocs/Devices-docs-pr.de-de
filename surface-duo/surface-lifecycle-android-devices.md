@@ -27,7 +27,7 @@ ms.locfileid: "11326288"
 
 Der Surface Lifecycle für Android-basierte Geräte deckt Android-Versions- und Sicherheitsupdates für Surface Duo ab. Der Lebenszyklus beginnt mit der ersten Veröffentlichung eines Geräts und endet, wenn Surface die Veröffentlichung von Updates aufhört.
 
-## Unterstützung von Surface -Android-Geräten 
+##  <a name="surface-android-device-support"></a>Unterstützung von Surface -Android-Geräten 
 
 Surface -Android-Geräte erhalten mindestens drei Jahre ab dem Veröffentlichungsdatum (10. September 2020) Versions- und Sicherheitsupdates für Android. In Fällen, in denen die Supportdauer länger als 3 Jahre ist, wird ein aktualisiertes Ende des Wartungsdatums 18 Monate vor Ablauf des letzten geplanten Wartungsdatums veröffentlicht. 
 

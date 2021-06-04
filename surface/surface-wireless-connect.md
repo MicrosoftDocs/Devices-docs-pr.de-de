@@ -24,11 +24,11 @@ ms.locfileid: "11271379"
 
 Um mit der Akkulaufzeit des ganzen Tages in Verbindung zu bleiben, implementieren die Surface-Geräte Drahtlosverbindungseinstellungen, die Leistung und Leistungssteigerungen ausgleichen. Außerhalb der anspruchsvollesten Mobilitätsszenarien können Benutzer eine ausreichende Drahtlose Konnektivität beibehalten, ohne den Standardnetzwerkadapter oder die zugehörigen Einstellungen zu ändern. Auf dieser Seite werden wichtige Überlegungen zur Drahtlosen Konnektivität in mobilen Szenarien mit den neuesten Surface-Geräten wie Surface Pro 7 und höher, Surface Laptop Go, Surface Go 2, Surface Pro X, Surface Laptop 3, Surface Book 3 und Surface Pro 7 beschrieben.
 
-## Voraussetzungen
+##  <a name="prerequisites"></a>Voraussetzungen
 
 In diesem Dokument wird davon ausgegangen, dass Sie erfolgreich ein Drahtlosnetzwerk bereitgestellt haben, das 802.11n (WLAN 4) oder höher gemäß den Empfehlungen führender Gerätehersteller unterstützt.
 
-## Konfigurieren von Zugriffpunkten für optimale Roamingfunktionen
+##  <a name="configuring-access-points-for-optimal-roaming-capabilities"></a>Konfigurieren von Zugriffpunkten für optimale Roamingfunktionen
 
 Wenn Sie ein Drahtlosnetzwerk verwalten, auf das normalerweise von vielen verschiedenen Clientgerätentypen zugegriffen wird, wird empfohlen, bestimmte Protokolle für Zugriffspunkte (Access Points, APs) in Ihrem WLAN zu aktivieren, wie in Fast Roaming mit [802.11k, 802.11v und 802.11r](https://docs.microsoft.com/windows-hardware/drivers/network/fast-roaming-with-802-11k--802-11v--and-802-11r)beschrieben. Surface-Geräte können die folgenden Drahtlosprotokolle nutzen:
 
@@ -37,18 +37,18 @@ Wenn Sie ein Drahtlosnetzwerk verwalten, auf das normalerweise von vielen versch
 
 Bestimmte Surface-Geräte können auch 802.11v "BSS Transition Management Frames" verwenden, die ähnlich wie 802.11k bei der Bereitstellung von Informationen zu Kandidaten-APs in der Nähe verwendet werden. Dazu gehören Surface Pro 7+, Surface Go, Surface Go 2, Surface Pro 7, Surface Pro X und Surface Laptop 3. 
 
-## Verwalten von Benutzereinstellungen
+##  <a name="managing-user-settings"></a>Verwalten von Benutzereinstellungen
 
 Sie können optimale Roamingfunktionen über ein gut entworfenes Netzwerk erreichen, das 802.11r und 802.11k über alle Zugriffspunkte hinweg unterstützt. Es wird empfohlen, nicht zu versuchen, Benutzereinstellungen auf einzelnen Geräten zu verwalten, um sicherzustellen, dass Ihr Netzwerk ordnungsgemäß konfiguriert ist, um Benutzern eine optimale Drahtloserfahrung zu bieten. 
 
-### Empfohlene Benutzereinstellungen und bewährte Methoden
+###  <a name="recommended-user-settings-and-best-practices"></a>Empfohlene Benutzereinstellungen und bewährte Methoden
 
 In bestimmten Situationen kann das Ändern erweiterter Netzwerkadaptereinstellungen, die in die Geräte von Surface integrierte sind, eine zuverlässigere Verbindung erleichtern. Bedenken Sie jedoch, dass eine Verbindung mit Drahtlosressourcen häufiger aufgrund eines Problems mit Zugriffspunkt, Netzwerkentwurfsfehlern oder Umgebungsstandorten nicht hergestellt werden kann.
 
 > [!NOTE]
 > Die Art und Weise, wie Surface Pro Oder Surface Go halten, kann sich auch auf die Signalstärke auswirken. Wenn Sie einen Bandbreitenverlust haben, überprüfen Sie, ob Sie den oberen Rand der Anzeige, in der sich der Wi-Fi befindet, nicht halten. Auch wenn das Halten des oberen Bildschirms keine Drahtlosen Signale blockiert, kann es dazu kommen, dass der Gerätetreiber Änderungen initiiert, die die Konnektivität reduzieren.
 
-### Behalten Sie die Standardeinstellung "Automatisch" für die Dualbandbreite bei
+###  <a name="keep-default-auto-setting-for-dual-bandwidth-capability"></a>Behalten Sie die Standardeinstellung "Automatisch" für die Dualbandbreite bei
 
 Auf den meisten Surface-Geräten können Sie die Einstellungen des Clientnetzwerkadapters so konfigurieren, dass nur eine Verbindung mit drahtlosen APs über 5 GHz hergestellt wird, nur eine Verbindung über 2,4 GHz hergestellt wird oder das Betriebssystem die beste Option auswählen kann (Automatische Standardeinstellung).
 
@@ -69,7 +69,7 @@ Beachten Sie, dass 2,4 GHz einige Vorteile gegenüber 5 GHz bietet: Es erweitert
 
 Sie können die Bandeinstellung auch entsprechend Ihrer Umgebung umschalten. Beispielsweise profitieren Benutzer, die in Gebäuden mit hoher Dichte mit mehreren Wi-Fi-Hotspots leben , die alle Überträgt über 2,4 GHz übertragen, wahrscheinlich davon, dass ihr Surface Gerät nur auf 5 GHz und bei Bedarf auf Auto zurückgesetzt wird.
 
-### Roaming-Aggressivitätseinstellungen auf Surface-Geräten mit Intel-Adaptern 
+###  <a name="roaming-aggressiveness-settings-on-surface-devices-with-intel-adapters"></a>Roaming-Aggressivitätseinstellungen auf Surface-Geräten mit Intel-Adaptern 
 
 Benutzer möchten möglicherweise einen Schwellenwert für die Signalstärke auswählen, mit dem das Gerät aufgefordert wird, nach einem neuen Zugriffspunkt zu suchen, wenn das Signal abstürzt (Roaming-Aggressivität). Standardmäßig versuchen Surface-Geräte mit Intel-Adaptern, das Roaming zu einem neuen Zugriffspunkt zu versuchen, wenn die Signalstärke unter **"Mittel"** (72 Prozent Signalstärke) fällt. Beachten Sie auch, dass Organisationen zwecksgef?hnte Drahtlosprotokolle über mehrere Netzwerkzugriffspunkte hinweg implementieren können, um roamingüberlastete Netzwerkumgebungen zu vereinfachen, wie weiter oben auf dieser Seite erläutert. 
 
@@ -86,7 +86,7 @@ Es wird empfohlen, die Einstellung für die Aggressivität des Roamings im Stand
 
 ![* Roaming-Aggressivitätseinstellungen-Intel *](images/wifi-roaming-int.png) <br>
 
-### Einstellungen für die Roaming-Aggressivität auf Surface Go und Surface Pro X
+###  <a name="roaming-aggressiveness-settings-on-surface-go-and-surface-pro-x"></a>Einstellungen für die Roaming-Aggressivität auf Surface Go und Surface Pro X
 
 Front-Line-Mitarbeiter, die Surface Go verwenden, möchten möglicherweise einen Schwellenwert für die Signalstärke auswählen, der das Gerät dazu veranlasst, nach einem neuen Zugriffspunkt zu suchen, wenn die Signalstärke abstürzt (Roaming-Aggressivität). Standardmäßig versuchen Surface-Geräte, ein Roam zu einem neuen Zugriffspunkt zu verwenden, wenn die Signalstärke unter **"Mittel"** (50 Prozent Signalstärke) fällt. Beachten Sie, dass Sie immer dann, wenn Sie die Aggressivität des Roamings erhöhen, den Akkuverbrauch beschleunigen.
 
@@ -102,6 +102,6 @@ Lassen Sie die Einstellung für die Roaming-Aggressivität im Standardzustand, e
 ![* Roaming aggressiveness settings-QualComm *](images/wifi-roaming.png) <br>
 
 
-## Fazit
+##  <a name="conclusion"></a>Fazit
 
 Surface Geräte sind mit Standardeinstellungen für eine optimale Drahtlose Konnektivität ausgelegt, während gleichzeitig die Akkulaufzeit erhalten bleiben muss. Die effektivste Möglichkeit, zuverlässige Verbindungen für Surface-Geräte zu ermöglichen, ist ein gut entworfenes Netzwerk, das 802.11r und 802.11k unterstützt. Benutzer können die Netzwerkadaptereinstellungen oder die Aggressivität des Roamings anpassen, sollten dies jedoch nur als Reaktion auf bestimmte Umgebungsfaktoren tun und den Standardzustand wiederherstellen, wenn keine spürbare Verbesserung vor sich geht.

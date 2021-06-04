@@ -23,7 +23,7 @@ ms.locfileid: "10833379"
 Microsoft Surface Hub besitzt die gleichen Barrierefreiheitsoptionen wie Windows10.
 
 
-## Standardmäßige Barrierefreiheiteinstellungen
+##  <a name="default-accessibility-settings"></a>Standardmäßige Barrierefreiheiteinstellungen
 
 IT-Administratoren finden die vollständige Liste der Barrierefreiheitseinstellungen in der App **Einstellungen**. Zu den standardmäßigen Barrierefreiheitseinstellungen für Surface Hub zählen:
 
@@ -57,7 +57,7 @@ Darüber hinaus werden die folgenden Barrierefreiheitsfeatures und -Apps auf die
 - Tastaturmaus
 
 
-## Ändern der Barrierefreiheitseinstellungen während einer Besprechung
+##  <a name="change-accessibility-settings-during-a-meeting"></a>Ändern der Barrierefreiheitseinstellungen während einer Besprechung
 
 Benutzer können während einer Besprechung die Barrierefreiheitsfeatures und -Apps auf verschiedene Arten aktivieren oder deaktivieren:
 - [Tastenkombinationen](https://support.microsoft.com/help/13813/windows-10-microsoft-surface-hub-keyboard-shortcuts)
@@ -66,7 +66,7 @@ Benutzer können während einer Besprechung die Barrierefreiheitsfeatures und -A
 > ![Bild mit dem Center für schnelle Aktionen auf Surface Hub](images/sh-quick-action.png)
 
 
-## Verwandte Themen
+##  <a name="related-content"></a>Verwandte Themen
 
 [Verwalten von Microsoft Surface Hub](manage-surface-hub.md)
 

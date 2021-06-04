@@ -28,20 +28,20 @@ Microsoft veröffentlicht regelmäßig Updates und Lösungen für Surface Hub. U
 
 Hierbei handelt es sich um die wichtigsten Microsoft-Support-Lösungen für häufige Probleme mit Surface Hub.
 
-## Probleme bei Einrichtung und Installation
+##  <a name="setup-and-install-issues"></a>Probleme bei Einrichtung und Installation
 
 - [Setup-Problembehandlung](troubleshoot-surface-hub.md#setup-troubleshooting)
 - [Exchange ActiveSync-Fehler](troubleshoot-surface-hub.md#exchange-activesync-errors)
 
-## Miracast-Probleme
+##  <a name="miracast-issues"></a>Miracast-Probleme
 
 - [Problembehandlung von Miracast auf Surface Hub](miracast-troubleshooting.md)
  
-## Probleme beim Herunterladen von Updates
+##  <a name="download-updates-issues"></a>Probleme beim Herunterladen von Updates
 
 - [Surface Hub kann keine Updates über Windows Update herunterladen](https://support.microsoft.com/help/3191418/surface-hub-can-t-download-updates-from-windows-update)
 
-## Probleme bei der App-Verbindung
+##  <a name="connect-app-issues"></a>Probleme bei der App-Verbindung
 
 - [App-Verbindung in Surface Hub wird unerwartet beendet](https://support.microsoft.com/help/3157417/the-connect-app-in-surface-hub-exits-unexpectedly)
 

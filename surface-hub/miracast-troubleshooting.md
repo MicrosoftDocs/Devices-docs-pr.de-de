@@ -38,11 +38,11 @@ Wenn Surface Hub mit einem WLAN-Netzwerk verbunden ist werden die gleichen Kanal
 
 Es ist auch möglich, dass das Verbindungsproblem auf dem Gerät das Ergebnis eines Problems des verbundenen Geräts ist. Wenn das projizierende Gerät Windows ausführt, sollte dies Windows8.1 oder höher sein, um Miracast vollständig zu unterstützen. In diesem Fall sollten Sie für die Problembehandlung das projizierende Gerät vom WLAN-Netzwerk trennen. Dadurch vermeiden Sie jeglichen Kanalwechsel zwischen dem Kanal des Zugangspunkts und dem festgelegten Miracast-Kanal auf Surface Hub. Außerdem können einige der Gruppenrichtlinien und Firewall-Einstellungen an ein WLAN-Netzwerk gebunden sein.
 
-### Überprüfen von Treibern
+###  <a name="check-drivers"></a>Überprüfen von Treibern
 
 Es wird auch empfohlen, sicherzustellen, dass die neuesten Treiber und Updates auf dem projizierten Gerät installiert sind. Öffnen Sie im Geräte-Manager den WLAN-Adapter und die Grafikkarte und suchen Sie nach einer aktualisierten Treiber-Version. [Hotfix 3120232](https://support.microsoft.com/help/3120232/poor-wireless-performance-on-5-ghz-connections-on-surface-pro-3-and-surface-3) wird für Surface Pro 3 und Surface Pro 4 dringend empfohlen, wenn sie einen älteren WLAN-Treiber haben. 
 
-### Überprüfen Sie die Miracast-Unterstützung
+###  <a name="check-for-miracast-support"></a>Überprüfen Sie die Miracast-Unterstützung
 
 Als Nächstes stellen Sie sicher, dass Miracast auf dem Gerät unterstützt wird. 
 
@@ -50,14 +50,14 @@ Als Nächstes stellen Sie sicher, dass Miracast auf dem Gerät unterstützt wird
 2. Klicken Sie auf "alle Informationen speichern". 
 3. Öffnen Sie die gespeicherten dxdiag.txt und suchen Sie nach **Miracast**. Es sollte **Verfügbar, mit HDCP** angezeigt werden. 
     
-### Firewallüberprüfung
+###  <a name="check-firewall"></a>Firewallüberprüfung
     
 Die Windows-Firewall kann den Miracast-Datenverkehr blockieren. Am einfachsten testen Sie dies, indem Sie die Firewall deaktivieren und die Projektion testen. Wenn die Firewall deaktiviert ist und Miracast funktioniert, fügen Sie eine Ausnahme für
 
     C:\Windows\System32\WUDFHost.exe
     Allow In/Out connections for TCP and UDP, Ports: All.
 
-### Gruppenrichtlinieneinstellungen überprüfen
+###  <a name="check-group-policy-settings"></a>Gruppenrichtlinieneinstellungen überprüfen
 
 Bei in die Domäne eingebundenen Geräten können Gruppenrichtlinien auch Miracast blockieren. 
 
@@ -66,7 +66,7 @@ Bei in die Domäne eingebundenen Geräten können Gruppenrichtlinien auch Miraca
 3. Doppelklicken Sie auf die Einstellung für die WLAN-Richtlinien, damit ein Dialogfeld angezeigt wird. 
 4. Öffnen Sie die Registerkarte **Netzwerkberechtigungen** und wählen Sie **Erstellen von Profilen für alle Benutzer für jeden zulassen**.
 
-### Prüfen Sie die Ereignisprotokolle
+###  <a name="check-event-logs"></a>Prüfen Sie die Ereignisprotokolle
 
 Als letztes sollten Sie die Ereignisprotokolle überprüfen. Miracast-Ereignisse werden unter **Wlanautoconfig** aufgezeichnet. Dies trifft für den Surface Hub und das projizierte Gerät zu. Wenn Sie Surface Hub-Protokolle exportieren, können Sie die Wlanautoconfig des Surface-Hubs im Ordner **WindowsEventLog** anzeigen. Fehler im Ereignisprotokoll können zusätzliche Details aufzeigen, wo die Verbindung fehlschlägt.
 
@@ -84,6 +84,6 @@ Das Umschalten zwischen Kanälen tritt auch dann auf, wenn das projizierte Gerä
 
 Wenn mehrere WLAN-Netzwerke oder Zugangspunkte in der Umgebung vorhanden sind, ist das Umschalten zwischen den Kanälen unvermeidbar. Dies wird am besten behandelt, indem Sie sicherstellen, dass alle WLAN-Treiber auf dem neuesten Stand sind.
 
-## Support kontaktieren
+##  <a name="contact-support"></a>Support kontaktieren
 
 Wenn Sie Fragen haben oder Hilfe benötigen, können Sie [eine Supportanfrage erstellen](https://support.microsoft.com/supportforbusiness/productselection).

@@ -23,7 +23,7 @@ ms.locfileid: "11174725"
 
 Neue Versionen des Surface Hub-Betriebssystems werden über Windows Update veröffentlicht, genau wie Versionen von Windows10. Auf dieser Seite werden bewährte Methoden zum Verwalten von Updates für Surface-Hub-Geräte erläutert. 
 
-## Windows Update for Business
+##  <a name="windows-update-for-business"></a>Windows Update for Business
 
 Windows Update for Business ist eine Reihe von Features, die Unternehmen eine zusätzliche Kontrolle darüber bieten, wie und wann Windows Updateversionen installiert, während die Geräte Verwaltungskosten reduziert werden. Bei Verwendung dieser Methode werden Surface Hub-Geräte direkt mit dem Windows Update-Dienst von Microsoft verbunden.
 
@@ -39,7 +39,7 @@ Windows Update for Business ist eine Reihe von Features, die Unternehmen eine zu
 > Surface Hub unterstützt zurzeit das Zurücksetzen von Updates nicht.
 
 
-## Surface Hub-Wartungsmodell
+##  <a name="surface-hub-servicing-model"></a>Surface Hub-Wartungsmodell
 
 Surface Hub verwendet das Windows10-Wartungsmodell, das als [Windows as a Service (WaaS)](https://docs.microsoft.com/windows/deployment/update/waas-overview) bezeichnet wird. Herkömmlicherweise werden neue Features nur in neuen Versionen von Windows hinzugefügt, die in Abständen von einigen Jahren veröffentlicht werden. Jede neue Version erforderte langwierige und kostspielige Bereitstellungsvorgänge in Unternehmen. Dies führte dazu, dass Endbenutzer und Unternehmen die Vorteile von Innovationen häufig nicht nutzten. Das Ziel von Windows as a Service besteht darin, kontinuierlich neue Funktionen bereitzustellen und gleichzeitig eine hohe Qualität zu wahren.
 
@@ -54,7 +54,7 @@ Das Surface Hub-Betriebssystem empfängt Updates über den [Semi-Annual Channel]
 Weitere Informationen zu Windows as a Service finden Sie unter [Übersicht über Windows as a Service](https://technet.microsoft.com/itpro/windows/manage/waas-overview).
 
 
-## Verwenden von Windows Update for Business
+##  <a name="use-windows-update-for-business"></a>Verwenden von Windows Update for Business
 
 Surface Hub-Geräte enthalten, wie alle Windows10-Geräte, **Windows Update for Business (WUfB)**, damit Sie steuern können, wie Ihre Geräte aktualisiert werden. Windows Update for Business hilft, die Kosten für die Geräteverwaltung zu reduzieren, die Kontrolle über die Bereitstellung von Updates zu wahren, einen schnelleren Zugriff auf Sicherheitsupdates zu erhalten und kontinuierlich die neuesten Innovationen von Microsoft bereitzustellen. Weitere Informationen finden Sie unter [Verwalten von Updates mit Windows Update for Business](https://technet.microsoft.com/itpro/windows/manage/waas-manage-updates-wufb).
 
@@ -123,12 +123,12 @@ Für alle neuen Surface Hub-Geräte ist ein Standardwartungsfenster festgelegt:
 Wenn Sie das Wartungsfenster mithilfe von MDM ändern möchten, setzen Sie den **MaintenanceHoursSimple** -Knoten im [SurfaceHub-Konfigurationsdienst Anbieter](https://msdn.microsoft.com/library/windows/hardware/mt608323.aspx). Weitere Details hierzu finden Sie unter [Verwalten von Einstellungen mit einem MDM-Anbieter](manage-settings-with-mdm-for-surface-hub.md).
 
 
-## Weitere Informationen
+##  <a name="additional-information"></a>Weitere Informationen
 
 - [Blog Beitrag: warten, flighten und Verwalten von Updates für Surface Hub (natürlich mit InTune!)](https://blogs.technet.microsoft.com/y0av/2018/05/31/7-3/)
 
 
-## Verwandte Themen
+##  <a name="related-content"></a>Verwandte Themen
 
 [Verwalten von Microsoft Surface Hub](manage-surface-hub.md)
 

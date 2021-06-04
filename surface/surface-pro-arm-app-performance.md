@@ -44,7 +44,7 @@ Beachten Sie, dass Anwendungen auf ARM-basierten Windows 10-PCs wie Surface pro 
 - **Einige Antivirus-Software von Drittanbietern kann nicht installiert werden**. Sie können die Antivirensoftware von Drittanbietern nicht auf einem Windows 10-ARM-basierten PC installieren. Die Windows-Sicherheit hilft Ihnen jedoch, die unterstützte Lebensdauer Ihres Windows 10-Geräts zu schützen.
 - **Windows-Fax und-Scan steht nicht zur Verfügung**. Dieses Feature ist auf einem Windows 10 ARM-basierten PC nicht verfügbar.
 
-## App versichern
+##  <a name="app-assure"></a>App versichern
 
 Microsoft verpflichtet sich, sicherzustellen, dass Kunden mit Windows 10 auf ARM64-Geräten wie Surface pro X eine hervorragende Kompatibilitäts Erfahrung aufweisen. Wir haben das Programm für die APP-Sicherheit erweitert, um Kunden zu unterstützen, die APP-compat-Herausforderungen finden, indem wir Ingenieuren bei der Problembehandlung und Bereitstellung von App-Behebungen zur Verfügung stehen. Der Dienst steht kommerziellen und edu-Kunden für Ihre Lob-, ISV-und Microsoft-Erstanbieter-Apps zur Verfügung, die auf Windows 10 auf ARM64 ausgerichtet sind. 
 

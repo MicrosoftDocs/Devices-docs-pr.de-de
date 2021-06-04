@@ -26,7 +26,7 @@ Raumsteuerungssysteme können mit Microsoft Surface Hub verwendet werden.
 
 Die Verwendung eines Raumsteuerungssystems mit Surface Hub umfasst die Verbindung von Raumsteuerungshardware mit Surface Hub. Diese wird in der Regel über den seriellen RJ11-Anschluss unten an Surface Hub hergestellt.
 
-## Terminaleinstellungen
+##  <a name="terminal-settings"></a>Terminaleinstellungen
 
 Zum Herstellen der Verbindung mit einem Raumsteuerungssystem ist keine Konfiguration von Terminaleinstellungen an Surface Hub erforderlich. Wenn Sie einen PC oder Laptop mit Surface Hub verbinden und serielle Befehle von Surface Hub senden möchten, können Sie ein Terminalemulationsprogramm wie Tera Term oder PuTTY verwenden. 
 
@@ -40,7 +40,7 @@ Zum Herstellen der Verbindung mit einem Raumsteuerungssystem ist keine Konfigura
 | Zeilenvorschub | bei jedem Wagenrücklauf |
  
 
-## Verdrahtungsdiagramm
+##  <a name="wiring-diagram"></a>Verdrahtungsdiagramm
 
 Sie können mit einem standardmäßigen RJ-11 (6P6C)-Stecker den seriellen Surface Hub-Anschluss mit einem Raumsteuerungssystem verbinden. Dies ist die empfohlene Methode. Sie können auch ein RJ-11-Kabel mit vier Leitern verwenden, aber diese Methode wird nicht empfohlen.
 
@@ -48,7 +48,7 @@ In diesem Diagramm ist die korrekte Pinbelegung dargestellt, die für ein RJ-11 
 
 ![Abbildung des Verdrahtungsdiagramms](images/room-control-wiring-diagram.png)
 
-## Befehlssätze
+##  <a name="command-sets"></a>Befehlssätze
 
 Raumsteuerungssysteme verwenden gängige Besprechungsraumszenarien für Befehle. Befehle stammen vom Raumsteuerungssystem und werden über eine serielle Verbindung an einen Surface Hub kommuniziert. Befehle sind ASCII-basiert, und der Surface Hub bestätigt auftretende Zustandsänderungen.
 
@@ -62,7 +62,7 @@ Der folgende Befehlsmodifizierer sind verfügbar. Befehle werden mit einem Neue-
 | ? | Abfragen für einen aktuellen Wert |
  
 
-## Ein/Aus
+##  <a name="power"></a>Ein/Aus
 
 Der Surface Hub kann sich in einem der folgenden Ein/Aus-Zustände befinden.
 
@@ -91,7 +91,7 @@ Bei Steuerungsgeräten müssen alle Zustände außer „5/Bereit" als deaktivier
 
 
 
-## Helligkeit
+##  <a name="brightness"></a>Helligkeit
 
 Die aktuelle Helligkeitsstufe umfasst einen Bereich von 0 bis 100.
 
@@ -102,7 +102,7 @@ Die aktuelle Helligkeitsstufe umfasst einen Bereich von 0 bis 100.
 | Brightness+ | Der System-Managementcontroller (SMC) sendet den Befehl zum Erhöhen der Helligkeit.</br></br>Der PC-Dienst im Raumsteuerungssystem benachrichtigt den SMC über die neue Helligkeitsstufe. |  Brightness = 51 |
 | Brightness- |  Der SMC sendet den Befehl zum Verringern der Helligkeit.</br></br>Der PC-Dienst benachrichtigt den SMC über die neue Helligkeitsstufe. | Brightness = 50 |
 
-## Volume
+##  <a name="volume"></a>Volume
 
 Die aktuelle Lautstärkestufe ist ein Bereich von 0 bis 100.
 
@@ -119,7 +119,7 @@ Die aktuelle Lautstärkestufe ist ein Bereich von 0 bis 100.
 
  
 
-## Stummschalten für Audio
+##  <a name="mute-for-audio"></a>Stummschalten für Audio
 
 Audio kann stummgeschaltet werden.
 
@@ -130,7 +130,7 @@ Audio kann stummgeschaltet werden.
 
  
 
-## Videoquelle
+##  <a name="video-source"></a>Videoquelle
 
 Es können mehrere Anzeigequellen verwendet werden.
 
@@ -153,7 +153,7 @@ Es können mehrere Anzeigequellen verwendet werden.
 | Source- | Der SMC wechselt zur vorherigen aktiven Eingabequelle.</br></br>Der PC-Dienst benachrichtigt den SMC über die aktuelle Eingabequelle. |  Source=&lt;#&gt; |
 | Source? |  Der SMC fragt beim PC-Dienst die aktive Eingabequelle ab.</br></br>Der PC-Dienst benachrichtigt den SMC über die aktuelle Eingabequelle. | Source=&lt;#&gt; |
 
-## Fehler
+##  <a name="errors"></a>Fehler
 
 Fehler werden entsprechend dem Format in dieser Tabelle zurückgegeben.
 
@@ -167,7 +167,7 @@ Fehler werden entsprechend dem Format in dieser Tabelle zurückgegeben.
 
  
 
-## Verwandte Themen
+##  <a name="related-content"></a>Verwandte Themen
 
 
 [Verwalten von Microsoft Surface Hub](manage-surface-hub.md)

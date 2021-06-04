@@ -23,7 +23,7 @@ ms.locfileid: "11271399"
 
 Surface Geräte sind so konzipiert, dass sie die neuesten Fortschritte beim Energieverbrauch mobiler Geräte nutzen, um eine optimierte Oberfläche für alle Workloads zu bieten. Je nachdem, was Sie tun, passt Surface dynamisch an, wie der Strom zu einzelnen Hardwarekomponenten fließt. Dabei werden systemkomponenten zur Verarbeitung von Hintergrundaufgaben (z. B. eingehender E-Mail- oder Netzwerkdatenverkehr) vor der Rückkehr zu einem niedrigen Energieleerzustand (S0ix) für einen Moment auf die Systemkomponenten aktualisiert.
 
-## Zusammenfassung der Empfehlungen für IT-Administratoren
+##  <a name="summary-of-recommendations-for-it-administrators"></a>Zusammenfassung der Empfehlungen für IT-Administratoren
 
 So stellen Sie sicher, dass surface-Geräte in Ihrer gesamten Organisation vollständig von den Features der Surface-Energieoptimierung profitieren:
 
@@ -36,18 +36,18 @@ So stellen Sie sicher, dass surface-Geräte in Ihrer gesamten Organisation volls
 
 - Schließen Sie die Geräte von Surface von vorhandenen Richtlinieneinstellungen für die Energieverwaltung aus. 
 
-## Hintergrund
+##  <a name="background"></a>Hintergrund
 
 Die Art und Weise, wie Surface die Energieverwaltung implementiert, unterscheidet sich erheblich von dem früheren Betriebssystemstandard, der die Energie durch eine Reihe von Ruhezustandszuständen schrittweise reduziert und deaktiviert. Beispielsweise durch S1, S2, S3 und so weiter.
 
 Surface wird stattdessen mit einem benutzerdefinierten Energieprofil abbilden, das ältere Funktionen für Ruhezustand und Energieverbrauch durch moderne Standbyfunktionen und dynamische Optimierung ersetzt. Dieses benutzerdefinierte Energieprofil wird über den Surface Serial Hub Driver und das Systemaggregatormodul (Sam) implementiert. Der SAM-Chip fungiert als Besitzer der Energierichtlinie des Surface-Geräts und verwendet Algorithmen, um optimale Energieanforderungen zu berechnen. In Verbindung mit Dem Windows Power Manager wird nur die genaue Energiemenge zugewiesen oder gedrosselt, die für die Funktion von Hardwarekomponenten erforderlich ist. Dieser Artikel bezieht sich auf alle derzeit unterstützten Surface-Geräte, einschließlich Surface Pro 7 und höher, Surface Laptop Go, Surface Pro 7, Surface Pro X und Surface Laptop 3.
 
-## Verwenden des benutzerdefinierten Energieprofils in Surface
+##  <a name="utilizing-the-custom-power-profile-in-surface"></a>Verwenden des benutzerdefinierten Energieprofils in Surface
 
 Wenn Sie die Energieoptionen auf einem Oberflächengerät verwenden, werden Sie sehen, dass ein einzelner Energieplan verfügbar ist. Dies ist das benutzerdefinierte Energieprofil. Und wenn Sie zu den erweiterten Energieeinstellungen wechseln, sehen Sie im Vergleich zu einem generischen PC unter Windows 10 eine wesentlich kleinere Teilmenge der Energieoptionen. Im Gegensatz zu generischen Geräten verfügt Surface über Firmware und benutzerdefinierte Komponenten, um diese Energieoptionen zu verwalten.
 
 
-## Moderner Standbymodus
+##  <a name="modern-standby"></a>Moderner Standbymodus
 
 Das algorithmisch eingebettete benutzerdefinierte Energieprofil ermöglicht eine moderne Standbyverbindung für Surface, indem ein niedriger Energiezustand für die für Smartphones typische Sofort-/Sofortbetriebsfunktionen beibehalten wird. S0ix, auch bekannt als DEEPS (Deepest Runtime Idle Platform State), ist der Standardmäßige Energiemodus für Surface-Geräte. Der moderne Standbymodus verfügt über zwei Modi:
 
@@ -57,7 +57,7 @@ Das algorithmisch eingebettete benutzerdefinierte Energieprofil ermöglicht eine
 
 Weitere Informationen zum modernen Standbymodus finden Sie im [Microsoft Hardware Dev Center.](https://docs.microsoft.com/windows-hardware/design/device-experiences/modern-standby-wake-sources)
 
-## Optimieren der Energieverwaltung durch Surface 
+##  <a name="how-surface-streamlines-the-power-management-experience"></a>Optimieren der Energieverwaltung durch Surface 
 
 Surface integriert die folgenden Features, mit deren Hilfe Benutzer die Energieverwaltung optimieren können:
 
@@ -71,7 +71,7 @@ Surface integriert die folgenden Features, mit deren Hilfe Benutzer die Energiev
 
 Surface ist für eine optimierte Energieverwaltung ausgelegt, die das Erstellen benutzerdefinierter Energiepläne oder das manuelle Konfigurieren von Energieeinstellungen entfällt. Microsoft optimiert die Benutzerfreundlichkeit, indem ein einzelner Energieplan (ausgeglichen) zur Vererbung der verschiedenen Energiepläne aus standardmäßigen Windows-Builds erstellt wird.
 
-### Benutzeroberfläche für vereinfachte Energieeinstellungen
+###  <a name="user-interface"></a>Benutzeroberfläche für vereinfachte Energieeinstellungen
 
 Surface bietet eine vereinfachte Benutzeroberfläche in Übereinstimmung mit empfehlungen für die Energieeinstellung mit bewährten Vorgehensweisen. Im Allgemeinen wird empfohlen, nur einstellungen anzupassen, die auf der Standardbenutzerschnittstelle angezeigt werden, und die Konfiguration erweiterter Energieeinstellungen oder Gruppenrichtlinieneinstellungen zu vermeiden. Die Verwendung der Standardtimeouts für Bildschirm und Ruhezustand bei gleichzeitiger Vermeidung von maximalen Helligkeitsstufen ist die effektivste Methode für Benutzer, um eine längere Akkulaufzeit auf sich zu nehmen.
 
@@ -114,7 +114,7 @@ Weitere Informationen finden Sie unter:
 
 -   [Stromsparen.](https://docs.microsoft.com/windows-hardware/design/component-guidelines/battery-saver)
 
-## Bewährte Methoden für eine längere Akkulaufzeit
+##  <a name="best-practices-for-extended-battery-life"></a>Bewährte Methoden für eine längere Akkulaufzeit
 
 
 | Bewährte Methode | Wechseln Sie zu | Nächste Schritte |
@@ -128,7 +128,7 @@ Weitere Informationen finden Sie unter:
 | Überprüfen der App-Nutzung | Ihre Apps | Schließen Sie Apps.|
 | Überprüfen Sie Ihr Netzkabel auf Beschädigungen.| Ihr Netzkabel | Ersetzen Sie das Netzkabel, wenn es beschädigt oder beschädigt ist.|
 
-## Mehr erfahren 
+##  <a name="learn-more"></a>Mehr erfahren 
 
 - [Moderner Standbymodus](https://docs.microsoft.com/windows-hardware/design/device-experiences/modern-standby-wake-sources)
 

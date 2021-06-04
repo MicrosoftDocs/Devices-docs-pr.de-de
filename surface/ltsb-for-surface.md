@@ -35,7 +35,7 @@ Universelle Oberflächen-Devices sollen auf dem halbjährlichen Kanal ausgeführ
 
 Surface-Geräte in speziellen Szenarien – wie PCs, die medizinische Geräte, Point-of-Sale-Systeme und Geldautomaten Steuern – könnten die Verwendung von LTSC in Frage stellen. Bei diesen Sondersystemen wird in der Regel eine einzige Aufgabe ausgeführt, und es werden keine Funktionsupdates mehr so häufig wie andere Geräte in der Organisation benötigt. 
 
-## Verwandte Themen
+##  <a name="related-content"></a>Verwandte Themen
 
 - [Surface IT Pro Blog](https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/bg-p/SurfaceITPro)
 

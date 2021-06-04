@@ -29,7 +29,7 @@ Durch die Kenn Wort lose Anmeldung wird der Zugriff auf Ihre apps, Besprechungen
 - [Aktivieren der Kennwortsicherheit bei der Anmeldung](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-passwordless-security-key)
 
 
-## Konfigurieren der Anmeldung mit der Microsoft Authenticator-App
+##  <a name="configure-sign-in-using-microsoft-authenticator-app"></a>Konfigurieren der Anmeldung mit der Microsoft Authenticator-App
 
 **Hinweis:** Ab Windows 10 Team 2020-Update können Benutzer Ihre bevorzugten e-Mail-Aliase in Azure AD sowie deren Benutzerprinzipalnamen (User Principal Name, UPN) verwenden, um sich mit Microsoft Authenticator zu anmelden. Beispielsweise kann ein Benutzer entweder seinen bevorzugten Alias (John.Doe@contoso.com) oder seinen UPN (jdoe@contoso.com) für die Anmeldung verwenden.
  
@@ -43,7 +43,7 @@ Die Microsoft Authenticator-App unterstützt Sie bei der Anmeldung bei Surface H
 3. Aktivieren Sie die Microsoft Authenticator-App auf Ihrem mobilen Gerät, [und verwenden Sie die Telefonanmeldung](https://docs.microsoft.com/azure/active-directory/user-help/user-help-auth-app-sign-in#turn-on-and-use-phone-sign-in-for-your-work-or-school-account) für Ihr Geschäfts-oder Schulkonto.
 
  
-## Konfigurieren der Anmeldung mithilfe von FIDO2-Sicherheitsschlüsseln
+##  <a name="configure-sign-in-using-fido2-security-keys"></a>Konfigurieren der Anmeldung mithilfe von FIDO2-Sicherheitsschlüsseln
 
 > [!NOTE]
 >  Die Kenn Wort lose Anmeldung auf Surface Hub mithilfe von FIDO2-Sicherheitsschlüsseln erfordert das Windows 10 Team 2020-Update.
@@ -53,7 +53,7 @@ Die Microsoft Authenticator-App unterstützt Sie bei der Anmeldung bei Surface H
  
 Sie können sich auch mit einem von Ihrer Organisation bereitgestellten FIDO2-Sicherheitsschlüssel bei Surface Hub anmelden. 
 
-### So konfigurieren Sie die Anmeldung mit einem Sicherheitsschlüssel:
+###  <a name="to-configure-sign-in-using-a-security-key"></a>So konfigurieren Sie die Anmeldung mit einem Sicherheitsschlüssel:
 
 
 1. Wechseln Sie auf Ihrem PC zu Ihrer [https://myprofile.microsoft.com/](https://myprofile.microsoft.com/) Seite, und registrieren Sie sich bei Ihrem Firmen-oder Schulkonto.
@@ -65,7 +65,7 @@ Sie können sich auch mit einem von Ihrer Organisation bereitgestellten FIDO2-Si
 7. Geben Sie auf der Seite **Sicherheitsschlüssel** Ihrem Sicherheitsschlüssel einen Namen, und wählen Sie dann **weiter**aus.
 8. Wählen Sie **Fertig** aus, um den Vorgang abzuschließen.
 
-## Anmelden beim Surface Hub
+##  <a name="sign-in-to-surface-hub"></a>Anmelden beim Surface Hub
 
 Nachdem Sie die Kenn Wort lose Anmeldung konfiguriert haben, können Sie Sie verwenden, um den Zugriff auf Ihre apps, Besprechungen und Dateien auf dem Surface Hub zu vereinfachen:
 
@@ -75,7 +75,7 @@ Nachdem Sie die Kenn Wort lose Anmeldung konfiguriert haben, können Sie Sie ver
 - Nachdem Sie sich bei Surface Hub angemeldet haben, können Sie andere apps verwenden, ohne sich erneut anmelden zu müssen, bis Sie **Sitzung beenden**auswählen. Wenn Sie **Sitzung beenden** auswählen, werden Ihre Anmeldeinformationen, Dateien und persönlichen Daten auf dem Gerät gelöscht. Weitere Informationen finden Sie unter [Beenden der Sitzung](finishing-your-surface-hub-meeting.md).
 
 
-## Mehr erfahren
+##  <a name="learn-more"></a>Mehr erfahren
 
 - [Kennwortlos-Authentifizierungsoptionen für Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-passwordless)
 - [Kenn Wort lose Anmeldung mit der Microsoft Authenticator-App](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-passwordless-phone)

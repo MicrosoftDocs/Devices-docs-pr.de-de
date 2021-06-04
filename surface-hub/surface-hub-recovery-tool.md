@@ -30,9 +30,9 @@ Zum erneuten Abbilden der Surface Hub-SSD mithilfe des Wiederherstellungstools m
 
 Wenn das Tool beim Reimaging ihres Laufwerks nicht erfolgreich ist, wenden Sie sich an [den Surface Hub-Support.](https://support.microsoft.com/help/4037644/surface-contact-surface-warranty-and-software-support)
 
-## Voraussetzungen
+##  <a name="prerequisites"></a>Voraussetzungen
 
-### Mandatory
+###  <a name="mandatory"></a>Mandatory
 
 - Host-PC mit 64-Bit-Version von Windows 10, Version 1607 oder höher.
 - Internetzugriff
@@ -41,7 +41,7 @@ Wenn das Tool beim Reimaging ihres Laufwerks nicht erfolgreich ist, wenden Sie s
 - 10 GB freier Speicherplatz auf dem Hostcomputer
 - SSDs, die mit Surface Hub oder einer SSD ausgeliefert wurden, die vom Support als Ersatz bereitgestellt werden. Von Microsoft nicht bereitgestellte SSDs werden nicht unterstützt.
 
-### Empfohlen
+###  <a name="recommended"></a>Empfohlen
 
 - High-Speed-Internetverbindung
 - Öffnen des USB 3.0-Ports
@@ -51,7 +51,7 @@ Wenn das Tool beim Reimaging ihres Laufwerks nicht erfolgreich ist, wenden Sie s
     - Rosawill RCUC16001
     - Ugreen 20231
 
-## Surface Hub Recovery Tool herunterladen
+##  <a name="download-surface-hub-recovery-tool"></a>Surface Hub Recovery Tool herunterladen
 
 Das Surface Hub-Wiederherstellungstool steht unter dem Dateinamen "Surface Hub-Wiederherstellungstool" unter dem Namen "Surface Hub Tools for [IT"](https://www.microsoft.com/download/details.aspx?id=52210) zum **SurfaceHub_Recovery_v2.7.139.0.msi. **
 
@@ -65,7 +65,7 @@ Klicken Sie zum Starten des Downloads auf **"Herunterladen",** **wählenSurfaceH
 
 Installieren Sie das Surface Hub-Wiederherstellungstool auf dem Host-PC.
 
-## Ausführen des Surface Hub-Wiederherstellungstools
+##  <a name="run-surface-hub-recovery-tool"></a>Ausführen des Surface Hub-Wiederherstellungstools
 
 1. Wählen Sie auf dem Host-PC die **Startschaltfläche** aus, scrollen Sie durch die alphabetische Liste auf der linken Seite, und wählen Sie die Verknüpfung des Wiederherstellungstools aus.
 
@@ -102,7 +102,7 @@ Installieren Sie das Surface Hub-Wiederherstellungstool auf dem Host-PC.
 
 
 
-## Problembehandlung und häufige Probleme
+##  <a name="troubleshooting-and-common-problems"></a>Problembehandlung und häufige Probleme
 
 Problem | Anmerkungen
 --- | ---
@@ -113,10 +113,10 @@ Fehler: -2147024809 | Öffnen Sie den Datenträger-Manager, und entfernen Sie di
 
 Wenn das Tool beim Reimaging ihres Laufwerks nicht erfolgreich ist, wenden Sie sich an [den Surface Hub-Support.](https://support.microsoft.com/help/4037644/surface-contact-surface-warranty-and-software-support)
 
-## Versionsverlauf
+##  <a name="version-history"></a>Versionsverlauf
 
 
-### Version v2.7.139.0
+###  <a name="version-v2.7.139.0"></a>Version v2.7.139.0
 
 *Veröffentlichungsdatum: 11. Februar 2021*<br>
 Diese Version des Surface Hub-Wiederherstellungstools bietet Unterstützung für Folgendes:
@@ -124,7 +124,7 @@ Diese Version des Surface Hub-Wiederherstellungstools bietet Unterstützung für
 - Sicherheitsupdate
 
 
-### Version v2.0.139.0
+###  <a name="version-v2.0.139.0"></a>Version v2.0.139.0
 
 > [!IMPORTANT]
 > Diese Version ist nicht mehr funktionsfähig. Laden Sie die oben aufgeführte aktuelle Version herunter. 

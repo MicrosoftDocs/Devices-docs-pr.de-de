@@ -30,7 +30,7 @@ Für Organisationen mit Microsoft Endpoint Configuration Manager gibt es eine Al
 > [!Note]
 > Obwohl der in diesem Artikel beschriebene Prozess möglicherweise mit früheren Versionen von Endpoint Configuration Manager oder mit anderen Verwaltungslösungen von Drittanbietern funktioniert, wird die Verwaltung von Semm mit Microsoft Surface UEFI Manager und PowerShell nur mit der aktuellen Verzweigung des Endpunkt Konfigurations-Managers unterstützt.
 
-#### Voraussetzungen
+####  <a name="prerequisites"></a>Voraussetzungen
 
 Bevor Sie mit dem in diesem Artikel beschriebenen Verfahren beginnen, sollten Sie sich mit den folgenden Technologien und Tools vertraut machen:
 
@@ -107,7 +107,7 @@ Die Beispielskripts umfassen Beispiele für das Festlegen von UEFI-Einstellungen
 > [!NOTE]
 > Die Semm-Konfigurations-Manager-Skripts und die exportierte Semm-Zertifikatsdatei (. pfx) sollten sich im gleichen Ordner wie keine anderen Dateien befinden, bevor Sie dem Configuration Manager hinzugefügt werden.
 
-### Angeben von Zertifikats-und Paketnamen
+###  <a name="specify-certificate-and-package-names"></a>Angeben von Zertifikats-und Paketnamen
 
 Der erste Bereich des Skripts, den Sie ändern müssen, ist der Teil, der das Semm-Zertifikat angibt und lädt, und auch die SurfaceUEFIManager-Version sowie die Namen für das Semm-Konfigurationspaket und das Semm-Zurücksetzungs Paket. Der Zertifikatname und die SurfaceUEFIManager-Version werden in Zeilen 56 bis 73 im ConfigureSEMM.ps1-Skript angegeben.
 
@@ -163,7 +163,7 @@ Administratoren mit Zugriff auf die Zertifikatsdatei (. pfx) können den Fingera
 > [!NOTE]
 > Der Semm-Zertifikatname und das Kennwort müssen ebenfalls in diesem Abschnitt des ResetSEMM.ps1 Skripts eingegeben werden, damit Configuration Manager Semm vom Gerät mit der Deinstallations Aktion Entfernen kann.
 
-### Konfigurieren von Berechtigungen
+###  <a name="configure-permissions"></a>Konfigurieren von Berechtigungen
 
 Der erste Bereich des Skripts, in dem Sie die Konfiguration für Surface UEFI angeben, ist der Bereich " **Berechtigungen konfigurieren** ". Dieser Bereich beginnt bei Zeile 210 im Beispielskript mit dem Kommentar **# configure-Berechtigungen** und fährt mit Zeile 247 fort. Das folgende Codefragment legt zunächst Berechtigungen für alle DGM-UEFI-Einstellungen fest, sodass Sie nur von Semm geändert werden können, und fügt dann explizite Berechtigungen hinzu, um dem lokalen Benutzer das Ändern des UEFI-Kennworts, des TPM und der Front-und rückkamera zu ermöglichen.
 
@@ -215,7 +215,7 @@ Jede **$uefiV 2** -Variable kennzeichnet eine DGM-UEFI-Einstellung durch Festleg
 
 Informationen zu den verfügbaren Einstellungsnamen und IDs für Surface UEFI finden Sie im Abschnitt [Settings Names and IDs](#settings-names-and-ids) in diesem Artikel.
 
-### Konfigurieren von Einstellungen
+###  <a name="configure-settings"></a>Konfigurieren von Einstellungen
 
 Der zweite Bereich des Skripts, in dem Sie die Konfiguration für Surface UEFI angeben, ist der Bereich " **Einstellungen konfigurieren** " des ConfigureSEMM.ps1 Skripts, mit dem konfiguriert wird, ob jede Einstellung aktiviert oder deaktiviert ist. Das Beispielskript enthält Anweisungen zum Festlegen aller Einstellungen auf die Standardwerte. Das Skript enthält dann explizite Anweisungen, um IPv6 für PXE-Start zu deaktivieren und das Surface UEFI-Administrator Kennwort unverändert zu lassen. Sie finden diese Region beginnend mit dem Kommentar **# Configure Settings** in Zeile 291 bis Zeile 335 im Beispielskript. Der Bereich wird wie folgt angezeigt:
 
@@ -273,7 +273,7 @@ Wenn Sie die Konfiguration einer Oberflächen UEFI-Einstellung nicht ändern mö
 
 Informationen zu den verfügbaren Einstellungsnamen und IDs für Surface UEFI finden Sie im Abschnitt [Einstellungsnamen und IDs](#settings-names-and-ids) weiter unten in diesem Artikel.
 
-### Registrierungsschlüssel "Einstellungen"
+###  <a name="settings-registry-key"></a>Registrierungsschlüssel "Einstellungen"
 
 Zum Identifizieren von eingeschriebenen Systemen für Configuration Manager schreibt das ConfigureSEMM.ps1-Skriptregistrierungsschlüssel, die zum Identifizieren von eingeschriebenen Systemen verwendet werden können, wenn Sie mit dem Semm-Konfigurationsskript installiert wurden. Diese Schlüssel finden Sie am folgenden Standort.
 

@@ -24,7 +24,7 @@ Wenn Probleme mit Surface Hub 2S auftreten, können Sie das Gerät auf die Werks
 
 Melden Sie sich zunächst bei Surface Hub 2S mit Administratoranmeldeinformationen an, öffnen Sie die **App** "Einstellungen", wählen Sie **"&** Aktualisieren" und dann "Wiederherstellung" **aus.**
 
-## Setzen Sie das Gerät zurück
+##  <a name="reset-the-device"></a>Setzen Sie das Gerät zurück
 
    > [!IMPORTANT]
    > Stellen Sie sicher, dass Ihr BitLocker-Schlüssel verfügbar ist, bevor Sie das Gerät zurücksetzen, da Sie später dazu aufgefordert werden. Weitere Informationen finden Sie unter ["Speichern des BitLocker-Schlüssels".](save-bitlocker-key-surface-hub.md)
@@ -44,11 +44,11 @@ Melden Sie sich zunächst bei Surface Hub 2S mit Administratoranmeldeinformation
    > ![*Zurücksetzen und Wiederherstellung für Surface Hub 2S*](images/sh2-reset.png)
    <br/>*Abbildung1. Zurücksetzen und Wiederherstellung für Surface Hub 2S* 
 
-## Wiederherstellen von Surface Hub 2S mithilfe eines USB-Wiederherstellungslaufwerks
+##  <a name="recover-surface-hub-2s-by-using-a-usb-recovery-drive"></a>Wiederherstellen von Surface Hub 2S mithilfe eines USB-Wiederherstellungslaufwerks
 
 Neu in Surface Hub 2S: Sie können das Gerät jetzt mithilfe eines Wiederherstellungsabbilds neu installieren.
 
-### Wiederherstellung von einem USB-Laufwerk
+###  <a name="recovery-from-a-usb-drive"></a>Wiederherstellung von einem USB-Laufwerk
 
 Mit Surface Hub 2S können Sie das Gerät mithilfe eines Wiederherstellungsabbilds neu installieren. Dadurch können Sie das Gerät in den Werkseinstellungen neu installieren, wenn Sie den BitLocker-Schlüssel verloren haben oder wenn Sie nicht mehr über Administratoranmeldeinformationen für die Einstellungs-App verfügen.
 
@@ -90,6 +90,6 @@ Mit Surface Hub 2S können Sie das Gerät mithilfe eines Wiederherstellungsabbil
 
 Wenn der Bildschirm zum ersten Einrichten angezeigt wird, entfernen Sie das USB-Laufwerk.
 
-## Hilfe und Support zu Windows
+##  <a name="contact-support"></a>Hilfe und Support zu Windows
 
 Wenn Sie Fragen haben oder Hilfe benötigen, können [Sie eine Supportanfrage erstellen.](https://support.microsoft.com/supportforbusiness/productselection)

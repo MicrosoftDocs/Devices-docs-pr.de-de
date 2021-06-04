@@ -31,7 +31,7 @@ In diesem Artikel wird beschrieben, wie Sie die Cloud-Wiederherstellungsfunktion
 > [!IMPORTANT]
 > Dieser Vorgang erfordert eine offene Internet Verbindung, die keinen Proxy oder eine andere Authentifizierungsmethode verwendet.
 
-## Cloud-Wiederherstellungsprozess
+##  <a name="cloud-recovery-process"></a>Cloud-Wiederherstellungsprozess
 
 Führen Sie die folgenden Schritte aus, um eine Cloud-Wiederherstellung durchzuführen:
 
@@ -61,7 +61,7 @@ Führen Sie die folgenden Schritte aus, um eine Cloud-Wiederherstellung durchzuf
 
    ![Screenshot von Out-of-the-Box](images/06-out-of-box.png)
 
-## Fehlermeldung "etwas ist schief gelaufen"
+##  <a name="something-went-wrong-error-message"></a>Fehlermeldung "etwas ist schief gelaufen"
 
 Dieser Fehler wird in der Regel durch Netzwerkprobleme verursacht, die während des Wiederherstellungs Downloads auftreten. Wenn dieses Problem auftritt, deaktivieren Sie den Hub nicht, da Sie ihn nicht erneut starten können. Wenn diese Fehlermeldung angezeigt wird, kehren Sie zum Schritt "aus der Cloud wiederherstellen" zurück, und starten Sie den Wiederherstellungsprozess erneut.
 

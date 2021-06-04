@@ -34,7 +34,7 @@ Surface Duo verfügt über integrierten Schutz auf jeder Ebene mit tief integrie
 - **Microsoft Defender ATP.** Die Antiviren- und Schadsoftware der Unternehmensklasse für Windows 10 ist jetzt für Android-Geräte verfügbar, die von Intune verwaltet werden. Weitere Informationen finden Sie unter [Microsoft Defender ATP für Android.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-android) 
 
 
-## Verwaltung mobiler Geräte
+##  <a name="mobile-device-management-security"></a>Verwaltung mobiler Geräte
 
 Surface Duo wird in einer Unternehmensumgebung mithilfe einer Enterprise Mobility Management (EMM)-Lösung gesichert, die einen konsistenten Satz von Schutztools, Technologien und bewährten Methoden bietet, die Sie an Ihre Organisatorischen und Complianceanforderungen anpassen können. Eine breite Palette von Verwaltungs-APIs bietet it-Abteilungen tools, um Datenlecks zu verhindern und compliance in einer Vielzahl von Szenarien durchzusetzen. Die Unterstützung mit mehreren Profilen und Geräteverwaltungsoptionen ermöglichen die Trennung von Arbeits- und personenbezogenen Daten, um Unternehmensdaten zu schützen.
 
@@ -43,13 +43,13 @@ Die Sicherheit von MDM baut auf einer erweiterten Reihe von Konfigurationstechno
 Sie können beispielsweise die Geräteauthentifizierung stärken, indem Sie die Benutzer zur Eingabe einer 6-stelligen alphanumerischen Pin zusammen mit der 2-Faktor-Authentifizierung verlangen.  Sie können die Geräte einschränken, die Benutzer registrieren können, um sicherzustellen, dass Sie die Lizenzbeschränkungen einhalten oder den Zugriff auf "jailbroken"-Telefone oder andere nicht unterstützte Gerätetypen vermeiden.
 Intune und andere EMMs bieten Organisationen die Flexibilität, Geräte entsprechend ihren Anforderungen zu verwalten.
 
-## Richtlinien zum Schutz von Apps
+##  <a name="app-protection-policies"></a>Richtlinien zum Schutz von Apps
 
 App-Schutz-Richtlinien (APP) sind Regeln, die sicherstellen, dass die Daten einer Organisation sicher oder in einer verwalteten App enthalten bleiben. Eine Richtlinie kann eine Regel sein, die erzwungen wird, wenn der Benutzer versucht, auf "Unternehmensdaten" zu zugreifen oder diese zu verschieben, oder eine Reihe von Aktionen, die verboten oder überwacht werden, wenn sich der Benutzer innerhalb der App befindet. Eine verwaltete App ist eine App, auf die App-Schutzrichtlinien angewendet wurden und die von Intune verwaltet werden kann.
 
 Mit Richtlinien zum Schutz von Apps können Sie die Daten Ihrer Organisation innerhalb einer Anwendung verwalten und schützen. Viele Produktivitäts-Apps, wie Microsoft Office Apps, können von Intune MAM verwaltet werden. Sehen Sie sich die offizielle Liste der [microsoft Intune-geschützten Apps an,](https://docs.microsoft.com/mem/intune/apps/apps-supported-intune-apps) die für die öffentliche Verwendung verfügbar sind.
 
-## Sicherheitsüberlegungen für die Verwaltung von Surface Duo
+##  <a name="security-considerations-for-managing-surface-duo"></a>Sicherheitsüberlegungen für die Verwaltung von Surface Duo
 
 Die wachsende Anzahl von Richtlinieneinstellungen, die in Lösungen für die Verwaltung mobiler Geräte verfügbar sind, ermöglicht Es Organisationen, die Schutzebenen an ihre spezifischen Anforderungen anzupassen. Um Organisationen bei der Priorisierung von Sicherheitseinstellungen für Surface Duo (oder ein anderes Android-Gerät) zu unterstützen, hat Intune sein Sicherheitskonfigurationsframework für [Android Enterprise](https://docs.microsoft.com/mem/intune/enrollment/android-configuration-framework) eingeführt, das in mehrere unterschiedliche Konfigurationsszenarien organisiert ist und Anleitungen für Arbeitsprofil- und vollständig verwaltete Szenarien bietet.
  

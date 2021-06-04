@@ -32,7 +32,7 @@ SdT for Business ermöglicht Ihnen insbesondere:
 - [Erhalten Sie einen detaillierten Bericht, in dem das Gerät mit der optimalen Konfiguration verglichen wird.](surface-diagnostic-toolkit-desktop-mode.md#detailed-report)
 
 
-## Primäre Szenarien und Downloadressourcen 
+##  <a name="primary-scenarios-and-download-resources-"></a>Primäre Szenarien und Downloadressourcen 
 
 Laden Sie zum Ausführen von SDT for Business die in der folgenden Tabelle aufgeführten Komponenten herunter.
 
@@ -42,7 +42,7 @@ Modus |  Primäre Szenarien | Herunterladen | Mehr erfahren
 Desktopmodus |  Unterstützen Sie Benutzer bei der Ausführung von SDT auf ihren Surface-Geräten, um Probleme zu beheben.<br>Erstellen Sie ein benutzerdefiniertes Paket für die Bereitstellung auf einem oder mehreren Surface-Geräten, sodass Benutzer bestimmte Protokolle zum Sammeln und Analysieren auswählen können. | Verteilbares SDT-MSI-Paket:<br>Microsoft Surface Diagnostic Toolkit for Business Installer<br>[Surface-Tools für IT](https://www.microsoft.com/download/details.aspx?id=46703) | [Verwenden des Surface Diagnostic Toolkits im Desktopmodus](surface-diagnostic-toolkit-desktop-mode.md)
 Befehlszeile |  Direkte Problembehandlung für Surface-Geräte remote ohne Benutzerinteraktion mithilfe von Standardtools wie Configuration Manager. Sie enthält die folgenden Befehle:<br>`-DataCollector` sammelt alle Protokolldateien<br>`-bpa` Führt Integritätsdiagnosen mit Best Practice Analyzer aus.<br>`-windowsupdate` Überprüft Windows Update auf fehlende Firmware- oder Treiberupdates.<br>`-warranty` überprüft Garantieinformationen. <br><br>| SDT-Konsolen-App:<br>Microsoft Surface Diagnostics App Console<br>[Surface-Tools für IT](https://www.microsoft.com/download/details.aspx?id=46703) | [Ausführen des Surface Diagnostic Toolkit mithilfe von Befehlen](surface-diagnostic-toolkit-command-line.md)
 
-## Unterstützte Geräte 
+##  <a name="supported-devices"></a>Unterstützte Geräte 
 
 SDT for Business wird auf Surface 3 und höher unterstützt, einschließlich:
 
@@ -56,7 +56,7 @@ SDT for Business wird auf Surface 3 und höher unterstützt, einschließlich:
 - Surface3
 
 
-## Installieren des Surface Diagnostic Toolkit for Business
+##  <a name="installing-surface-diagnostic-toolkit-for-business"></a>Installieren des Surface Diagnostic Toolkit for Business
 
 So erstellen Sie ein SDT-Paket, das Sie an Benutzer in Ihrer Organisation verteilen können:
 
@@ -83,13 +83,13 @@ So erstellen Sie ein SDT-Paket, das Sie an Benutzer in Ihrer Organisation vertei
 
 7. Klicken Sie **auf "Weiter",** und klicken Sie dann auf **"Installieren".** 
 
-## Installieren über die Befehlszeile
+##  <a name="installing-using-the-command-line"></a>Installieren über die Befehlszeile
 Bei Bedarf können Sie SDT an einer Eingabeaufforderung installieren und ein benutzerdefiniertes Flag festlegen, um das Tool im Administratormodus zu installieren. SDT enthält die folgenden Installationsoptionsflags:
 
 - `SENDTELEMETRY` sendet Telemetriedaten an Microsoft. Das Flag akzeptiert `0` "Deaktiviert" oder `1` "Aktiviert". Der Standardwert ist das `1` Senden von Telemetrie.
 - `ADMINMODE` konfiguriert das Tool für die Installation im Administratormodus. Das Flag akzeptiert `0` den Clientmodus oder `1` den IT-Administratormodus. Der Standardwert lautet `0`.
 
-### So installieren Sie SDT über die Befehlszeile:
+###  <a name="to-install-sdt-from-the-command-line:"></a>So installieren Sie SDT über die Befehlszeile:
 
 1. Öffnen Sie eine Eingabeaufforderung, und geben Sie folgenden Befehl ein:
 
@@ -102,7 +102,7 @@ Bei Bedarf können Sie SDT an einer Eingabeaufforderung installieren und ein ben
     C:\Users\Administrator> msiexec.exe/I"C:\Users\Administrator\Desktop\Microsoft_Surface_Diagnostic_Toolkit_for_Business_Installer.msi" ADMINMODE=1
     ```
 
-## Suchen von SDT auf Ihrem Surface-Gerät
+##  <a name="locating-sdt-on-your-surface-device"></a>Suchen von SDT auf Ihrem Surface-Gerät
 
 Sowohl SDT als auch die SDT-App-Konsole werden unter `C:\Program Files\Microsoft\Surface\Microsoft Surface Diagnostic Toolkit for Business` installiert.
 
@@ -123,7 +123,7 @@ Durch das Erstellen eines benutzerdefinierten Pakets können Sie das Tool auf be
 
     *Abbildung3. Erstellen eines benutzerdefinierten Pakets*
 
-### Sprach- und Telemetrieeinstellungen
+###  <a name="language-and-telemetry-settings"></a>Sprach- und Telemetrieeinstellungen
 
   Beim Erstellen eines Pakets können Sie Spracheinstellungen auswählen oder das Senden von Telemetrieinformationen an Microsoft deaktivieren. Standardmäßig sendet SDT Telemetrie an Microsoft, die verwendet wird, um die Anwendung in Übereinstimmung mit den Datenschutzbestimmungen von [Microsoft zu verbessern.](https://privacy.microsoft.com/privacystatement) Wenn Sie dies ablehnen möchten, müssen Sie das Kontrollkästchen beim Erstellen eines benutzerdefinierten Pakets wie unten dargestellt aktivieren. Oder aktivieren Sie das **Kontrollkästchen "Telemetrie** an Microsoft senden" auf der Seite **"Installationsoptionen"** während des SDT-Setups. 
 
@@ -136,7 +136,7 @@ Durch das Erstellen eines benutzerdefinierten Pakets können Sie das Tool auf be
 *Abbildung 4. Auswählen von Sprach- und Telemetrieeinstellungen*
 
 
-### Windows Update-Seite
+###  <a name="windows-update-page"></a>Windows Update-Seite
 
 Wählen Sie die für Ihre Organisation geeignete Option aus. Die meisten Organisationen mit mehreren Benutzern wählen in der Regel updates über Windows Server Update Services (WSUS) aus, wie in Abbildung 5 dargestellt. Wenn Sie lokale Windows Update-Pakete oder WSUS verwenden, geben Sie den Pfad entsprechend ein. 
 
@@ -144,7 +144,7 @@ Wählen Sie die für Ihre Organisation geeignete Option aus. Die meisten Organis
 
 *Abbildung5. Windows Update-Option*
 
-### Seite "Softwarereparatur"
+###  <a name="software-repair-page"></a>Seite "Softwarereparatur"
 
 Auf diese Weise können Sie die Option zum Ausführen von Softwarereparaturupdates auswählen oder entfernen. 
 
@@ -152,7 +152,7 @@ Auf diese Weise können Sie die Option zum Ausführen von Softwarereparaturupdat
 
 *Abbildung6. Softwarereparaturoption*
 
-### Sammeln von Protokollen und Speichern der Paketseite
+###  <a name="collecting-logs-and-saving-package-page"></a>Sammeln von Protokollen und Speichern der Paketseite
 
 Sie können eine Vielzahl von Protokollen für Anwendungen, Treiber, Hardware und das Betriebssystem ausführen. Klicken Sie auf den entsprechenden Bereich, und wählen Sie im Menü der verfügbaren Protokolle aus. Anschließend können Sie das Paket an einem Softwareverteilungspunkt oder einem gleichwertigen Speicherort speichern, auf den Benutzer zugreifen können. 
 
@@ -160,14 +160,14 @@ Sie können eine Vielzahl von Protokollen für Anwendungen, Treiber, Hardware un
 
 *Abbildung7. Protokollierungsoption und Paket speichern*
 
-## Nächste Schritte
+##  <a name="next-steps"></a>Nächste Schritte
 
 - [Surface-Diagnosetoolkit für Unternehmen im Desktopmodus verwenden](surface-diagnostic-toolkit-desktop-mode.md)
 - [Verwenden des Surface Diagnostic Toolkit for Business mithilfe von Befehlen](surface-diagnostic-toolkit-command-line.md)
 
-## Änderungen und Updates
+##  <a name="changes-and-updates"></a>Änderungen und Updates
 
-### Version 2.131.139.0
+###  <a name="version-2.131.139.0"></a>Version 2.131.139.0
 
 Diese Version des Surface Diagnostic Toolkit for Business bietet Unterstützung für Folgendes:
 
@@ -176,7 +176,7 @@ Diese Version des Surface Diagnostic Toolkit for Business bietet Unterstützung 
 - Sicherheitsverbesserungen
 - Verbesserungen der inklusiven Benutzerfreundlichkeit
 
-### Version 2.124.139.0
+###  <a name="version-2.124.139.0"></a>Version 2.124.139.0
 
 Diese Version des Surface Diagnostic Toolkit for Business bietet Unterstützung für Folgendes:
 
@@ -188,14 +188,14 @@ Diese Version des Surface Diagnostic Toolkit for Business bietet Unterstützung 
 - Kennzeichnen von Laufwerken als potenzielle Fehler beim Speichertest
 - Entfernen eines Informationsspeicherlinks 
 
-### Version 2.121.139
+###  <a name="version-2.121.139"></a>Version 2.121.139
 *Veröffentlichungsdatum: 31. Juli 2020*<br>
 Diese Version des Surface Diagnostic Toolkit for Business bietet Unterstützung für Folgendes:
 
 - Nahtlose Supporterfahrung
 - Fehlerbehebungen
 
-### Version 2.94.139.0
+###  <a name="version-2.94.139.0"></a>Version 2.94.139.0
 *Veröffentlichungsdatum: 11. Mai 2020*<br>
 Diese Version des Surface Diagnostic Toolkit for Business bietet Unterstützung für Folgendes:
 
@@ -206,27 +206,27 @@ Diese Version des Surface Diagnostic Toolkit for Business bietet Unterstützung 
 - Statusanzeige anzeigen
 
 
-### Version 2.43.139.0
+###  <a name="version-2.43.139.0"></a>Version 2.43.139.0
 *Veröffentlichungsdatum: 21. Oktober 2019*<br>
 Diese Version des Surface Diagnostic Toolkit for Business bietet Unterstützung für Folgendes:
 
 - Surface Pro 7
 - Surface Laptop 3
 
-### Version 2.42.139.0
+###  <a name="version-2.42.139.0"></a>Version 2.42.139.0
 *Veröffentlichungsdatum: 24. September 2019*<br>
 Diese Version des Surface Diagnostic Toolkit for Business bietet Unterstützung für Folgendes: 
 - Möglichkeit zum Herunterladen von Hardwareberichten.
 - Möglichkeit, den Microsoft Support direkt über das Tool zu kontaktieren. <br>
 
-### Version 2.41.139.0
+###  <a name="version-2.41.139.0"></a>Version 2.41.139.0
 *Veröffentlichungsdatum: 24. Juni 2019*<br>
 Diese Version des Surface Diagnostic Toolkit for Business bietet Unterstützung für Folgendes: 
 - Informationen zur Treiberversion, die in Protokollen und Berichten enthalten sind.
 - Möglichkeit, Feedback zur App zu geben.<br>
 
 
-### Version 2.36.139.0
+###  <a name="version-2.36.139.0"></a>Version 2.36.139.0
 *Veröffentlichungsdatum: 26. April 2019*<br>
 Diese Version des Surface Diagnostic Toolkit for Business bietet Unterstützung für Folgendes: 
 - Erweiterte Setupoption zum Entsperren von Administratorfunktionen über die Installer-Benutzeroberfläche, ohne dass eine Befehlszeilenkonfiguration erforderlich ist.

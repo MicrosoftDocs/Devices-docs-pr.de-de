@@ -31,7 +31,7 @@ Miracast über Infrastruktur bietet eine Reihe von Vorteilen an:
 - Sie nutzt eine vorhandene Verbindung, die die Zeit für die Verbindung reduziert und einen sehr stabilen Stream bereitstellt.
 
 
-## Funktionsweise
+##  <a name="how-it-works"></a>Funktionsweise
 
 Benutzer versuchen, über Ihren WLAN-Adapter eine Verbindung mit einem Miracast-Receiver herzustellen, wie zuvor. Wenn die Liste der Miracast-Empfänger gefüllt wird, erkennt Windows10, dass der Empfänger eine Verbindung über die Infrastruktur unterstützen kann. Wählt der Benutzer einen Miracast-Empfänger, versucht Windows10, den Hostnamen des Geräts über standardmäßige DNS-Protokolle und Multicast DNS (mDNS) aufzulösen. Wenn der Name nicht über beide DNS-Methoden aufgelöst werden kann, greift Windows10 auf das Erstellen einer Miracast-Sitzung mit der standardmäßigen Wi-Fi Direct-Verbindung zurück.
 
@@ -41,7 +41,7 @@ Benutzer versuchen, über Ihren WLAN-Adapter eine Verbindung mit einem Miracast-
 
 
 
-## Aktivieren von Miracast über Infrastruktur 
+##  <a name="enabling-miracast-over-infrastructure-"></a>Aktivieren von Miracast über Infrastruktur 
 
 Wenn Sie ein Surface Hub- oder ein anderes Windows10-Gerät haben, das auf Windows10, Version 1703, aktualisiert wurde, erhalten Sie automatisch diese neue Funktionen. Um diese in Ihrer Umgebung zu nutzen, müssen Sie sicherstellen, dass folgende Elemente zu Ihrer Bereitstellung gehören:
 
@@ -59,6 +59,6 @@ Es ist wichtig zu beachten, dass Miracast über Infrastruktur kein Ersatz für d
 
 Die Einstellung **InBoxApps/WirelessProjection/PinRequired** des [SurfaceHub-Konfigurationsdienstanbieters (CSP)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/surfacehub-csp) ist nicht für Miracast für Infrastruktur erforderlich. Dies liegt daran, dass Miracast über Infrastruktur nur dann funktioniert, wenn beide Geräte mit dem gleichen Netzwerk des Unternehmens verbunden sind. Dadurch wird die Sicherheitseinschränkung, die zuvor bei Miracast fehlte, entfernt. Es wird empfohlen, dass Sie auch weiterhin diese Einstellung verwenden (falls sie zuvor verwendet wurde) da Miracast auf die reguläre Miracast zurückgreift, wenn die Infrastruktur-Verbindung nicht möglich ist. 
 
-## Häufig gestellte Fragen
+##  <a name="faq"></a>Häufig gestellte Fragen
 **Warum benötige ich weiterhin WLAN, um Miracast über die Infrastruktur zu nutzen?**<br>
 Ermittlungsanforderungen zur Identifizierung von Miracast-Empfängern können nur über den WLAN-Adapter erfolgen. Nachdem die Empfänger identifiziert wurden, kann Windows 10 die Verbindung mit dem Netzwerk versuchen.

@@ -29,7 +29,7 @@ Wenn ein Surface-Gerät im Surface Enterprise Management Mode (Semm) registriert
 
 Weitere Informationen zu Semm finden Sie unter [Microsoft Surface Enterprise-Verwaltungsmodus](https://technet.microsoft.com/itpro/surface/surface-enterprise-management-mode).
 
-## Aufheben der Registrierung eines Surface-Geräts aus Semm mit einem Surface UEFI-Reset-Paket
+##  <a name="unenroll-a-surface-device-from-semm-with-a-surface-uefi-reset-package"></a>Aufheben der Registrierung eines Surface-Geräts aus Semm mit einem Surface UEFI-Reset-Paket
 
 Das Oberflächen-UEFI-Zurücksetzungs Paket ist die primäre Methode, mit der Sie die Registrierung eines Surface-Geräts von Semm aufheben. Wie bei einem Oberflächen UEFI-Konfigurationspaket handelt es sich bei dem Zurücksetzungs Paket um eine Windows Installer-Datei (MSI), die Semm auf dem Gerät konfiguriert. Im Gegensatz zum Konfigurationspaket setzt das Reset-Paket die Oberflächen UEFI-Konfiguration auf einem Surface-Gerät auf die Standardeinstellungen zurück, entfernt das Semm-Zertifikat und die Registrierung des Geräts von Semm.
 
@@ -74,7 +74,7 @@ Führen Sie die Windows Installer-Datei (MSI-Datei) des Surface UEFI-Pakets auf 
 
 *Abbildung5. Das vorhanden sein des Microsoft Surface-Konfigurationspaket Elements in "Programme und Features" gibt an, dass das Gerät in Semm registriert ist.*
 
-## Aufhebung der Registrierung eines Surface-Geräts von Semm mit einer Wiederherstellungsanforderung
+##  <a name="unenroll-a-surface-device-from-semm-with-a-recovery-request"></a>Aufhebung der Registrierung eines Surface-Geräts von Semm mit einer Wiederherstellungsanforderung
 
 In einigen Szenarien ist ein Oberflächen UEFI-Zurücksetzungs Paket möglicherweise keine gangbare Option zum Aufheben der Registrierung eines Surface-Geräts von Semm (beispielsweise, wenn Windows nicht mehr verwendet werden kann). In diesen Szenarien können Sie die Registrierung des Geräts mithilfe einer Wiederherstellungsanforderung, die innerhalb von Surface UEFI generiert wurde, Aufhebung. Der Wiederherstellungs Anforderungsprozess kann auch auf Geräten initiiert werden, auf denen Sie nicht über das UEFI-Kennwort für die Oberfläche verfügen.
 

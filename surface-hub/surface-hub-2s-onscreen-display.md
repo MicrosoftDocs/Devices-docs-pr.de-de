@@ -22,7 +22,7 @@ ms.locfileid: "10833991"
 
 Surface Hub 2S bietet eine Bildschirmanzeige für Lautstärke, Helligkeit und Eingabesteuerung. Die Schaltfläche "Quelle" fungiert als UMSCHALTTASTE, um zwischen den Menüs Lautstärke, Helligkeit und Eingabesteuerelement zu wechseln.
 
-## So zeigen Sie die Bildschirmanzeige an
+##  <a name="to-show-the-on-screen-display"></a>So zeigen Sie die Bildschirmanzeige an
 
 - Drücken Sie die Taste **Source** für 4 Sekunden, und halten Sie sie gedrückt.
 
@@ -30,16 +30,16 @@ Surface Hub 2S bietet eine Bildschirmanzeige für Lautstärke, Helligkeit und Ei
 
  Wenn die Bildschirmanzeige angezeigt wird, verwenden Sie eine oder mehrere Schaltflächen, um die gewünschten Einstellungen zu erreichen.
  
-## So passen Sie die Lautstärke an
+##  <a name="to-adjust-volume"></a>So passen Sie die Lautstärke an
 
 - Verwenden Sie die **Lautstärke** Taste, um die Lautstärke zu erhöhen oder zu verringern.
 
-## So passen Sie die Helligkeit an
+##  <a name="to-adjust-brightness"></a>So passen Sie die Helligkeit an
 
 1. Drücken Sie die Taste **Source** erneut, um zum Menü Helligkeit zu wechseln.
 2. Verwenden Sie die **Lautstärke** Taste, um die Helligkeit zu erhöhen oder zu verringern.
 
-## So passen Sie die Eingabe an
+##  <a name="to-adjust-input"></a>So passen Sie die Eingabe an
 
 1. Drücken Sie zweimal die **Source** -Taste, um zum Menü Quelle zu wechseln.
 2. Verwenden Sie die **Lautstärke** Taste, um zwischen PC-, HDMI-und USB-C-Eingängen umzuschalten.

@@ -22,15 +22,15 @@ ms.locfileid: "10833346"
 
 Ganz gleich, ob es sich um ein kleines oder großes Unternehmen handelt: ein Surface Hub-Adoptions Plan ist wichtig, um die richtigen Anwendungsfälle zu generieren und ihren Benutzern zu helfen, sich mit dem Gerät vertraut zu machen. Schauen Sie sich diese herunterladbaren Leitfäden an, die Ihnen bei der Bereitstellung von Schulungen in Ihrer Organisation helfen sollen.
 
-## On-Demand-Schulung
+##  <a name="on-demand-training"></a>On-Demand-Schulung
 
 - [Surface Hub 2S – Einführungs-und Schulungsvideos](surface-hub-2s-adoption-videos.md)
 
-## Annahme-Toolkit
+##  <a name="adoption-toolkit"></a>Annahme-Toolkit
 
 - [Surface Hub-Einführung-Toolkit](downloads/SurfaceHubAdoptionToolKit.pdf)
 
-## Schulungshandbücher
+##  <a name="training-guides"></a>Schulungshandbücher
 
 - [Schulungshandbuch – Endbenutzer](downloads/TrainingGuide-SurfaceHub2S-EndUser.pdf)
 - [Schulungshandbuch – Power User](downloads/TrainingGuide-SurfaceHub2S-PowerUser.pdf)
@@ -39,7 +39,7 @@ Ganz gleich, ob es sich um ein kleines oder großes Unternehmen handelt: ein Sur
 
 [Alle Schulungshandbücher herunterladen](https://download.microsoft.com/download/2/2/3/2234F70E-E65A-4790-93DF-F4C373A75B8E/SurfaceHub2S-TrainerGuides-July2019.zip)
 
-## Endbenutzer Handbücher
+##  <a name="end-user-guides"></a>Endbenutzer Handbücher
 
 - [Leitfaden zur Navigation auf dem Surface Hub](downloads/Guide-SurfaceHub2S-Navigation.pptx)
 - [Leitfaden zu Office 365 auf Surface Hub](downloads/Guide-SurfaceHub2S-Office365.pptx)
@@ -48,7 +48,7 @@ Ganz gleich, ob es sich um ein kleines oder großes Unternehmen handelt: ein Sur
 
 [Alle Endnutzer Handbücher herunterladen](https://download.microsoft.com/download/E/7/F/E7FC6611-BB55-43E1-AF36-7BD5CE6E0FE0/SurfaceHub2S-EndUserGuides-July2019.zip)
 
-## Kurzübersichtskarten
+##  <a name="quick-reference-cards"></a>Kurzübersichtskarten
 
 - [Anschließen Ihres PCs](downloads/QRCConnectYourPC.pdf) 
 - [Teilnehmen an einer Teambesprechung](downloads/QRCJoinTeamsMeeting.pdf)
