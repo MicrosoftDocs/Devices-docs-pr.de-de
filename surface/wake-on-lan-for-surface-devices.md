@@ -1,7 +1,7 @@
 ---
 title: Wake-On-LAN für Surface-Geräte
-description: Erfahren Sie, wie Sie Wake On LAN verwenden können, um Geräte remote zu aktivieren, um Verwaltungsaufgaben automatisch auszuführen.
-keywords: update, deploy, driver, wol, wake-on-lan
+description: Erfahren Sie, wie Sie Wake On LAN zum Remotereaktivieren von Geräten verwenden können, um Verwaltungsaufgaben automatisch auszuführen.
+keywords: update, deploy, driver, doppelklicken, wake-on-lan
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices
@@ -13,72 +13,83 @@ ms.topic: article
 ms.reviewer: jesko
 manager: laurawi
 ms.audience: itpro
-ms.date: 3/19/2021
-ms.openlocfilehash: 9c3302616de97cf60b7d750948fed653456a7cba
-ms.sourcegitcommit: 6c362c5d5f67449f1adf4618847093eaf6ad087b
+ms.date: 6/04/2021
+ms.openlocfilehash: 83989461ca557d27740252149418056688774d3f
+ms.sourcegitcommit: 267e12897efd9d11f8c7303eaf780632741cfe77
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "11442889"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "11613799"
 ---
-# <a name="wake-on-lan-for-surface-devices"></a><span data-ttu-id="7e56a-104">Wake-On-LAN für Surface-Geräte</span><span class="sxs-lookup"><span data-stu-id="7e56a-104">Wake On LAN for Surface devices</span></span>
+# <a name="wake-on-lan-for-surface-devices"></a><span data-ttu-id="fc2d9-104">Wake-On-LAN für Surface-Geräte</span><span class="sxs-lookup"><span data-stu-id="fc2d9-104">Wake On LAN for Surface devices</span></span>
 
-<span data-ttu-id="7e56a-105">Surface-Geräte, die einen Surface -Ethernet-Adapter zum Herstellen einer Verbindung mit einem verkabelten Netzwerk verwenden, können wake On LAN (WOL) aus dem verbundenen Standbymodus nutzen.</span><span class="sxs-lookup"><span data-stu-id="7e56a-105">Surface devices that use a Surface Ethernet adapter to connect to a wired network can take advantage of Wake On LAN (WOL) from Connected Standby.</span></span> <span data-ttu-id="7e56a-106">Mit WOL können Sie Geräte remote aktivieren und automatisch Verwaltungsaufgaben mithilfe von Verwaltungslösungen wie Microsoft Endpoint Manager/Microsoft Intune ausführen.</span><span class="sxs-lookup"><span data-stu-id="7e56a-106">With WOL, you can remotely wake up devices and automatically perform management tasks using management solutions such as Microsoft Endpoint Manager/Microsoft Intune.</span></span>
+<span data-ttu-id="fc2d9-105">Um Geräte vollständig auf dem neuesten Stand zu halten, müssen IT-Administratoren In der Lage sein, Geräte zu verwalten, wenn sie nicht verwendet werden, in der Regel während der Nachtwartungsfenster.</span><span class="sxs-lookup"><span data-stu-id="fc2d9-105">To keep devices fully up to date, IT admins need to be able to manage devices when they’re not in use, typically during nightly maintenance windows.</span></span> <span data-ttu-id="fc2d9-106">Wake on LAN (MAUSTASTE) ermöglicht Administratoren das Remotereaktivieren von Geräten und das automatische Ausführen von Verwaltungsaufgaben mit Microsoft Endpoint Manager- oder Drittanbieterlösungen.</span><span class="sxs-lookup"><span data-stu-id="fc2d9-106">Wake on LAN (WOL) enables admins to remotely wake up devices and automatically perform management tasks with Microsoft Endpoint Manager or third-party solutions.</span></span>
 
-## <a name="wol-supported-devices"></a><span data-ttu-id="7e56a-107">VON WOL unterstützte Geräte</span><span class="sxs-lookup"><span data-stu-id="7e56a-107">WOL-supported devices</span></span>
+## <a name="requirements"></a><span data-ttu-id="fc2d9-107">Anforderungen</span><span class="sxs-lookup"><span data-stu-id="fc2d9-107">Requirements</span></span>
 
-- <span data-ttu-id="7e56a-108">Surface -Ethernet-Adapter</span><span class="sxs-lookup"><span data-stu-id="7e56a-108">Surface Ethernet adapter</span></span>
-- <span data-ttu-id="7e56a-109">Surface USB-C zu Ethernet und USB Adapter</span><span class="sxs-lookup"><span data-stu-id="7e56a-109">Surface USB-C to Ethernet and USB Adapter</span></span>
-- <span data-ttu-id="7e56a-110">Surface Dock 2</span><span class="sxs-lookup"><span data-stu-id="7e56a-110">Surface Dock 2</span></span>
-- <span data-ttu-id="7e56a-111">Surface Pro 6 und höher</span><span class="sxs-lookup"><span data-stu-id="7e56a-111">Surface Pro 6 and later</span></span>
-- <span data-ttu-id="7e56a-112">Surface Book (alle Generationen)</span><span class="sxs-lookup"><span data-stu-id="7e56a-112">Surface Book (all generations)</span></span>
-- <span data-ttu-id="7e56a-113">Surface Laptop (alle Generationen)</span><span class="sxs-lookup"><span data-stu-id="7e56a-113">Surface Laptop (all generations)</span></span>
-- <span data-ttu-id="7e56a-114">Surface Go (alle Generationen)</span><span class="sxs-lookup"><span data-stu-id="7e56a-114">Surface Go (all generations)</span></span>
-- <span data-ttu-id="7e56a-115">Surface Studio 2 (siehe Anhang)</span><span class="sxs-lookup"><span data-stu-id="7e56a-115">Surface Studio 2 (see Appendix)</span></span>
+<span data-ttu-id="fc2d9-108">Geräte müssen an die Stromversorgung angeschlossen sein und über eine kabelgebundene Verbindung mit einem der folgenden kompatiblen Ethernet-Adapter verfügen:</span><span class="sxs-lookup"><span data-stu-id="fc2d9-108">Devices must be connected to AC power and have a wired connection with one of the following compatible Ethernet adapters:</span></span>
 
+- <span data-ttu-id="fc2d9-109">Surface USB 3.0-Ethernet-Adapter für Ethernet-Ethernet</span><span class="sxs-lookup"><span data-stu-id="fc2d9-109">Surface USB 3.0 Gigabit Ethernet Adapter</span></span>
+- <span data-ttu-id="fc2d9-110">Surface Ethernet-Adapter</span><span class="sxs-lookup"><span data-stu-id="fc2d9-110">Surface Ethernet Adapter</span></span>
+- <span data-ttu-id="fc2d9-111">Surface USB-C zu Ethernet und USB-Adapter</span><span class="sxs-lookup"><span data-stu-id="fc2d9-111">Surface USB-C to Ethernet and USB Adapter</span></span>
+- <span data-ttu-id="fc2d9-112">Microsoft USB-C-Reiseadapter-Hub</span><span class="sxs-lookup"><span data-stu-id="fc2d9-112">Microsoft USB-C Travel Adapter Hub</span></span>
+- <span data-ttu-id="fc2d9-113">Surface Dock</span><span class="sxs-lookup"><span data-stu-id="fc2d9-113">Surface Dock</span></span>
+- <span data-ttu-id="fc2d9-114">Surface Dock 2</span><span class="sxs-lookup"><span data-stu-id="fc2d9-114">Surface Dock 2</span></span>
 
-## <a name="using-surface-wol"></a><span data-ttu-id="7e56a-116">Verwenden von Surface WOL</span><span class="sxs-lookup"><span data-stu-id="7e56a-116">Using Surface WOL</span></span>
+> [!NOTE]
+> <span data-ttu-id="fc2d9-115">Surface Dock 2 bietet die beste Unterstützung für Wake on LAN, ohne dass eine zusätzliche IT-Konfiguration erforderlich ist.</span><span class="sxs-lookup"><span data-stu-id="fc2d9-115">Surface Dock 2 provides the best support for Wake on LAN without the need for any additional IT configuration.</span></span> <span data-ttu-id="fc2d9-116">Weitere Informationen finden Sie unter ["Wake on LAN" für Surface Dock 2.](wake-on-lan-surface-dock2.md)</span><span class="sxs-lookup"><span data-stu-id="fc2d9-116">To learn more, see [Wake on LAN for Surface Dock 2](wake-on-lan-surface-dock2.md)</span></span>
 
-<span data-ttu-id="7e56a-117">IT-Administratoren können Geräte mithilfe einer Wake-on-LAN-Anforderung (Magisches Paket) auslösen, die die MAC-Adresse des Zielcomputers enthält.</span><span class="sxs-lookup"><span data-stu-id="7e56a-117">IT admins can trigger devices using a wake on LAN request (magic packet) that contains the target computer’s MAC address.</span></span> <span data-ttu-id="7e56a-118">Um ein Magisches Paket zu senden und ein Gerät mithilfe von WOL zu wecken, müssen Sie die MAC-Adresse des Zielgeräts und den Ethernetadapter kennen.</span><span class="sxs-lookup"><span data-stu-id="7e56a-118">To send a magic packet and wake up a device by using WOL, you must know the MAC address of the target device and Ethernet adapter.</span></span> <span data-ttu-id="7e56a-119">Da das Magische Paket nicht das IP-Netzwerkprotokoll verwendet, ist es nicht möglich, die IP-Adresse oder den DNS-Namen des Geräts zu verwenden.</span><span class="sxs-lookup"><span data-stu-id="7e56a-119">Because the magic packet does not use the IP network protocol, it is not possible to use the IP address or DNS name of the device.</span></span>
+## <a name="how-it-works"></a><span data-ttu-id="fc2d9-117">Funktionsweise</span><span class="sxs-lookup"><span data-stu-id="fc2d9-117">How it works</span></span>
 
-<span data-ttu-id="7e56a-120">Viele Verwaltungslösungen, z. B. Microsoft Endpoint Configuration Manager und Microsoft Store-Apps von Drittanbietern, bieten integrierte Unterstützung für WOL.</span><span class="sxs-lookup"><span data-stu-id="7e56a-120">Many management solutions, such as Microsoft Endpoint Configuration Manager and third party Microsoft Store apps provide built-in support for WOL.</span></span> <span data-ttu-id="7e56a-121">Beachten Sie, dass sich Geräte im Modus "Verbundener Standbymodus" (Standbymodus) befinden und mit Netzstrom verbunden sein müssen.</span><span class="sxs-lookup"><span data-stu-id="7e56a-121">Note that devices need to be in Connected Standby (Sleep) mode and connected to AC power.</span></span> <span data-ttu-id="7e56a-122">Weitere Informationen zum Aufwachen von Geräten mit Endpoint Configuration Manager finden Sie unter [Configure Wake on LAN - Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/clients/deploy/configure-wake-on-lan).</span><span class="sxs-lookup"><span data-stu-id="7e56a-122">To learn more about waking devices with Endpoint Configuration Manager, see [Configure Wake on LAN - Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/clients/deploy/configure-wake-on-lan).</span></span>
+<span data-ttu-id="fc2d9-118">Wenn Surface-Geräte nicht verwendet werden, treten sie in einen leerlauffähigen, energiesparend zustandsarmen Zustand ein, der als moderner Standbymodus oder verbundener Standbymodus bezeichnet wird.</span><span class="sxs-lookup"><span data-stu-id="fc2d9-118">When not in use, Surface devices enter an idle, low powered state known as Modern Standby or Connected Standby.</span></span> <span data-ttu-id="fc2d9-119">IT-Administratoren können Geräte mithilfe einer Reaktivierungsanforderung (Paket), die die MAC-Adresse (Media Access Control) des Surface-Zielgeräts enthält, remote auslösen.</span><span class="sxs-lookup"><span data-stu-id="fc2d9-119">IT admins can remotely trigger devices using a wake request (magic packet) that contains the Media Access Control (MAC) address of the target Surface device.</span></span> <span data-ttu-id="fc2d9-120">Viele Verwaltungslösungen, z. B. Microsoft Endpoint Configuration Manager- und Drittanbieter-Microsoft Store-Apps, bieten integrierte Unterstützung für XAML.</span><span class="sxs-lookup"><span data-stu-id="fc2d9-120">Many management solutions, such as Microsoft Endpoint Configuration Manager and third-party Microsoft Store apps provide built-in support for WOL.</span></span> <span data-ttu-id="fc2d9-121">Weitere Informationen zum Aufwachen von Geräten mit Endpoint Configuration Manager finden Sie unter [Konfigurieren der Aktivierung im LAN – Configuration Manager.](/mem/configmgr/core/clients/deploy/configure-wake-on-lan)</span><span class="sxs-lookup"><span data-stu-id="fc2d9-121">To learn more about waking devices with Endpoint Configuration Manager, see [Configure Wake on LAN - Configuration Manager](/mem/configmgr/core/clients/deploy/configure-wake-on-lan).</span></span>
 
+<span data-ttu-id="fc2d9-122">Die Unterstützung für Wake on LAN variiert je nach Ruhezustand: Verbundener Standbymodus oder Ruhezustand (S4-Energiezustand).</span><span class="sxs-lookup"><span data-stu-id="fc2d9-122">Support for Wake on LAN varies depending on sleep state:  Connected Standby or Hibernation (S4 power state).</span></span>
 
-### <a name="to-check-wol-is-enabled-on-your-device"></a><span data-ttu-id="7e56a-123">So überprüfen Sie, ob WOL auf Ihrem Gerät aktiviert ist</span><span class="sxs-lookup"><span data-stu-id="7e56a-123">To check WOL is enabled on your device</span></span>
+## <a name="connected-standby"></a><span data-ttu-id="fc2d9-123">Verbundener Standbymodus</span><span class="sxs-lookup"><span data-stu-id="fc2d9-123">Connected Standby</span></span>
 
-1. <span data-ttu-id="7e56a-124">Wählen Sie auf Ihrem ethernetgebundenen Gerät den Netzwerkadapter aus, und wählen Sie dann **Eigenschaften aus.**</span><span class="sxs-lookup"><span data-stu-id="7e56a-124">On your Ethernet connected device, select your network adapter, and then select **Properties**.</span></span>
+<span data-ttu-id="fc2d9-124">Standardmäßig unterstützt Windows 10 Wake on LAN für Surface-Geräte im verbundenen Standbymodus.</span><span class="sxs-lookup"><span data-stu-id="fc2d9-124">By default, Windows 10 supports Wake on LAN for Surface devices in Connected Standby.</span></span>
 
-   > [!div class="mx-imgBorder"]
-   > ![Surface Ethernet Adapter](images/surface-ethernet.png)
+### <a name="supported-surface-devices---connected-standby"></a><span data-ttu-id="fc2d9-125">Unterstützte Surface-Geräte – Verbundener Standbymodus</span><span class="sxs-lookup"><span data-stu-id="fc2d9-125">Supported Surface devices - Connected Standby</span></span>
 
-2. <span data-ttu-id="7e56a-126">Wählen **Sie Erweitert**konfigurieren  >  **aus.**</span><span class="sxs-lookup"><span data-stu-id="7e56a-126">Select **Configure** > **Advanced**.</span></span>
-3. <span data-ttu-id="7e56a-127">Scrollen Sie zu **Modern Standby WoL Magic Packet,** und stellen Sie **sicher, dass Enabled** ausgewählt ist.</span><span class="sxs-lookup"><span data-stu-id="7e56a-127">Scroll to **Modern Standby WoL Magic Packet** and ensure **Enabled** is selected.</span></span>
+- <span data-ttu-id="fc2d9-126">Surface Laptop 4 (nur Intel-Prozessoren)</span><span class="sxs-lookup"><span data-stu-id="fc2d9-126">Surface Laptop 4 (Intel processors only)</span></span>
+- <span data-ttu-id="fc2d9-127">Surface Laptop 3 (nur Intel-Prozessoren)</span><span class="sxs-lookup"><span data-stu-id="fc2d9-127">Surface Laptop 3 (Intel processors only)</span></span>
+- <span data-ttu-id="fc2d9-128">Surface Pro 7+</span><span class="sxs-lookup"><span data-stu-id="fc2d9-128">Surface Pro 7+</span></span>
+- <span data-ttu-id="fc2d9-129">Surface Pro 7</span><span class="sxs-lookup"><span data-stu-id="fc2d9-129">Surface Pro 7</span></span>
+- <span data-ttu-id="fc2d9-130">Surface Pro X</span><span class="sxs-lookup"><span data-stu-id="fc2d9-130">Surface Pro X</span></span>
+- <span data-ttu-id="fc2d9-131">Surface Go 2</span><span class="sxs-lookup"><span data-stu-id="fc2d9-131">Surface Go 2</span></span>
+- <span data-ttu-id="fc2d9-132">Surface Laptop Gehen</span><span class="sxs-lookup"><span data-stu-id="fc2d9-132">Surface Laptop Go</span></span>
+- <span data-ttu-id="fc2d9-133">Surface Book 3</span><span class="sxs-lookup"><span data-stu-id="fc2d9-133">Surface Book 3</span></span>
 
-     ![Überprüfen, ob "WOL" auf Ihrem Gerät aktiviert ist](images/ethernet-wol-setting.png)
+## <a name="hibernation"></a><span data-ttu-id="fc2d9-134">Ruhezustand</span><span class="sxs-lookup"><span data-stu-id="fc2d9-134">Hibernation</span></span>
 
-## <a name="appendix-surface-studio-2"></a><span data-ttu-id="7e56a-129">Anhang: Surface Studio 2</span><span class="sxs-lookup"><span data-stu-id="7e56a-129">Appendix: Surface Studio 2</span></span>
+<span data-ttu-id="fc2d9-135">Um Geräte aus dem Ruhezustand zu reaktivieren, muss eine UEFI-Richtlinieneinstellung über [surface Enterprise Management Mode](surface-enterprise-management-mode.md) (SEMM) aktiviert werden (nicht erforderlich für Geräte, die mit Surface Dock 2 verbunden sind).</span><span class="sxs-lookup"><span data-stu-id="fc2d9-135">To wake devices out of Hibernation requires enabling a UEFI policy setting via [Surface Enterprise Management Mode](surface-enterprise-management-mode.md) (SEMM) (not required for devices connected to Surface Dock 2).</span></span>
 
-<span data-ttu-id="7e56a-130">Verwenden Sie das folgende Verfahren, um WOL auf Surface Studio 2 zu aktivieren.</span><span class="sxs-lookup"><span data-stu-id="7e56a-130">To enable WOL on Surface Studio 2, use the following procedure.</span></span>
+### <a name="supported-surface-devices---hibernation"></a><span data-ttu-id="fc2d9-136">Unterstützte Surface-Geräte – Ruhezustand</span><span class="sxs-lookup"><span data-stu-id="fc2d9-136">Supported Surface devices - Hibernation</span></span>
 
-1. <span data-ttu-id="7e56a-131">Erstellen Sie die folgenden Registrierungsschlüssel:</span><span class="sxs-lookup"><span data-stu-id="7e56a-131">Create the following registry keys:</span></span>
+- <span data-ttu-id="fc2d9-137">Surface Laptop 4 (nur Intel-Prozessoren)</span><span class="sxs-lookup"><span data-stu-id="fc2d9-137">Surface Laptop 4 (Intel processors only)</span></span>
+- <span data-ttu-id="fc2d9-138">Surface Laptop 3 (nur Intel-Prozessoren)</span><span class="sxs-lookup"><span data-stu-id="fc2d9-138">Surface Laptop 3 (Intel processors only)</span></span>
+- <span data-ttu-id="fc2d9-139">Surface Pro 7+</span><span class="sxs-lookup"><span data-stu-id="fc2d9-139">Surface Pro 7+</span></span>
+- <span data-ttu-id="fc2d9-140">Surface Pro 7</span><span class="sxs-lookup"><span data-stu-id="fc2d9-140">Surface Pro 7</span></span>
+- <span data-ttu-id="fc2d9-141">Surface Laptop Gehen</span><span class="sxs-lookup"><span data-stu-id="fc2d9-141">Surface Laptop Go</span></span>
+- <span data-ttu-id="fc2d9-142">Surface Book 3</span><span class="sxs-lookup"><span data-stu-id="fc2d9-142">Surface Book 3</span></span>
 
-   ```console
-   ; Set CONNECTIVITYINSTANDBY to 1:
-   [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\F15576E8-98B7-4186-B944-EAFA664402D9]
-   "Attributes"=dword:00000001
-   ; Set EnforceDisconnectedStandby to 0 and AllowSystemRequiredPowerRequests to 1:
-   [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power]
-   "EnforceDisconnectedStandby"=dword:00000000
-   "AllowSystemRequiredPowerRequests"=dword:00000001
-   ```
+### <a name="to-enable-wake-on-lan-uefi-setting"></a><span data-ttu-id="fc2d9-143">So aktivieren Sie die UEFI-Einstellung "Wake on LAN"</span><span class="sxs-lookup"><span data-stu-id="fc2d9-143">To enable Wake on LAN UEFI setting</span></span>
 
-2. <span data-ttu-id="7e56a-132">Führen Sie den folgenden Befehl aus</span><span class="sxs-lookup"><span data-stu-id="7e56a-132">Run the following command</span></span>
+<span data-ttu-id="fc2d9-144">Um die UEFI-Einstellung "Wake on LAN" zu aktivieren, müssen Sie Zielgeräte bei SEMM registrieren, ein Konfigurationspaket erstellen und das Paket auf die Geräte anwenden.</span><span class="sxs-lookup"><span data-stu-id="fc2d9-144">To enable the Wake on LAN UEFI setting you need to enroll target devices into SEMM, create a configuration package, and apply the package to the devices.</span></span> <span data-ttu-id="fc2d9-145">Weitere Informationen finden Sie unter:</span><span class="sxs-lookup"><span data-stu-id="fc2d9-145">For more information, refer to:</span></span>
 
-    ```powercfg /SETACVALUEINDEX SCHEME_BALANCED SUB_NONE CONNECTIVITYINSTANDBY 1```
+- [<span data-ttu-id="fc2d9-146">Surface Enterprise Management-Modus</span><span class="sxs-lookup"><span data-stu-id="fc2d9-146">Surface Enterprise Management Mode</span></span>](surface-enterprise-management-mode.md)
+- [<span data-ttu-id="fc2d9-147">Registrieren und Konfigurieren von Surface-Geräten mit SEMM</span><span class="sxs-lookup"><span data-stu-id="fc2d9-147">Enroll and configure Surface devices with SEMM</span></span>](enroll-and-configure-surface-devices-with-semm.md)
 
+1. <span data-ttu-id="fc2d9-148">Laden Sie [**Surface UEFI Configurator**](https://www.microsoft.com/download/details.aspx?id=46703)herunter, und installieren Sie es.</span><span class="sxs-lookup"><span data-stu-id="fc2d9-148">Download and install [**Surface UEFI Configurator**](https://www.microsoft.com/download/details.aspx?id=46703).</span></span>
+2. <span data-ttu-id="fc2d9-149">Wählen \*\*\*\* Sie  >  **Start Configuration Package**  >  **Create**+ Certificate  > **Protection**aus.</span><span class="sxs-lookup"><span data-stu-id="fc2d9-149">Select **Start** > **Configuration Package** > **Create** >**+ Certificate Protection**.</span></span>
+3. <span data-ttu-id="fc2d9-150">Wechseln Sie zu **"Erweiterte Einstellungen",** und wechseln Sie **"Wake on LAN"** zu **"Ein".**</span><span class="sxs-lookup"><span data-stu-id="fc2d9-150">Go to **Advanced settings** and switch **Wake on LAN** to **On**.</span></span>
+4. <span data-ttu-id="fc2d9-151">Wenden Sie das Paket auf Zielgeräte an.</span><span class="sxs-lookup"><span data-stu-id="fc2d9-151">Apply the package to target devices.</span></span>
 
-## <a name="learn-more"></a><span data-ttu-id="7e56a-133">Weitere Informationen</span><span class="sxs-lookup"><span data-stu-id="7e56a-133">Learn more</span></span>
+    > [!div class="mx-imgBorder"]
+    > ![Aktivieren der UEFI-Richtlinieneinstellung für die Aktivierung im LAN](images/wol-uefi.png)
 
-- [<span data-ttu-id="7e56a-134">Microsoft Surface USB-C-zu-Ethernet- und #A0</span><span class="sxs-lookup"><span data-stu-id="7e56a-134">Microsoft Surface USB-C to Ethernet and USB Adapter</span></span>](https://www.microsoft.com/p/surface-usb-c-to-ethernet-and-usb-adapter/8wt81cglrblp?)
+## <a name="learn-more"></a><span data-ttu-id="fc2d9-153">Mehr erfahren</span><span class="sxs-lookup"><span data-stu-id="fc2d9-153">Learn more</span></span>
 
-- [<span data-ttu-id="7e56a-135">Surface USB 3.0 Gigabit Ethernet Adapter</span><span class="sxs-lookup"><span data-stu-id="7e56a-135">Surface USB 3.0 Gigabit Ethernet Adapter</span></span>](https://www.microsoft.com/p/surface-usb-30-gigabit-ethernet-adapter/8xn9fqvzbvq0?)
+- [<span data-ttu-id="fc2d9-154">Aktivieren von LAN für Surface Dock 2</span><span class="sxs-lookup"><span data-stu-id="fc2d9-154">Wake on LAN for Surface Dock 2</span></span>](wake-on-lan-surface-dock2.md)
+- [<span data-ttu-id="fc2d9-155">Microsoft Surface USB-C zu Ethernet und USB-Adapter</span><span class="sxs-lookup"><span data-stu-id="fc2d9-155">Microsoft Surface USB-C to Ethernet and USB Adapter</span></span>](https://www.microsoft.com/p/surface-usb-c-to-ethernet-and-usb-adapter/8wt81cglrblp?)
+- [<span data-ttu-id="fc2d9-156">Surface USB 3.0-Ethernet-Adapter für Ethernet-Ethernet</span><span class="sxs-lookup"><span data-stu-id="fc2d9-156">Surface USB 3.0 Gigabit Ethernet Adapter</span></span>](https://www.microsoft.com/p/surface-usb-30-gigabit-ethernet-adapter/8xn9fqvzbvq0?)
