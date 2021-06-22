@@ -1,8 +1,8 @@
 ---
-title: Erstellen von Bereitstellungspaketen (Surface Hub)
+title: Erstellen von Bereitstellungspaketen
 description: Für Windows 10 können Einstellungen, die die Registrierung oder eine Konfigurationsdienstanbieter (configuration service provider, CSP) verwenden, mithilfe von Bereitstellungspaketen konfiguriert werden.
 ms.assetid: 8AA25BD4-8A8F-4B95-9268-504A49BA5345
-ms.reviewer: ''
+ms.reviewer: dpandre
 manager: laurawi
 keywords: Zertifikat hinzufügen, Bereitstellungspaket
 ms.prod: surface-hub
@@ -10,320 +10,265 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 03/16/2019
+ms.date: 05/28/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 5e0714d284cc5c8207633719ec8fb52cec9f95cb
-ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
+appliesto:
+- Surface Hub
+- Surface Hub 2S
+ms.openlocfilehash: 087826a7a0cba7a47accc0d3d66714289f2ae9d2
+ms.sourcegitcommit: 267e12897efd9d11f8c7303eaf780632741cfe77
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "11576985"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "11613966"
 ---
-# <a name="create-provisioning-packages-surface-hub"></a>Erstellen von Bereitstellungspaketen (Surface Hub)
+# <a name="create-provisioning-packages-for-surface-hub"></a>Erstellen von Bereitstellungspaketen für Surface Hub
 
-In diesem Thema wird erläutert, wie Sie mit dem Windows Configuration Designer ein Bereitstellungspaket erstellen und auf Surface Hub-Geräte anwenden. Sie können Bereitstellungspakete für Surface Hub verwenden, um Zertifikate hinzuzufügen, UWP (Universelle Windows-Plattform)-Apps zu installieren und Richtlinien und Einstellungen anzupassen.
+Mit Bereitstellungspaketen können Sie die Bereitstellung wichtiger Features automatisieren und so eine konsistente Oberfläche für alle Surface Hubs in Ihrer Organisation bereitstellen.  Mit Windows Configuration Designer (WCD) auf einem separaten PC können Sie die folgenden Aufgaben ausführen:
 
-Sie können ein Bereitstellungspaket während der Erstausführungseinrichtung per USB-Speicherstick oder über die **Einstellungs-App** anwenden. 
-
-
-## <a name="advantages"></a>Vorteile
--   Konfigurieren Sie schnell die Geräte ohne Verwendung eines Mobile Gerätemanagement (MDM)-Anbieters.
-
--   Keine Netzwerkverbindung erforderlich.
-
--   Einfache Anwendung
-
-[Erfahren Sie mehr über die Vorteile und Verwendungsmöglichkeiten von Bereitstellungspaketen.](https://technet.microsoft.com/itpro/windows/configure/provisioning-packages)
-
-
-## <a name="requirements"></a>Anforderungen 
-
-Sie benötigen Folgendes, um ein Bereitstellungspaket zu erstellen und auf einen Surface Hub anzuwenden:
-
--   Der Windows-Konfigurations-Designer, der aus dem Microsoft Store oder aus dem Windows 10 Assessment and Deployment Kit (ADK) installiert werden kann. [Erfahren Sie, wie Sie Windows-Konfigurations-Designer installieren.](https://technet.microsoft.com/itpro/windows/configure/provisioning-install-icd)
--   Ein USB-Stick.
--   Wenn Sie das Paket mithilfe der **Einstellungs-App** anwenden, benötigen Sie Geräteadministrator-Anmeldeinformationen.
-
-Sie erstellen das Bereitstellungspaket auf einem PC mit Windows10, speichern das Paket auf einem USB-Laufwerk und stellen es dann für den Surface Hub bereit.
-
-
-## <a name="supported-items-for-surface-hub-provisioning-packages"></a>Unterstützte Elemente für Surface Hub-Bereitstellungspakete
-
-Mit dem **Bereitstellen von Surface Hub-Geräte** -Assistenten können Sie:
-
-- In Active Directory, Azure Active Directory oder MDM registrieren. 
-- Ein Geräteadministratorkonto erstellen 
+- Registrieren bei Active Directory oder Azure Active Directory
+- Erstellen eines Geräteadministratorkontos
 - Anwendungen und Zertifikate hinzufügen
 - Proxyeinstellungen konfigurieren
 - Eine Konfigurationsdatei für Surface Hub hinzufügen
+- Konfigurieren von [Konfigurationsdienstanbietereinstellungen (Configuration Service Provider, CSP)](/windows/client-management/mdm/surfacehub-csp)
 
->[!WARNING]
->Sie müssen Windows-Konfigurations-Designer unter Windows10 ausführen, um die Azure Active Directory-Registrierung mit dem Assistenten zu konfigurieren.
+## <a name="overview"></a>Übersicht
 
-Mit dem erweiterten Bereitstellungseditor können Sie diese Elemente zu den Bereitstellungspaketen für Surface Hub hinzufügen:
+1. Installieren Sie auf einem separaten PC, auf dem Windows 10 ausgeführt wird, [Windows Konfigurations-Designer](https://www.microsoft.com/store/apps/9nblggh4tx22) aus dem Microsoft Store.
+1. Wählen Sie [**"Bereitstellen Surface Hub Geräte"**](#use-surface-hub-provisioning-wizard) aus, um allgemeine Einstellungen mithilfe eines Assistenten zu konfigurieren. Oder wählen Sie ["Erweiterte Bereitstellung"](#use-advanced-provisioning) aus, um alle möglichen Einstellungen anzuzeigen und zu konfigurieren.
+1. Erstellen Sie das Bereitstellungspaket, und speichern Sie es auf einem USB-Laufwerk.
+1. Stellen Sie das Paket während des Setups bei der ersten Ausführung oder über die Einstellungen App für Ihre Surface Hub bereit. Weitere Informationen finden Sie unter [Erstellen eines Bereitstellungspakets für Windows 10.](/windows/configuration/provisioning-packages/provisioning-create-package)
 
-- **Richtlinien**: Surface Hub unterstützt eine Teilmenge der Richtlinien im [Konfigurationsdienstanbieter (CSP) für Richtlinien](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#surfacehubpolicies). 
-- **Einstellungen** – Sie können alle Einstellungen im [SurfaceHub-Konfigurationsdienstanbieter](https://msdn.microsoft.com/library/windows/hardware/mt608323.aspx) konfigurieren.
+## <a name="use-surface-hub-provisioning-wizard"></a>Verwenden Surface Hub Bereitstellungs-Assistenten
 
->[!TIP]
-> Verwenden Sie den Assistenten, um ein Paket mit allgemeinen Einstellungen zu erstellen, und wechseln Sie dann zum erweiterten Editor, um weitere Einstellungen hinzuzufügen.
->
->![Öffnen des erweiterten Editors](images/icd-simple-edit.png)
-
-## <a name="use-the-surface-hub-provisioning-wizard"></a>Verwendung des Surface Hub-Bereitstellungsassistenten
-
-Nachdem Sie den [Windows-Konfigurations-Designer](https://technet.microsoft.com/itpro/windows/configure/provisioning-install-icd) installiert haben, können Sie ein Bereitstellungspaket erstellen.
-
-### <a name="create-the-provisioning-package"></a>Erstellen des Bereitstellungspakets 
-
-1. Öffnen Sie Windows-Konfigurations-Designer:
-   - Geben Sie auf dem Startbildschirm oder im Suchbereich des Startmenüs „Windows-Konfigurations-Designer“ ein, und klicken Sie auf die Windows-Konfigurations-Designer-Verknüpfung, 
+1. Öffnen Sie Windows Konfigurations-Designer, und wählen Sie **"Bereitstellung Surface Hub Geräte"** aus.<br>
+    ![Verwendung des Surface Hub-Bereitstellungsassistenten](images/sh-prov-start.png)
     
-     oder
-    
-   - Wenn Sie Windows-Konfigurations-Designer aus dem ADK installiert haben, navigieren Sie zu `C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86` (auf einem x64-Computer) oder `C:\Program Files\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86\ICD.exe` (auf einem x86-Computer), und doppelklicken Sie anschließend auf **ICD.exe**.
+2. Benennen Sie Ihr Projekt, und wählen Sie **"Weiter"** aus.
 
-2. Klicken Sie auf **Bereitstellen von Surface Hub-Geräten**.
+### <a name="add-certificates"></a>Hinzufügen von Zertifikaten
 
-3. Benennen Sie Ihr Projekt, und klicken Sie auf **Weiter**.
+> [!div class="mx-imgBorder"]
+> ![Zertifikat hinzufügen](images/sh-prov-cert.png)
 
-### <a name="configure-settings"></a>Konfigurieren von Einstellungen
+Um das Gerät mit einem Zertifikat bereitzustellen, wählen Sie **"Zertifikat hinzufügen"** aus. Geben Sie einen Namen für das Zertifikat ein, und navigieren Sie dann, um das zu verwendende Zertifikat auszuwählen.  Erweiterte Bereitstellungsoptionen finden Sie im Abschnitt unter ["Hinzufügen eines Zertifikats zu Ihrem Paket".](#add-a-certificate-to-your-package)
 
-<table>
-<tr><td style="width:45%" valign="top"><img src="images/one.png" alt="step one"/> <img src="images/add-certificates.png" alt="add certificates"/></br></br>Um dem Gerät ein Zertifikat bereitzustellen, klicken Sie auf <strong>Add a certificate</strong>. Geben Sie einen Namen für das Zertifikat ein, navigieren Sie zum Zertifikat, das verwendet werden soll, und wählen Sie es aus.</td><td><img src="images/add-certificates-details.png" alt="add a certificate"/></td></tr> 
-<tr><td style="width:45%" valign="top"><img src="images/two.png" alt="step two"/>  <img src="images/proxy.png" alt="configure proxy settings"/></br></br>Umschalten zwischen <strong>Ja</strong> oder <strong>Nein</strong> für Proxyeinstellungen. Die Standardkonfiguration für Surface Hub ist es, Proxyeinstellungen automatisch zuerkennen, damit Sie <strong>Nein</strong> auswählen können, wenn Sie möchten. Wenn Ihre Infrastruktur jedoch zuvor die Verwendung eines Proxyservers erfordert hat und diese Anforderung beseitigt hat, können Sie ein Bereitstellungspaket verwenden, um Ihre Surface Hub-Geräte auf die Standardeinstellungen wiederherzustellen, indem Sie <strong>Ja</strong> und <strong>Einstellungen automatisch erkennen</strong> auswählen. </br></br>Wenn Sie auf <strong>Ja</strong> umschalten, können Sie auswählen, dass die Proxyeinstellungen automatisch erkannt werden, oder Sie können die Einstellungen manuell konfigurieren, indem Sie eine URL oder eine statische Proxyserveradresse in ein Setup-Skript eingeben. Sie können auch angeben, ob der Proxyserver für lokale Adressen verwendet werden soll, und Ausnahmen (Adressen, die Surface Hub eine Verbindung herstellen soll direkt und ohne Verwendung des Proxyservers) festlegen.  </td><td><img src="images/proxy-details.png" alt="proxy configuration details"/></td></tr>
-<tr><td style="width:45%" valign="top"><img src="images/three.png" alt="step three"/>  <img src="images/set-up-device-admins.png" alt="device admins"/></br></br>Sie können das Gerät in Active Directory registrieren und eine Sicherheitsgruppe angeben, um die Einstellungs-App zu verwenden und in der Azure Active Directory zu registrieren, sodass globale Administratoren die Einstellungs-App verwenden oder ein lokales Administratorkonto auf dem Gerät erstellen können.</br></br>Um das Gerät in Active Directory zu registrieren, geben Sie die Anmeldeinformationen für ein Konto mit den geringsten Rechten an, um das Gerät mit der Domäne zu verknüpfen, und geben Sie die Sicherheitsgruppe an, um über die Administratoranmeldeinformationen für Surface Hub zu verfügen. Wenn ein Bereitstellungspaket, das ein Gerät in der Active Directory registriert, auf ein Surface Hub angewendet werden soll, das zurückgesetzt wurde, kann nur das gleiche Domänenkonto verwendet werden, wenn das aufgeführte Konto ein Domänenadministrator oder das gleiche Konto ist, das Surface Hub ursprünglich eingerichtet hatte. Andernfalls muss ein anderes Domänenkonto im Bereitstellungspaket verwendet werden.</br></br>Bevor Sie einen Assistenten in Windows-Konfigurations-Designer verwenden, um die Azure AD-Massenregistrierung zu konfigurieren, <a href="https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup" data-raw-source="[set up Azure AD join in your organization](https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup)">richten Sie die den Beitritt zu Azure AD in Ihrer Organisation ein</a>. Die Einstellung <strong>Maximale Anzahl von Geräten pro Benutzer</strong> in Ihrem Azure AD-Mandanten bestimmt, wie oft das Massen-Token im Assistenten verwendet werden kann. Um das Gerät in Azure AD zu registrieren, wählen Sie diese Option aus, und geben Sie einen aussagekräftigen Namen für das Massen-Token ein, das Sie vom Assistenten erhalten. Legen Sie ein Ablaufdatum für das Token fest. (Das Maximum liegt bei 30Tagen ab Erhalt des Tokens.) Klicken Sie auf <strong>Get bulk token</strong>. Geben Sie im&#39;Sie anmelden ein Konto ein, das über Berechtigungen zum Beitreten eines Geräts zu Azure AD verfügt, und geben Sie dann <strong> </strong> das Kennwort ein. Klicken Sie auf <strong>Akzeptieren</strong>, um Windows-Konfigurations-Designer die erforderlichen Berechtigungen zu erteilen.</br></br>Um ein lokales Administratorkonto zu erstellen, wählen Sie diese Option aus, und geben Sie einen Benutzernamen und ein Kennwort ein. </br></br><strong>Wichtig:</strong> Wenn Sie ein lokales Konto im Bereitstellungspaket erstellen, müssen Sie mithilfe der App <strong>Einstellungen</strong> alle 42Tage das Kennwort ändern. Wenn das Kennwort innerhalb dieses Zeitraums nicht geändert wird, wird das Konto möglicherweise gesperrt, und eine Anmeldung ist nicht möglich.  </td><td><img src="images/set-up-device-admins-details.png" alt="join Active Directory, Azure AD, or create a local admin account"/></td></tr>
-<tr><td style="width:45%" valign="top"><img src="images/four.png" alt="step four"/> <img src="images/enroll-mdm.png" alt="enroll in device management"/></br></br>Verwenden Sie diesen Abschnitt, um sich neben Intune bei MDM-Anbietern zu registrieren. Verwenden Sie für die Intune-Registrierung azure AD join im vorherigen Abschnitt mit <a href="https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment" data-raw-source="[automatic Intune enrollment](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)"> automatischer Intune-Registrierung. </a></br></br>Umschalten zwischen <strong>Ja</strong> oder <strong>Nein</strong> für die Registrierung in MDM </br></br>Wenn Sie auf <strong>Ja</strong> umschalten, müssen Sie ein Servicekonto und das Kennwort oder den Fingerabdruck des Zertifikats, das berechtigt ist, das Gerät zu registrieren und auch die Art der Authentifizierung angeben. Wenn von Ihrem MDM-Anbieter vorausgesetzt, müssen Sie auch die URLs für den Erkennungs-, Registrierungs-, und Richtlinienservice eingeben. <a href="manage-settings-with-mdm-for-surface-hub.md" data-raw-source="[Learn more about managing Surface Hub with MDM.](manage-settings-with-mdm-for-surface-hub.md)">Erfahren Sie mehr über das Verwalten von Surface Hub mit MDM</a></td><td><img src="images/enroll-mdm-details.png" alt="enroll in mobile device management"/></td></tr>
-<tr><td style="width:45%" valign="top"><img src="images/five.png" alt="step five"/> <img src="images/add-applications.png" alt="add applications"/></br></br>Sie können mehrere Universelle Windows-Plattform (UWP)-Apps in einem Bereitstellungspaket installieren. Hilfe zu diesen Einstellungen erhalten Sie unter <a href="https://technet.microsoft.com/itpro/windows/configure/provision-pcs-with-apps" data-raw-source="[Provision PCs with apps](https://technet.microsoft.com/itpro/windows/configure/provision-pcs-with-apps)">Bereitstellen von Apps für PCs</a>. </br></br><strong>Wichtig: Obwohl Sie über die Assistentenschnittstelle eine klassische Win32-App auswählen können, schließen Sie nur UWP-Apps in ein Bereitstellungspaket ein, das auf </strong> Surface Hub. Wenn Sie eine klassische Win32-App hinzufügen, wird die Bereitstellung fehlschlagen. </td><td><img src="images/add-applications-details.png" alt="add an application"/></td></tr>
-<tr><td style="width:45%" valign="top"><img src="images/six.png" alt="step six"/>  <img src="images/add-config-file.png" alt="Add configuration file"/></br></br>Sie&#39;in diesem Schritt keine Einstellungen konfigurieren. Es enthält Hinweise für das Hinzufügen einer Konfigurationsdatei, die eine Liste von Gerätekonten enthält. Die Konfigurationsdatei darf keine Spaltenüberschriften enthalten. Wenn eine Surface Hub-Konfigurationsdatei bei der Anwendung eines Bereitstellungspakets auf Surface-Hub auf dem USB-Laufwerk enthalten ist, können Sie das Konto und den Anzeigenamen für das Gerät aus der Datei auswählen. Unter <a href="#sample-configuration-file" data-raw-source="[Sample configuration file](#sample-configuration-file)">Beispiel-Konfigurationsdatei</a> finden Sie ein Beispiel.</br></br><strong>Wichtig: Die Konfigurationsdatei kann nur während der out-of-box Setup Experience (OOBE) angewendet werden und kann nur mit Bereitstellungspaketen verwendet werden, die mit dem Windows Configuration Designer erstellt wurden, der mit Windows 10, Version </strong> 1703, veröffentlicht wurde.  </td><td><img src="images/add-config-file-details.png" alt="Add a Surface Hub configuration file"/></td></tr>
-<tr><td style="width:45%" valign="top">  <img src="images/finish.png" alt="finish creating your package"/></br></br>Sie können ein Kennwort zum Schützen des Bereitstellungspakets festlegen. Sie müssen dieses Kennwort eingeben, wenn Sie das Bereitstellungspaket auf ein Gerät anwenden.</td><td><img src="images/finish-details.png" alt="Protect your package"/></td></tr>
-</table>
+### <a name="configure-proxy-settings"></a>Proxyeinstellungen konfigurieren
 
-Klicken Sie auf **Erstellen**, wenn Sie fertig sind. Es dauert nur wenige Sekunden. Wenn das Paket erstellt wurde, wird der Speicherort des Pakets als Hyperlink am unteren Rand der Seite angezeigt.
+> [!div class="mx-imgBorder"]
+> ![Proxyeinstellungen konfigurieren](images/sh-prov-proxy.png)
 
-## <a name="sample-configuration-file"></a>Konfigurationsdatei-Beispiel
+1. Umschalten zwischen **Ja** oder **Nein** für Proxyeinstellungen. Standardmäßig erkennt Surface Hub automatisch Proxyeinstellungen. Wenn Ihre Infrastruktur jedoch zuvor die Verwendung eines Proxyservers erfordert hat und diese Anforderung beseitigt hat, können Sie ein Bereitstellungspaket verwenden, um Ihre Surface Hub-Geräte auf die Standardeinstellungen wiederherzustellen, indem Sie **Ja** und **Einstellungen automatisch erkennen** auswählen.
+2. Wenn Sie **"Ja"** umschalten, können Sie auswählen, ob Proxyeinstellungen automatisch erkannt oder die Einstellungen manuell konfiguriert werden sollen, indem Sie eine der folgenden Einstellungen eingeben:
 
-Eine Konfigurationsdatei für Surface Hub enthält eine Liste der Gerätekonten, die Ihr Gerät verwenden kann, um mit Exchange und Skype for Business zu verbinden. Wenn Sie ein Bereitstellungspaket auf Surface Hub anwenden, können Sie eine Konfigurationsdatei an das Stammverzeichnis des USB-Speichersticks hinzufügen, und dann das gewünschte Konto für das Gerät auswählen. Die Konfigurationsdatei kann nur während der Einrichtung der Out-of-Box-Experience (OOBE) angewendet werden, und kann nur mithilfe von Bereitstellungspaketen erstellt, mit dem Windows-Konfigurations-Designer mit Windows10, Version 1703 veröffentlicht verwendet werden.
+    - Eine URL zu einem Setupskript.
+    - Eine statische Proxyserveradresse und Portinformationen.
 
-Verwenden Sie Microsoft Excel oder einen anderen CSV-Editor zum Erstellen einer CSV-Datei mit dem Namen `SurfaceHubConfiguration.csv`. Geben Sie in der Datei eine Liste von Gerätekonten und Namen im folgenden Format ein:
+3. Wenn Sie ein Setupskript oder einen Proxyserver verwenden möchten, deaktivieren Sie **"Einstellungen automatisch erkennen".** Sie können ein Setupskript *oder* einen Proxyserver verwenden, nicht beides.
+4. Geben Sie Ausnahmen ein (Adressen, mit denen Surface Hub eine direkte Verbindung herstellen sollen, ohne den Proxyserver zu verwenden). **Beispiel:** *.office365.com
+5. Identifizieren Sie, ob der Proxyserver für lokale Adressen verwendet werden soll.
 
-```console
-<DeviceAccountName>,<DeviceAccountPassword>,<FriendlyName>
-```
->[!IMPORTANT]
->Da die Konfigurationsdatei die Kontokennwörter für Geräte im Nur-Text speichert, wird es empfohlen, die Kennwörter zu aktualisieren, nachdem Sie das Bereitstellungspaket auf Ihren Geräten angewendet haben. Sie können die [DeviceAccount Knoten](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/surfacehub-csp#deviceaccount) in der [Surface Hub-Konfigurationsdienstanbieter (CSP)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/surfacehub-csp) verwenden, um die Kennwörter per MDM zu aktualisieren.
+### <a name="set-up-device-admins"></a>Einrichten von Geräteadministratoren
 
+ > [!div class="mx-imgBorder"]
+ > ![Beitreten zu Active Directory, Azure AD oder Erstellen eines lokalen Administratorkontos](images/sh2-wcd.png)
 
-Im Folgenden finden Sie ein Beispiel von `SurfaceHubConfiguration.csv`. 
+Sie können das Gerät in Active Directory registrieren und eine Sicherheitsgruppe angeben, um die Einstellungs-App zu verwenden und in der Azure Active Directory zu registrieren, sodass globale Administratoren die Einstellungs-App verwenden oder ein lokales Administratorkonto auf dem Gerät erstellen können.
 
-```console
-Rainier@contoso.com,password,Rainier Surface Hub
-Adams@contoso.com,password,Adams Surface Hub
-Baker@contoso.com,password,Baker Surface Hub
-Glacier@constoso.com,password,Glacier Surface Hub
-Stuart@contoso.com,password,Stuart Surface Hub
-Fernow@contoso.com,password,Fernow Surface Hub
-Goode@contoso.com,password,Goode Surface Hub
-Shuksan@contoso.com,password,Shuksan Surface Hub
-Buckner@contoso.com,password,Buckner Surface Hub
-Logan@contoso.com,password,Logan Surface Hub
-Maude@consoto.com,password,Maude Surface hub
-Spickard@contoso.com,password,Spickard Surface Hub
-Redoubt@contoso.com,password,Redoubt Surface Hub
-Dome@contoso.com,password,Dome Surface Hub
-Eldorado@contoso.com,password,Eldorado Surface Hub
-Dragontail@contoso.com,password,Dragontail Surface Hub
-Forbidden@contoso.com,password,Forbidden Surface Hub
-Oval@contoso.com,password,Oval Surface Hub
-StHelens@contoso.com,password,St Helens Surface Hub
-Rushmore@contoso.com,password,Rushmore Surface Hub
-```
+1. Um das Gerät in Active Directory zu registrieren, geben Sie die Anmeldeinformationen für ein Konto mit den geringsten Rechten an, um das Gerät mit der Domäne zu verknüpfen, und geben Sie die Sicherheitsgruppe an, um über die Administratoranmeldeinformationen für Surface Hub zu verfügen. Wenn Sie das Paket auf eine zurückgesetzte Surface Hub anwenden, können Sie dasselbe Domänenkonto verwenden, solange es sich um dasselbe Konto handelt, das die Surface Hub anfangs eingerichtet hat. Andernfalls muss ein anderes Domänenkonto im Bereitstellungspaket verwendet werden.
+2. Bevor Sie Windows Configuration Designer verwenden, um die Azure AD-Massenregistrierung zu konfigurieren, [sollten Sie die Implementierung der Azure AD-Verknüpfung planen.](/azure/active-directory/devices/azureadjoin-plan) Die Einstellung **Maximale Anzahl von Geräten pro Benutzer** in Ihrem Azure AD-Mandanten bestimmt, wie oft das Massen-Token im Assistenten verwendet werden kann.
+3. Um das Gerät in Azure AD zu registrieren, wählen Sie diese Option aus, und geben Sie einen aussagekräftigen Namen für das Massen-Token ein, das Sie vom Assistenten erhalten. Legen Sie ein Ablaufdatum für das Token fest. (Das Maximum liegt bei 30Tagen ab Erhalt des Tokens.) Wählen Sie **"Massentoken abrufen"** aus. Geben Sie im **Anmeldefenster** ein Konto mit Berechtigungen für die Verknüpfung eines Geräts mit Azure AD und dann das Kennwort ein. Wählen Sie **"Annehmen"** aus, um Windows Konfigurations-Designer die erforderlichen Berechtigungen zu erteilen.
+4. Um ein lokales Administratorkonto zu erstellen, wählen Sie diese Option aus, und geben Sie einen Benutzernamen und ein Kennwort ein.
 
-## <a name="use-advanced-provisioning"></a>Verwenden Sie erweiterte Bereitstellung.
+> [!IMPORTANT]
+> Wenn Sie ein lokales Konto im Bereitstellungspaket erstellen, müssen Sie mithilfe der App **Einstellungen** alle 42Tage das Kennwort ändern. Wenn das Kennwort innerhalb dieses Zeitraums nicht geändert wird, wird das Konto möglicherweise gesperrt, und eine Anmeldung ist nicht möglich.
 
-Nachdem Sie den [Windows-Konfigurations-Designer](https://technet.microsoft.com/itpro/windows/configure/provisioning-install-icd) installiert haben, können Sie ein Bereitstellungspaket erstellen.
+### <a name="enroll-in-third-party-mdm-provider"></a>Registrieren bei einem MDM-Drittanbieter
 
-### <a name="create-the-provisioning-package-advanced"></a>Erstellen des Bereitstellungspakets (erweitert)
+> [!div class="mx-imgBorder"]
+> ![Registrieren bei der Verwaltung mobiler Geräte von Drittanbietern](images/sh-prov-mdm.png)
 
-1. Öffnen Sie Windows-Konfigurations-Designer:
-   - Geben Sie auf dem Startbildschirm oder im Suchbereich des Startmenüs „Windows-Konfigurations-Designer“ ein, und klicken Sie auf die Windows-Konfigurations-Designer-Verknüpfung, 
-    
-     oder
-    
-   - Wenn Sie Windows-Konfigurations-Designer aus dem ADK installiert haben, navigieren Sie zu `C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86` (auf einem x64-Computer) oder `C:\Program Files\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86\ICD.exe` (auf einem x86-Computer), und doppelklicken Sie anschließend auf **ICD.exe**.
+Wenn Sie einen Drittanbieter für die mobile Geräteverwaltung (Mobile Device Management, MDM) verwenden, können Sie diesen Abschnitt verwenden, um Surface Hub zu registrieren. Um sich bei Intune zu registrieren, richten Sie zuerst den Azure AD-Beitritt ein, wie im vorherigen Abschnitt beschrieben, und folgen Sie den Anweisungen in der folgenden Intune-Dokumentation: Einrichten der [automatischen Registrierung für Windows 10 Geräte.](/mem/intune/enrollment/quickstart-setup-auto-enrollment)
 
-2. Klicken Sie auf **Erweiterte Bereitstellung**.
-   
-3. Benennen Sie Ihr Projekt, und klicken Sie auf **Weiter**.
+1. Umschalten **von "Ja"** oder **"Nein"** für die Registrierung in MDM von Drittanbietern.
+2. Wenn Sie **"Ja"** umschalten, geben Sie ein Dienstkonto und ein Kennwort oder einen Zertifikatfingerabdruck an, der berechtigt ist, das Gerät zu registrieren und den Authentifizierungstyp anzugeben.
+3. Wenn dies von Ihrem MDM-Anbieter erforderlich ist, geben Sie die URLs für den Ermittlungsdienst, den Registrierungsdienst und den Richtliniendienst ein.
 
-4. Wählen **Sie Common to Windows 10 Team**aus, klicken Sie auf **Weiter**, und klicken Sie dann auf Fertig **stellen**.
+ Weitere Informationen finden Sie unter [Verwalten von Surface Hub mit einem MDM-Anbieter.](manage-settings-with-mdm-for-surface-hub.md)
 
-    ![Neues ICD-Projekt](images/icd-new-project.png)
+### <a name="add-applications"></a>Hinzufügen von Anwendungen
 
-5. Wählen Sie im Projekt unter **Verfügbare Anpassungen**allgemeine **Teameinstellungen aus.**
+> [!div class="mx-imgBorder"]
+> ![Anwendung hinzufügen](images/sh-prov-apps.png)
 
-    ![Allgemeine ICD-Einstellungen](images/icd-common-settings.png)
+Sie können mehrere Universelle Windows-Plattform (UWP)-Apps in einem Bereitstellungspaket installieren. Weitere Informationen finden Sie unter [Bereitstellen von Apps für PCs.](/windows/configuration/provisioning-packages/provision-pcs-with-apps)
 
+> [!NOTE]
+> Obwohl Sie mit Windows Konfigurations-Designer einem Bereitstellungspaket eine klassische Win32-App hinzufügen können, akzeptiert Surface Hub nur UWP-Apps. Wenn Sie eine klassische Win32-App hinzufügen, wird die Bereitstellung fehlschlagen.
+
+### <a name="add-a-configuration-file"></a>Hinzufügen einer Konfigurationsdatei
+
+Zusätzlich zu diesem Bereitstellungspaket können Sie eine Surface Hub Konfigurationsdatei verwenden, um die Einrichtung Ihrer Geräte noch einfacher zu machen. Eine Surface Hub Konfigurationsdatei enthält eine Liste der Gerätekonten zum Herstellen einer Verbindung mit Exchange, Microsoft Teams oder Skype for Business sowie "Anzeigenamen" für die drahtlose Projektion.
+
+**So erstellen Sie eine Surface Hub Konfigurationsdatei:**
+
+1. Öffnen Sie Microsoft Excel (oder einen anderen .csv-Editor), erstellen Sie eine .csv Datei mit dem Namen SurfaceHubConfiguration.csv
+2. Geben Sie eine Liste der Gerätekonten und Anzeigenamen in diesem Format ein:
+
+    ```
+    <DeviceAccountName>,<DeviceAccountPassword>,<FriendlyName>
+    ```
+
+    > [!NOTE]
+    > Die Konfigurationsdatei darf keine Spaltenüberschriften enthalten. Wenn sie in einem Bereitstellungspaket enthalten ist, das auf Surface Hub angewendet wird, können Sie das Konto und den Anzeigenamen für das Gerät aus der Datei auswählen. Um die .csv Datei zu erstellen, verwenden Sie entweder ein UPN-Adressformat (rainier@contoso.com) oder ein untergeordnetes Anmeldenamenformat (contoso\regenier).
+
+- rainier@contoso.com,password,Surface Hub
+
+3. Speichern Sie die Datei in Ihrem Projektordner, und kopieren Sie sie mit ihrem Bereitstellungspaket auf den USB-Stick.
+
+> [!NOTE]
+> Die Konfigurationsdatei kann nur während der Erstausführungseinrichtung angewendet werden.
+
+### <a name="password-protect-provisioning-package"></a>Bereitstellungspaket zum Kennwortschutz
+
+Wenn Sie sich für die Verwendung eines Kennworts entscheiden, müssen Sie es jedes Mal eingeben, wenn Sie das Bereitstellungspaket auf ein Gerät anwenden.
+
+### <a name="complete-provisioning-wizard"></a>Assistent zum Abschließen der Bereitstellung
+
+Wenn Sie nur allgemeine Einstellungen **** konfigurieren müssen, wählen Sie  >  **"Fertig stellen"** aus, und fahren Sie mit dem Abschnitt ["Paket erstellen"](#build-your-package)fort. Oder setzen Sie die Konfiguration von Einstellungen fort, indem Sie zur erweiterten Bereitstellung wechseln.
+
+## <a name="use-advanced-provisioning"></a>Verwenden der erweiterten Bereitstellung
+
+> [!TIP]
+> Verwenden Sie den Assistenten, um ein Paket mit allgemeinen Einstellungen zu erstellen, und wechseln Sie dann zum erweiterten Editor, um weitere Einstellungen hinzuzufügen.<br><br> ![Wechseln zum erweiterten Editor](images/icd-simple-edit.png)
+
+1. Wenn Sie den vorherigen Abschnitt fortsetzen, wählen Sie **"Wechseln zum erweiterten Editor"** aus, andernfalls öffnen **Sie Windows Konfigurations-Designer,** und wählen Sie **"Erweiterte Bereitstellung"** aus.<br>
+  ![Verwenden Sie erweiterte Bereitstellung.](images/sh-prov-adv.png)
+
+2. Benennen Sie Ihr Projekt, und wählen Sie **"Weiter"** aus.
+3. Wählen Sie **"Allgemein" Windows 10 Team**aus, wählen Sie **"Weiter"** und dann **"Fertig stellen"** aus.<br>
+     ![WCD neues Projekt](images/icd-new-project.png)
+
+4. Wählen Sie im Projekt unter **Verfügbare Anpassungen** **allgemeine Teameinstellungen**aus.<br>
+     ![Allgemeine WCD-Einstellungen](images/icd-common-settings.png)
 
 ### <a name="add-a-certificate-to-your-package"></a>Hinzufügen eines Zertifikats zum Paket
+
 Sie können Bereitstellungspakete zum Installieren von Zertifikaten verwenden, mit denen sich das Gerät bei Microsoft Exchange authentifizieren kann.
 
 > [!NOTE]
-> Mit Bereitstellungspaketen können Zertifikate nur im Speicher des Geräts (lokaler Computer) und nicht im Benutzerspeicher installiert werden. Wenn für Ihre Organisation die Installation von Zertifikaten **** im Benutzerspeicher erforderlich ist, können Sie die Schaltfläche Zertifikat importieren im Abschnitt **Update & Security**Certificates der Hub-Einstellungen  >  **** verwenden. **** Alternativ können [MdM-Richtlinien (Mobile Device Management)](manage-settings-with-mdm-for-surface-hub.md) zum Bereitstellen von Zertifikaten im Gerätespeicher oder im Benutzerspeicher verwendet werden.
+> Mit Bereitstellungspaketen können Zertifikate nur im Speicher des Geräts (lokaler Computer) und nicht im Benutzerspeicher installiert werden. Wenn In Ihrer Organisation die Installation von Zertifikaten im Benutzerspeicher erforderlich ist, verwenden **Sie** die Hub Einstellungen-App: **Aktualisieren &**  >  **Importzertifikats für Sicherheitszertifikate.**  >  ****
+Alternativ können Sie  [**MDM-Richtlinien**](manage-settings-with-mdm-for-surface-hub.md) verwenden, um Zertifikate entweder im Gerätespeicher oder im Benutzerspeicher bereitzustellen.
 
-1. Wechseln Sie im Bereich **Verfügbare Anpassungen** zu **Laufzeiteinstellungen** > **Certificates** > **ClientCertificates**.
-   > [!NOTE]
-   > Der Abschnitt **ClientCertificates** ist für #A0 mit einem privaten Schlüssel. #A1 für Stammzertifizierungsstellen sollten im **Abschnitt RootCertificates** und für Zwischenzertifizierungsstellen im Abschnitt **CACertificates** platziert werden.
+> [!TIP]
+> Der Abschnitt **"ClientCertificates"** gilt für PFX-Dateien mit einem privaten Schlüssel. CER-Dateien für Stammzertifizierungsstellen sollten im Abschnitt **"RootCertificates"** und für Zwischenzertifizierungsstellen im Abschnitt **"CACertificates"** platziert werden.
 
-2. Geben Sie eine Bezeichnung für **CertificateName ein,** und klicken Sie dann auf **Hinzufügen**. 
+1. Wechseln **Sie in Windows Configuration Designer**Available  >  **customizations** zu **Laufzeiteinstellungen**  >  **Zertifikate**  >  **ClientCertificates**.
+2. Geben Sie eine Bezeichnung für **"CertificateName"** ein, und wählen Sie dann **"Hinzufügen"** aus.
+3. Geben Sie das **CertificatePassword** ein.
+4. Suchen Sie für **CertificatePath** das Zertifikat, und wählen Sie es aus.
+5. Legen Sie **ExportCertificate** auf **False** fest.
+6. Wählen Sie für **KeyLocation** die Option **Software only** aus.
 
-2. Geben Sie das **CertificatePassword** ein. 
+### <a name="add-a-uwp-app-to-your-package"></a>Hinzufügen einer UWP-App zu Ihrem Paket
 
-3. Suchen Sie für **CertificatePath** das Zertifikat, und wählen Sie es aus. 
+Zum Hinzufügen einer UWP-App zu einem Bereitstellungspaket benötigen Sie das App-Paket (APPX- oder APPXBUNDLE-Dateien) und alle Abhängigkeitsdateien. Wenn Sie die App im Microsoft Store für Unternehmen erworben haben, benötigen Sie auch die *nicht codierte* App-Lizenz. Unter [Verteilen von Offline-Apps](/microsoft-store/distribute-offline-apps) erfahren Sie, wie Sie diese Elemente aus dem Microsoft Store für Unternehmen herunterladen.
 
-4. Legen Sie **ExportCertificate** auf **False** fest.
-
-5. Wählen Sie für **KeyLocation** die Option **Software only** aus.
-
-
-### <a name="add-a-universal-windows-platform-uwp-app-to-your-package"></a>Hinzufügen einer UWP (Universelle Windows-Plattform)-App zu Ihrem Paket
-Vor dem Hinzufügen einer UWP-App zu einem Bereitstellungspaket benötigen Sie das App-Paket (entweder „.appx“ oder „.appxbundle“) und alle Abhängigkeitsdateien. Wenn Sie die App im Microsoft Store für Unternehmen erworben haben, benötigen Sie auch die *nicht codierte* App-Lizenz. Unter [Verteilen von Offline-Apps](https://technet.microsoft.com/itpro/windows/manage/distribute-offline-apps#download-an-offline-licensed-app) erfahren Sie, wie Sie diese Elemente aus dem Microsoft Store für Unternehmen herunterladen.
+**So fügen Sie eine UWP-App hinzu:**
 
 1. Wechseln Sie im Bereich **Verfügbare Anpassungen** zu **Laufzeiteinstellungen** > **UniversalAppInstall** > **DeviceContextApp**.
+2. Geben Sie einen **PackageFamilyName** für die App ein, und wählen Sie dann **Hinzufügen**aus. Verwenden Sie aus Gründen der Konsistenz den Paketfamiliennamen der App. Wenn Sie die App im Microsoft Store für Unternehmen erworben haben, finden Sie den Paketfamiliennamen in der App-Lizenz. Öffnen Sie die Lizenzdatei mit einem Text-Editor, und verwenden Sie den Wert zwischen den PFM-Tags.
+3. For **ApplicationFile**, select **Browse** to find and select the target app ( .appx or .appxbundle).
+4. Wählen Sie für **DependencyAppxFiles** **"Durchsuchen"** aus, um Abhängigkeiten für die App zu suchen und hinzuzufügen. Für den Surface Hub benötigen Sie nur die x64-Versionen dieser Abhängigkeiten.
 
-2. Geben Sie einen **PackageFamilyName** für die App ein, und klicken Sie dann auf **Hinzufügen**. Verwenden Sie aus Gründen der Konsistenz den Paketfamiliennamen der App. Wenn Sie die App im Microsoft Store für Unternehmen erworben haben, finden Sie den Paketfamiliennamen in der App-Lizenz. Öffnen Sie die Lizenzdatei mithilfe eines Text-Editors, und verwenden Sie den Wert zwischen den \<PFM\> \</PFM\> ...-Tags.
+Wenn Sie die App vom Microsoft Store für Unternehmen erworben haben, müssen Sie die App-Lizenz zu Ihrem Bereitstellungspaket hinzufügen.
 
-3. Klicken Sie für **ApplicationFile** auf **Durchsuchen**, um die Ziel-App (entweder „\*.appx“ oder „\*.appxbundle“) zu suchen und auszuwählen.
+**So fügen Sie eine App-Lizenz hinzu:**
 
-4. Klicken Sie für **DependencyAppxFiles** auf **Durchsuchen**, um Abhängigkeiten für die App zu suchen und hinzuzufügen. Für den Surface Hub benötigen Sie nur die x64-Versionen dieser Abhängigkeiten.
-
-Wenn Sie die App im Microsoft Store für Unternehmen erworben haben, müssen Sie dem Bereitstellungspaket auch die App-Lizenz hinzufügen.
-
-1. Erstellen Sie eine Kopie der App-Lizenz, und benennen Sie sie unter Verwendung der Erweiterung **.ms-windows-store-license** um. So wird „Beispiel.xml“ beispielsweise zu „Beispiel.ms-windows-store-license“.
-
-2. Wechseln Sie im ICD im Bereich **Verfügbare Anpassungen** zu **Laufzeiteinstellungen** > **UniversalAppInstall** > **DeviceContextAppLicense**.
-
-3. Geben Sie eine **LicenseProductId** ein, und klicken Sie dann auf **Hinzufügen**. Verwenden Sie aus Gründen der Konsistenz die Lizenz-ID der App aus der App-Lizenz. Öffnen Sie die Lizenzdatei mit einem Text-Editor. Verwenden Sie dann im \<License\> Tag den Wert im **LicenseID-Attribut.**
-
-4. Wählen Sie den neuen Knoten **LicenseProductId** aus. Klicken Sie für **LicenseInstall** auf **Durchsuchen**, um die in Schritt1 umbenannte Lizenzdatei zu suchen und auszuwählen.
-
+1. Erstellen Sie eine Kopie der App-Lizenz, und benennen Sie sie unter Verwendung der Erweiterung **.ms-windows-store-license** um. Benennen Sie beispielsweise "example.xml" in "example.ms-windows-store-license" um.
+2. Wechseln Sie in Windows Konfigurations-Designer zu **Verfügbaren Anpassungen**  >  **Laufzeiteinstellungen**  >  **UniversalAppInstall**  >  **DeviceContextAppLicense**.
+3. Geben Sie eine **LicenseProductId** ein, und wählen Sie dann **Hinzufügen**aus. Verwenden Sie aus Gründen der Konsistenz die Lizenz-ID der App aus der App-Lizenz. Öffnen Sie die Lizenzdatei mit einem Text-Editor. Verwenden Sie dann im **License-Tag** den Wert im **LicenseID-Attribut.**
+4. Wählen Sie den neuen Knoten **LicenseProductId** aus. For **LicenseInstall**, select **Browse** to find and select your renamed license file (example.ms-windows-store-license).
 
 ### <a name="add-a-policy-to-your-package"></a>Hinzufügen einer Richtlinie zum Paket
-Surface Hub unterstützt eine Teilmenge der Richtlinien im [Konfigurationsdienstanbieter (CSP) für Richtlinien](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx). Einige dieser Richtlinien können mit dem ICD konfiguriert werden.
 
-1. Wechseln Sie im Bereich **Verfügbare Anpassungen** zu **Laufzeiteinstellungen** > **Policies**.
+Surface Hub unterstützt eine Teilmenge der Richtlinien im [Konfigurationsdienstanbieter (CSP) für Richtlinien](/windows/client-management/mdm/policy-configuration-service-provider). Einige dieser Richtlinien können mit Windows Konfigurations-Designer konfiguriert werden.
 
-2. Wählen Sie einen der verfügbaren Richtlinienbereiche aus.
+ **So fügen Sie [CSP-Richtlinien](/windows/client-management/mdm/policies-in-policy-csp-supported-by-surface-hub)hinzu:**
 
-3. Wählen Sie die Richtlinie aus, die Sie dem Bereitstellungspaket hinzufügen möchten, und legen Sie sie fest.
+1. Wechseln Sie zu **Verfügbaren Anpassungen**  >  **Laufzeiteinstellungsrichtlinien**  >  ****.
+2. Wählen Sie die Komponente aus, die Sie verwalten möchten, und konfigurieren Sie die Richtlinieneinstellung entsprechend. Um beispielsweise zu verhindern, dass Mitarbeiter in Surface Hub InPrivate-Website browsen, wählen Sie **AllowInPrivate** und dann **Deaktivieren**aus.  
 
+    > [!div class="mx-imgBorder"]
+    > ![Konfigurieren der Richtlinieneinstellung](images/sh-prov-policies.png)
 
-### <a name="add-surface-hub-settings-to-your-package"></a>Hinzufügen von Surface Hub-Einstellungen zum Paket 
+### <a name="add-surface-hub-settings-to-your-package"></a>Hinzufügen von Surface Hub-Einstellungen zum Paket
 
-Sie können Ihrem Bereitstellungspaket Einstellungen aus dem [SurfaceHub-Konfigurationsdienstanbieter](https://msdn.microsoft.com/library/windows/hardware/mt608323.aspx) hinzufügen. 
+Sie können Ihrem Bereitstellungspaket Einstellungen aus dem [SurfaceHub-Konfigurationsdienstanbieter](/windows/client-management/mdm/surfacehub-csp) hinzufügen.
 
-1. Wechseln Sie **im Bereich** Verfügbare Anpassungen zu **Laufzeiteinstellungen**  >  **SurfaceHub**.
+1. Wechseln Sie zu **Verfügbare Anpassungen**  >  **Common Team Edition Einstellungen**.
+1. Wählen Sie die Komponente aus, die Sie verwalten möchten, und konfigurieren Sie die Richtlinieneinstellung entsprechend.
+1. Wenn Sie die Konfiguration des Bereitstellungspakets abgeschlossen haben, wählen Sie **Datei**  >  **speichern**aus.
+1. Lesen Sie die Warnung, dass Projektdateien vertrauliche Informationen enthalten können, und wählen Sie **"OK"** aus.
 
-2. Wählen Sie einen der verfügbaren Einstellungsbereiche aus.
+### <a name="build-your-package"></a>Erstellen des Pakets
 
-3. Wählen Sie die Einstellung aus, die Sie dem Bereitstellungspaket hinzufügen möchten, und legen Sie sie fest. 
+Wenn Sie ein Bereitstellungspaket erstellen, können Sie vertrauliche Informationen in die Projektdateien und die Bereitstellungspaketdatei (PPKG-Datei) aufnehmen. Obwohl Sie die PPKG-Datei verschlüsseln können, werden die Projektdateien nicht verschlüsselt.  Store die Projektdateien an einem sicheren Speicherort ab, oder löschen Sie sie, wenn sie nicht mehr benötigt werden.
 
+1. Öffnen **Sie Windows Konfigurations-Designer-Exportbereitstellungspaket.**  >  ****  >  ****
+2. Ändern Sie **den Besitzer** in **DEN IT-Administrator.**  
+3. Legen Sie einen Wert für **Paketversion** fest, und wählen Sie dann **Weiter** aus.
 
-## <a name="build-your-package"></a>Erstellen des Pakets
+> [!TIP]
+> Durch Festlegen des Besitzers auf den IT-Administrator wird sichergestellt, dass die Paketeinstellungen die entsprechenden "Rangfolgeneigenschaften" beibehalten und auf Surface Hub wirksam bleiben, wenn andere Bereitstellungspakete anschließend aus anderen Quellen angewendet werden.
 
-1. Nachdem Sie das Bereitstellungspaket konfiguriert haben, klicken Sie im Menü **Datei** auf **Speichern**.
+> [!TIP]
+> Sie können vorhandene Pakete ändern und die Versionsnummer ändern, um zuvor angewendete Pakete zu aktualisieren.
 
-2. Lesen Sie den Warnhinweis, dass die Projektdateien möglicherweise vertrauliche Informationen enthalten, und klicken Sie auf **OK**.
+4. Optional: Sie können das Paket verschlüsseln und die Paketsignierung aktivieren:
+
+    1. Wählen Sie **"Paket verschlüsseln"** aus, und geben Sie dann ein Kennwort ein.
+    1. Wählen Sie **"Paket**durchsuchen  >  **signieren"** aus, und wählen Sie das Zertifikat nach Bedarf aus.
 
     > [!IMPORTANT]
-    > Wenn Sie ein Bereitstellungspaket erstellen, können Sie vertrauliche Informationen in die Projektdateien und das Bereitstellungspaket (PPKG-Datei) aufnehmen. Obwohl Sie die PPKG-Datei verschlüsseln können, werden die Projektdateien nicht verschlüsselt. Sie sollten die Projektdateien an einem sicheren Ort speichern und löschen, wenn sie nicht mehr benötigt werden.
+    > Es wird empfohlen, ein vertrauenswürdiges Bereitstellungszertifikat in Ihr Bereitstellungspaket einzugeben. Wenn das Paket auf ein Gerät angewendet wird, wird das Zertifikat dem Systemspeicher hinzugefügt, sodass nachfolgende Pakete im Hintergrund angewendet werden können.
 
-3. Klicken Sie im Menü **Exportieren** auf **Bereitstellungspaket**.
-
-4. Ändern Sie den **Besitzer** in **IT-Administrator**, sodass die Priorität dieses Bereitstellungspakets höher eingestuft wird als die von Bereitstellungspaketen, die von anderen Quellen auf dieses Gerät angewendet wurden.
-
-5. Legen Sie einen Wert für **Paketversion** fest, und wählen Sie dann **Weiter** aus.
-
-    > [!TIP]
-    > Sie können Änderungen an vorhandenen Paketen vornehmen und die Versionsnummer ändern, um bereits angewendete Pakete zu aktualisieren.
-
-6. Optional: Sie können das Paket auch verschlüsseln und die Paketsignierung aktivieren.
-
-    -   **Paketverschlüsselung aktivieren** – Wenn Sie diese Option auswählen, wird ein automatisch generiertes Kennwort auf dem Bildschirm angezeigt.
-
-    -   **Paketsignierung aktivieren** – Wenn Sie diese Option auswählen, müssen Sie ein gültiges Zertifikat zum Signieren des Pakets auswählen. Sie können das Zertifikat angeben, indem Sie auf **Durchsuchen…** klicken und das Zertifikat zum Signieren des Pakets auswählen.
-
-        > [!IMPORTANT]
-        > Es wird empfohlen, ein vertrauenswürdiges Bereitstellungszertifikat in das Bereitstellungspaket einzuschließen. Wird das Paket für ein Gerät übernommen, wird das Zertifikat dem Systemspeicher hinzugefügt, und alle mit diesem Zertifikat signierten Pakete werden anschließend automatisch im Hintergrund übernommen. 
-
-7. Klicken Sie auf **Weiter** , um den Ausgabespeicherort anzugeben, an dem das Bereitstellungspaket nach dem Erstellen gespeichert werden soll. Standardmäßig verwendet Windows ICD den Projektordner als Ausgabespeicherort.<p>
-Klicken Sie optional auf **Durchsuchen** , um den Standardausgabespeicherort zu ändern.
-
-8. Klicken Sie auf **Weiter**.
-
-9. Klicken Sie auf **Erstellen** , um mit der Paketerstellung zu beginnen. Die Projektinformationen werden auf der Buildseite angezeigt, und die Statusanzeige gibt den Buildstatus an.<p>
-Wenn Sie den Build abbrechen müssen, klicken Sie auf **Abbrechen**. Dadurch wird der aktuelle Buildprozess abgebrochen, der Assistent geschlossen und wieder die **Customizations Page**angezeigt.
-
-10. Falls der Build nicht erfolgreich verläuft, wird eine Fehlermeldung mit einem Link zum Projektordner angezeigt. Sie können die Fehlerursache anhand der Protokolle ermitteln. Nachdem Sie das Problem behoben haben, versuchen Sie, das Paket erneut zu erstellen.<p>
-Wenn der Build erfolgreich ist, werden der Name des Bereitstellungspakets sowie das Ausgabeverzeichnis und Projektverzeichnis angezeigt.
-
-    -   Sie können das Bereitstellungspaket ggf. erneut erstellen und einen anderen Pfad für das Ausgabepaket auswählen. Klicken Sie dazu auf **Zurück** , um den Namen und Pfad des Ausgabepakets zu ändern, und klicken Sie dann auf **Weiter** , um einen weiteren Build zu starten.
-    
-    -   Wenn Sie fertig sind, klicken Sie auf **Fertig stellen** , um den Assistenten zu schließen und zur **Customizations Page**zurückzukehren.
-
-11. Wählen Sie den Link zum **Ausgabespeicherort** aus, um zum Speicherort des Pakets zu navigieren. Kopieren Sie die PPKG-Datei auf einen leeren USB-Speicherstick.
-
+5. Wählen Sie **"Weiter"** aus, um den Ausgabespeicherort anzugeben. Standardmäßig verwendet der Windows-Konfigurations-Designer den Projektordner als Ausgabespeicherort. Oder wählen **Sie "Durchsuchen"** aus, um den Standardausgabespeicherort zu ändern. Wählen Sie **Weiter** aus.
+6. Wählen Sie **"Build"** aus, um mit dem Erstellen des Pakets zu beginnen. Die Projektinformationen werden auf der Buildseite angezeigt.
+7. Wenn ihr Build fehlschlägt, wird eine Fehlermeldung mit einem Link zum Projektordner angezeigt. Überprüfen Sie die Protokolle, um den Fehler zu diagnostizieren, und versuchen Sie erneut, das Paket zu erstellen.
+8. Wenn ihr Build erfolgreich ist, werden der Name des Bereitstellungspakets, des Ausgabeverzeichnisses und des Projektverzeichnisses angezeigt. Wählen Sie **"Fertig stellen"** aus, um den Assistenten zu schließen, und wechseln Sie zurück zur Seite "Anpassungen".
+9. Wählen Sie  **den Ausgabespeicherort**  aus, um zum Speicherort des Pakets zu wechseln. Kopieren Sie die PPKG-Datei auf einen leeren USB-Speicherstick.
 
 ## <a name="apply-a-provisioning-package-to-surface-hub"></a>Anwenden eines Bereitstellungspakets auf den Surface Hub
 
-Es gibt zwei Möglichkeiten zum Bereitstellen von Bereitstellungspaketen für einen Surface Hub. [](#apply-a-provisioning-package-during-first-run)Beim ersten Ausführen des Assistenten können Sie ein Bereitstellungspaket anwenden, das Zertifikate installiert, oder nach Abschluss des Programms für die erste Ausführung können Sie mithilfe von Einstellungen ein Bereitstellungspaket anwenden, das Einstellungen, Apps und [Zertifikate konfiguriert.](#apply-a-package-using-settings) 
-
+Es gibt zwei Möglichkeiten zum Bereitstellen von Bereitstellungspaketen für einen Surface Hub. [Während des Assistenten](#apply-a-provisioning-package-during-first-run)für die erste Ausführung können Sie ein Bereitstellungspaket anwenden, das Zertifikate installiert, oder nachdem das Programm für die erste Ausführung abgeschlossen ist, können Sie ein Bereitstellungspaket anwenden, das Einstellungen, Apps und Zertifikate konfiguriert, indem Sie [Einstellungen](#apply-a-provisioning-package-using-settings-app)verwenden.
 
 ### <a name="apply-a-provisioning-package-during-first-run"></a>Anwenden eines Bereitstellungspakets bei der ersten Ausführung
 
 > [!IMPORTANT]
-> Beim ersten Ausführen des Programms können Sie nur Bereitstellungspakete verwenden, um Zertifikate zu installieren. Verwenden Sie die **Einstellungs-App**, um Apps zu installieren und andere Einstellungen anzuwenden.
+> Während des Programms für die erstausführung können Sie nur Bereitstellungspakete verwenden, um Zertifikate zu installieren. Verwenden Sie die **Einstellungs-App**, um Apps zu installieren und andere Einstellungen anzuwenden.
 
-1. Wenn Sie den Surface Hub zum ersten Mal aktivieren, zeigt das Programm für die Erstausführung die [**Seite „Hallo“**](first-run-program-surface-hub.md#first-page) an. Stellen Sie sicher, dass die Einstellungen richtig festgelegt sind, bevor Sie fortfahren.
-
+1. Wenn Sie die Surface Hub zum ersten Mal aktivieren, zeigt das Programm für die erstausführung die [**Hi there-Seite**](first-run-program-surface-hub.md)an. Stellen Sie sicher, dass die Einstellungen richtig festgelegt sind, bevor Sie fortfahren.
 2. Schließen Sie den USB-Speicherstick, auf dem die PPKG-Datei enthalten ist, an den Surface Hub an. Wenn das Paket im Stammverzeichnis des Laufwerks enthalten ist, wird es vom Programm für die Erstausführung erkannt, und Sie werden gefragt, ob Sie das Gerät einrichten möchten. Wählen Sie **Einrichten** aus.
-
-    ![Gerät einrichten?](images/provisioningpackageoobe-01.png)
-
 3. Im nächsten Bildschirm werden Sie aufgefordert, eine Bereitstellungsquelle auszuwählen. Wählen Sie **Wechselmedien** aus, und tippen Sie auf **Weiter**.
-
-    ![Dieses Gerät bereitstellen](images/provisioningpackageoobe-02.png)
-    
-4. Wählen Sie das anzuwendende Bereitstellungspaket („\*.ppkg“) aus, und tippen Sie auf **Weiter**. Beachten Sie, dass Sie bei der ersten Ausführung nur ein Paket installieren können.
-
-    ![Paket auswählen](images/provisioningpackageoobe-03.png)
-
-5. Im Programm für die Erstausführung wird eine Zusammenfassung der Änderungen angezeigt, die vom Bereitstellungspaket angewendet werden. Wählen Sie **Ja, hinzufügen** aus.  
-
-    ![Vertrauen Sie diesem Paket?](images/provisioningpackageoobe-04.png)
-    
+4. Wählen Sie das Bereitstellungspaket (*.ppkg), das Sie anwenden möchten, und tippen Sie auf **"Weiter".** Beachten Sie, dass Sie bei der ersten Ausführung nur ein Paket installieren können.
+5. Im Programm für die Erstausführung wird eine Zusammenfassung der Änderungen angezeigt, die vom Bereitstellungspaket angewendet werden. Wählen Sie **Ja, hinzufügen** aus.
 6. Wenn eine Konfigurationsdatei im Stammverzeichnis des USB-Speichersticks enthalten ist, sehen Sie **Auswählen einer Konfiguration**. Das erste Gerätekonto in der Konfigurationsdatei wird mit einer Zusammenfassung der Kontoinformationen angezeigt, die mit dem Surface Hub angewendet werden.
+7. Wählen Sie in **"Konfiguration auswählen"** den zu übernehmenden Gerätenamen und dann **"Weiter"** aus.
 
-    ![Konfiguration auswählen](images/ppkg-config.png)    
-
-7. In **Auswählen einer Konfiguration**, wählen Sie den anzuwendenden Gerätenamen aus und klicken Sie dann auf **Weiter**.
-
-    ![Wählen Sie einen Gerätenamen aus](images/ppkg-csv.png)
-    
 Die Einstellungen im Bereitstellungspaket werden auf das Gerät angewendet, und die Windows-Willkommensseite wird abgeschlossen. Nach dem Neustart des Geräts können Sie das USB-Flash-Laufwerk entfernen.
 
-### <a name="apply-a-package-using-settings"></a>Anwenden eines Pakets mithilfe von Einstellungen
+### <a name="apply-a-provisioning-package-using-settings-app"></a>Anwenden eines Bereitstellungspakets mit Einstellungen App
 
 1. Schließen Sie den USB-Speicherstick, auf dem die PPKG-Datei enthalten ist, an den Surface Hub an.
+2. Starten Sie in Surface Hub **Einstellungen,** und geben Sie die Administratoranmeldeinformationen ein, wenn Sie dazu aufgefordert werden.
+3. Navigieren Sie zu **Surface Hub** > **Geräteverwaltung**. Wählen Sie unter **"Bereitstellungspakete"** die Option **"Bereitstellungspaket hinzufügen oder**  >  **entfernen" aus.**
+4. Wählen Sie das Bereitstellungspaket und dann **Hinzufügen** aus.  Wenn Sie dazu aufgefordert werden, geben Sie ihre Administratoranmeldeinformationen erneut ein.
+5. Es wird eine Zusammenfassung der anzuwendenden Änderungen angezeigt. Wählen Sie **Ja, hinzufügen** aus.
 
-2. Starten Sie über den Surface Hub **Einstellungen**, und geben Sie die Administratoranmeldeinformationen ein, wenn Sie dazu aufgefordert werden.
+## <a name="learn-more"></a>Mehr erfahren
 
-3. Navigieren Sie zu **Surface Hub** > **Geräteverwaltung**. Wählen Sie unter **Bereitstellungspakete** die Option **Bereitstellungspaket hinzufügen oder entfernen** aus.
-
-4. Wählen Sie **Paket hinzufügen** aus.
-
-5. Wählen Sie das Bereitstellungspaket und dann **Hinzufügen** aus. Sie müssen die Administratoranmeldeinformationen u. U. erneut eingeben, falls Sie dazu aufgefordert werden.
-
-6. Eine Zusammenfassung der Änderungen wird angezeigt, die vom Bereitstellungspaket angewendet werden. Wählen Sie **Ja, hinzufügen** aus.
-
-
+- [Herunterladen von Windows Configuration Designer](https://www.microsoft.com/store/apps/9nblggh4tx22)
+- [Erstellen eines Bereitstellungspakets für Windows 10](/windows/configuration/provisioning-packages/provisioning-create-package)
+- [Verwalten von Surface Hub mit einem MDM-Anbieter](manage-settings-with-mdm-for-surface-hub.md)

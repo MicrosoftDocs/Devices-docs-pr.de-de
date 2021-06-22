@@ -11,12 +11,12 @@ metadata:
   ms.author: greglin
   audience: itpro
   ms.localizationpriority: High
-  ms.openlocfilehash: 301a4b733ee477c1e9999dba84cd58283c02844f
-  ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
+  ms.openlocfilehash: 021d30e782bc50e0c89fad6478c8e784234c768d
+  ms.sourcegitcommit: 267e12897efd9d11f8c7303eaf780632741cfe77
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 05/20/2021
-  ms.locfileid: "11576825"
+  ms.lasthandoff: 06/22/2021
+  ms.locfileid: "11613924"
 landingContent:
 - title: Surface-Geräte
   linkLists:
@@ -36,9 +36,9 @@ landingContent:
   linkLists:
   - linkListType: get-started
     links:
-    - text: Surface Laptop 4 Prozessoren – Technische Übersicht
+    - text: Surface Laptop 4-Prozessoren – Technische Übersicht
       url: surface-laptop-processors.md
-    - text: Surface Headphones 2+ Tech-Übersicht
+    - text: Surface Headphones 2+ – Technische Übersicht
       url: surface-headphones.md
     - text: Windows virtueller Desktop auf Surface
       url: windows-virtual-desktop-surface.md
@@ -48,9 +48,9 @@ landingContent:
     links:
     - text: Zero Touch-Bereitstellung mit Surface & AutoPilot
       url: https://youtu.be/WQ-wg8fRzN0
-    - text: Surface Pro X und Windows ARM in einer Remotewelt
+    - text: Surface Pro X und Windows auf ARM in einer Remote-Welt
       url: https://youtu.be/bDw77ZQNPPw
-    - text: Surface Security – Chip to Cloud Modern Endpoint Protection von Microsoft
+    - text: Surface Security – Chip für cloudmoderne Endpoint Protection von Microsoft
       url: https://youtu.be/uadAecDbqf4
 - title: Bereitstellen von Surface-Geräten
   linkLists:
@@ -86,10 +86,10 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: DMA Protection auf Surface-Geräten
+    - text: Übersicht über die Surface-Sicherheit
+      url: surface-security.md
+    - text: DMA-Schutz auf Surface-Geräten
       url: dma-protect.md
-    - text: Sichern von Surface Dock 2-Ports mit Surface Enterprise Management Mode (SEMM)
-      url: secure-surface-dock-ports-semm.md
     - text: Surface Data Eraser-Tool
       url: microsoft-surface-data-eraser.md
 - title: Erkunden von Surface-Tools
