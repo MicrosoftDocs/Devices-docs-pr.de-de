@@ -3,7 +3,7 @@ title: "\"Next Business Day Replacement\"-Informationen und -Abdeckungsbereiche"
 ms.author: v-kaij
 author: greg-lindsay
 manager: laurawi
-ms.date: 05/23/2021
+ms.date: 06/17/2021
 audience: Admin
 ms.topic: article
 ms.prod: surface
@@ -11,15 +11,14 @@ localization_priority: high
 ms.custom: references_regions
 appliesto:
 - Surface
-- Surface Hub
 ms.reviewer: irenewhite
 description: "\"Next Business Day Replacement\"-Informationen und -Abdeckungsbereiche"
-ms.openlocfilehash: 2708890c864582cf638c48474f85ddc01ef36576
-ms.sourcegitcommit: 77b2c51f8467ac3ac37399551b0cc20d9ce57d24
+ms.openlocfilehash: 4488d2f1cc8a3e6c240710d59f3465d05abae12b
+ms.sourcegitcommit: 267e12897efd9d11f8c7303eaf780632741cfe77
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "11585926"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "11613844"
 ---
 # <a name="next-business-day-replacement-information--coverage-areas"></a>"Next Business Day Replacement"-Informationen und -Abdeckungsbereiche
 
@@ -58,6 +57,7 @@ Eine Liste der unterstützten Postleitzahlen finden Sie unter "Abdeckung für n�
 - [Schweden](#sweden)
 - [Schweiz](#switzerland)
 - [Niederlande](#the-netherlands)
+- [Großbritannien](#united-kingdom)
 - [USA](#united-states)
 
 
@@ -107,6 +107,7 @@ Eine Liste der unterstützten Postleitzahlen finden Sie unter "Abdeckung für n�
 #### <a name="hong-kong"></a>Hongkong
 
 - Annahmeschluss: 16:00 HKT (UTC+8) 
+- Die NBD-Abdeckung ist in allen Postleitzahlengebieten in Hongkong verfügbar.
 
 #### <a name="ireland"></a>Irland
 
@@ -142,11 +143,12 @@ Eine Liste der unterstützten Postleitzahlen finden Sie unter "Abdeckung für n�
 #### <a name="singapore"></a>Singapur
 
 - Annahmefrist: 13:00 SGT (UTC+8)
+- Die NBD-Abdeckung ist in allen Postleitzahlengebieten in diesem Land verfügbar.
 
 #### <a name="spain"></a>Spanien
 
 - Annahmefrist: 12:00 UHR (UTC+1)
-- [Abdeckung für nächsten Arbeitstag](https://download.microsoft.com/download/6/1/d/61da1e35-e17e-4a67-ab81-27cf7a21f91b/NBD%20Coveragef-%20Spain%20Post%20Codes%20030321.xlsx)
+- [Abdeckung für nächsten Arbeitstag](https://download.microsoft.com/download/6/1/d/61da1e35-e17e-4a67-ab81-27cf7a21f91b/NBD%20Coverage-%20Spain%20Post%20Codes%20030321.xlsx)
 
 #### <a name="sweden"></a>Schweden
 
@@ -162,6 +164,10 @@ Eine Liste der unterstützten Postleitzahlen finden Sie unter "Abdeckung für n�
 
 - Annahmefrist: 12:00 UHR (UTC+1)
 - [Abdeckung für nächsten Arbeitstag](https://download.microsoft.com/download/6/3/f/63f2ff4c-3b8f-465e-9498-0878f7ba70f3/NBD%20Coverage%20-%20Netherlands%20Post%20Codes%20042821.xlsx)
+
+### <a name="united-kingdom"></a>Großbritannien
+
+- Annahmefrist: 12:00 UHR (UTC+1)
 
 #### <a name="united-states"></a>USA 
 
