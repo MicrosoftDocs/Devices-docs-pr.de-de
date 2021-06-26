@@ -1,6 +1,6 @@
 ---
 title: Technische Daten für Surface Hub 2S
-description: Sehen Sie sich die technischen Daten für Surface Hub 2S an, einschließlich Stift, Kamera und optionaler Akku Spezifikationen für Handys.
+description: Zeigen Sie technische Spezifikationen für Surface Hub 2S an, einschließlich Stift-, Kamera- und optionaler Spezifikationen für den mobilen Akku.
 keywords: Trennen Sie Werte durch Kommata
 ms.prod: surface-hub
 ms.sitesec: library
@@ -11,46 +11,46 @@ audience: Admin
 ms.topic: article
 ms.date: 12/21/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: aa895e2fe5e2774d17f7f4729a3d1d613f59612d
-ms.sourcegitcommit: e83316c8b5e3c29b0af0730ef05fd8b96b0d0cdd
+ms.openlocfilehash: 114d5345b9c64247a6efdbe15d75abecf69ebbcb
+ms.sourcegitcommit: b7fa6865e8f4209552a8130b861a1edef1b6666d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "11238080"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "11615515"
 ---
-# Surface Hub 2S 50-Zoll technische Daten
+# <a name="surface-hub-2s-50-inch-tech-specs"></a>Surface Hub 2S 50-Zoll technische Daten
 
-|**Element**|**Details**|
+| Element | Details |
 |:------ |:--------- |
-|**Dimensionen**| 29,2 "x 43,2" x 3,0 "(741 mm x 1097 mm x 76 mm) |
-|**Versand Dimensionen**| 47,64 "x 36,89" x 9,92 "(1.210 mm x 937 mm x 252 mm)|
-|**Breite**| 61,6 lbs. (28 kg) |
-|**Versandgewicht**| 81,08 lbs. (36,77 kg) |
+|**Dimensionen**| 29,2 Zoll x 43,2 Zoll x 3,0 Zoll (741 mm x 1097 mm x 76 mm) |
+|**Versandabmessungen**| 47,64 " x 36,89" x 9,92" (1.210 mm x 937 mm x 252 mm)|
+|**Breite**| 61,6 lbs. (28 kilo) |
+|**Versandgewichtung**| 81,08 lbs. (36,77 kilo) |
 |**Lösung**| 3840 x 2560 |
-|**Anzeige**| PixelSense-Anzeige, 3:2-Seitenverhältnis, 10-Bit-Farbe, 15,5-mm-Rahmen, Anti-Glare, IPS-LCD |
-|**Prozessor**| Quad-Core-8-Generation Intel Core i5-Prozessor, 8 GB Arbeitsspeicher, 128 GB SSD <sup> 1</sup> |
-|**Grafiken**| Intel uhd-Grafik 620 |
-|**Funk**| Wi-Fi 5 (IEEE 802,11 a/b/g/n/AC-kompatibel) Bluetooth Wireless 4,1-Technologie <br> Miracast-Anzeige |
-|**Verbindungen**| USB-A <br> Videoausgabe Mini-DisplayPort 1,2 <br> RJ45-Gigabit-Ethernet (1000/100/10-BaseT) <br> HDMI-Videoeingang (HDMI 2,0, HDCP 2,2/1,4) <br> USB-C mit DisplayPort-Eingang <br> Vier USB-C (auf dem Display) |
-|**Sensoren**| Doppler Belegung <sup> 2</sup> <br> Beschleunigungsmesser <br> Gyroskop |
-|**Audio/Video**| Vollbereichs-, Front-3-Wege-Stereolautsprecher <br> Voll Band-Mikrofonarray mit 8 Elementen <br> Microsoft Surface Hub 2 Kamera, 4K, USB-C-Anschluss, 90-Grad-hfov |
-|**Stift**| Microsoft Surface Hub 2-Stift (aktiv) |
-|**Software**| Windows 10 <br> Microsoft Teams für Surface Hub <sup> 3</sup> <br> Skype for Business <br> Microsoft Whiteboard <br> Microsoft Office (mobil) <br> Microsoft Power BI <sup> 2</sup> |
-|**Außen**| Gehäuse: Präzisions gefrästes Aluminium mit mineralischem Verbund Harz <br> Farbe: Platin <br> Physikalische Schaltflächen: Power, Volume, Quelle |
-|**Inhalt des Felds**| Ein Surface Hub 2S <br> Ein Surface Hub 2-Stift  <br> Eine Surface Hub 2-Kamera <br> 2,5 m Netzkabel <br> Schnell Start Handbuch |
-|**Garantie**| eingeschränkte Hardwaregarantie für 1 Jahr |
-|**BTU**| 1518 BTU/Std. |
-|**Eingangsspannung**| 50/60Hz 110/230V nominal, 90-265V Max |
-|**Eingangsleistung, Betrieb**| 445 w (495 w Surge Load) |
-|**Eingangsstrom**| 5,46 |
-|**Eingangsspannung, Standby**| 5 W max  |
+|**Anzeige**| PixelSense Display, 3:2-Seitenverhältnis, 10-Bit-Farbe, 15,5-mm-Rahmen, blendend, IPS-BLEND |
+|**Prozessor**| Quad-Core Intel Core i5-Prozessor der 8. Generation, 8 GB RAM, 128 GB SSD <sup> 1</sup> |
+|**Grafiken**| IntelQLD Graphics 620 |
+|**Funk**| Wi-Fi 5 (IEEE 802.11 a/b/g/n/ac kompatibel) Bluetooth Wireless 4.1-Technologie <br> Miracast Anzeigen |
+|**Verbindungen**| USB-A <br> Mini-DisplayPort 1.2-Videoausgabe <br> RJ45-Ethernet-Ethernet (1000/100/10 BaseT) <br> HDMI-Videoeingang (HDMI 2.0, HDCP 2.2 /1.4) <br> USB-C mit DisplayPort-Eingabe <br> Vier USB-C (auf dem Bildschirm) |
+|**Sensoren**| Doppler <sup> 2</sup> <br> Beschleunigungsmesser <br> Gyroskop |
+|**Audio/Video**| 3-Wege-Stereolautsprecher mit voller Frontseite <br> MEMS-Mikrofonarray mit vollständigem Band 8-Element <br> Microsoft Surface Hub 2 Kamera, 4K, USB-C-Verbindung, 90-Grad-DOPPELKLICKOV |
+|**Stift**| Microsoft Surface Hub 2 Stift (aktiv) |
+|**Software <sup> 3</sup>**| Windows 10 <br> Microsoft Teams für Surface Hub <br> Skype for Business <br> Microsoft Whiteboard <br> Microsoft Office (Mobil) <br> Microsoft Power BI |
+|**Außen**| Groß-/Kleinschreibung: Präzisionsautomatisierung mit Verbundmaterial <br> Color:Skalen <br> Physische Tasten: Ein/Aus, Lautstärke, Quelle |
+|**Inhalt des Felds**| One Surface Hub 2S <br> Ein Surface Hub 2 Stift  <br> Eine Surface Hub 2 Kamera <br> 2,5 m AC-Netzkabel <br> Schnellstartanleitung |
+|**Garantie**| 1 Jahr eingeschränkte Hardware-Garantie <sup> 4</sup> |
+|**Btu**| 1518 BTU/hr |
+|**Input-Input-Eingang**| 50/60Hz 110/230v nominal, 90-265v max |
+|**Eingabeleistung, Betrieb**| 445 W (495 W Auslastung) |
+|**Eingabe aktuell**| 5.46 A |
+|**Eingabeleistung, Standby**| Max. 5 W  |
 
 > [!NOTE]
-> <sup>1 die </sup> System Software verwendet erheblichen Speicherplatz. Der verfügbare Speicher unterliegt Änderungen abhängig von den System Software-Updates und der apps-Nutzung. 1 GB = 1 Milliarde Bytes. Weitere Informationen finden Sie unter Surface.com/Storage. <br> <sup>2 </sup> Doppler Sensor nicht verfügbar in Hongkong, Indien, Kuwait und Oman aufgrund örtlicher Bestimmungen.
-<br> <sup>3 </sup> Software-Lizenz für einige Features erforderlich. Separat erhältlich.<br> 
+> <sup>1 </sup> Systemsoftware nutzt erheblichen Speicherplatz. Der verfügbare Speicher kann basierend auf Systemsoftwareupdates und der Nutzung von Apps geändert werden. 1 GB= 1 Milliarden Byte. Weitere Informationen finden Sie unter Surface.com/Storage. <br> <sup>2 </sup> Dopplersensor aufgrund lokaler Vorschriften in Hongkong, Indien, Malaysia und Oman nicht verfügbar.
+<br> <sup>3 </sup> Für einige Features erforderliche Softwarelizenz. Separat verkauft.<br> <sup>4 Die </sup> eingeschränkte Garantie von Microsoft gilt zusätzlich zu Ihren Verbraucherrechten. 
 
 > [!NOTE]
-> Surface Hub kann kontinuierlich für maximal 18 Stunden pro Tag verwendet werden. Um die Effizienz zu optimieren, verwendet Surface Hub intelligente Sensoren, um den LED-Bildschirm zu deaktivieren, wenn die Anwesenheit nicht mehr erkannt wird, was bedeutet, dass Sie am Ende des Tages keine Stromversorgung mehr benötigen. Wenn das Gerät in einem 24-Stunden-Arbeitsumfeld installiert ist, können die Sensoren deaktiviert werden, um die maximale Nutzungs Empfehlung von 18 Stunden pro Tag zu erfüllen. Beachten Sie, dass eine längere Anzeige eines Videosignals dazu führen kann, dass die verbrannte oder Bild Aufbewahrung auf dem Bildschirm auftritt. Weitere Informationen zum Verwalten von Energieeinstellungen finden Sie unter:
+> Surface Hub können maximal 18 Stunden am Tag kontinuierlich verwendet werden. Um die Effizienz zu optimieren, verwendet Surface Hub intelligente Sensoren, um den LED-Bildschirm zu deaktivieren, wenn die Anwesenheit nicht mehr erkannt wird. Dies bedeutet, dass sie am Ende des Tages nicht ausgeschaltet werden muss. Wenn die Einheit in einer 24-Stunden-Arbeitsplatzumgebung installiert ist, können die Sensoren deaktiviert werden, um die maximale Nutzungsempfehlung von 18 Stunden pro Tag einzuhalten. Beachten Sie, dass die längere Anzeige eines Videosignals dazu führen kann, dass das Video ein- oder eingeschaltet wird oder die Bildaufbewahrung auf dem Bildschirm erfolgt. Weitere Informationen zum Verwalten von Energieeinstellungen finden Sie unter:
 >
 > - [Lokale Verwaltung von Surface Hub-Einstellungen](local-management-surface-hub-settings.md)
-> - [SurfaceHub CSP – Windows-Client Verwaltung](https://docs.microsoft.com/windows/client-management/mdm/surfacehub-csp)
+> - [SurfaceHub-CSP – Windows Clientverwaltung](/windows/client-management/mdm/surfacehub-csp)
