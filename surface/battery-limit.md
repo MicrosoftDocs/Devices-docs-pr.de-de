@@ -26,7 +26,7 @@ Bei der Option "Akkulimit" handelt es sich um eine UEFI-Einstellung, die ändert
 
 ## Funktionsweise des Akkulimits
 
-Wenn Sie das Gerät auf "Akkulimit" einstellen, wird das Protokoll zum Aufladen des Akkus des Geräts geändert. Wenn "Akkulimit" aktiviert ist, ist der Akkustand auf 50% der maximalen Kapazität beschränkt. Der in Windows gemeldete Akkustand spiegelt dieses Limit wider. Daher wird angezeigt, dass der Akku bis zu 50% aufgeladen ist und dieses Limit nicht überschreitet. Wenn Sie "Akkulimit" aktivieren, während das Gerät über 50% aufgeladen ist, zeigt das Akkusymbol an, dass das Gerät angeschlossen ist, aber entladen wird, bis das Gerät 50% seiner maximalen Ladekapazität erreicht.  
+Wenn Sie das Gerät auf "Akkulimit" einstellen, wird das Protokoll zum Aufladen des Akkus des Geräts geändert. Wenn "Akkulimit" aktiviert ist, ist der Akkustand auf 50 % der maximalen Kapazität beschränkt. Der in Windows gemeldete Akkustand spiegelt dieses Limit wider. Daher wird angezeigt, dass der Akku bis zu 50 % aufgeladen ist und dieses Limit nicht überschreitet. Wenn Sie "Akkulimit" aktivieren, während das Gerät über 50 % aufgeladen ist, zeigt das Akkusymbol an, dass das Gerät angeschlossen ist, aber entladen wird, bis das Gerät 50 % seiner maximalen Ladekapazität erreicht.  
 
 ## Unterstützte Geräte
 
