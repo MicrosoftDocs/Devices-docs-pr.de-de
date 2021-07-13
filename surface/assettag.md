@@ -1,6 +1,6 @@
 ---
-title: DGM-Inventar-Tag-Tool
-description: In diesem Thema wird die Verwendung des Surface-Asset-Tag-Tools erläutert.
+title: Surface Asset Tag-Tool
+description: In diesem Thema wird die Verwendung des Surface Asset Tag-Tools erläutert.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.localizationpriority: medium
@@ -8,105 +8,103 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.reviewer: hachidan
+ms.reviewer: carlol
+ms.date: 06/29/2021
 manager: laurawi
-ms.openlocfilehash: ca6a71a6b864692953fcd96eb687c2752527c9f5
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: b130f6b0bf52dc1c3a28231a2330cae51a5ef44a
+ms.sourcegitcommit: d020d899e9c7e1eb0b85193ecb0a17a85bb39fe6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10832578"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "11643831"
 ---
-# DGM-Inventar-Tag-Tool
+# <a name="surface-asset-tag-tool"></a>Surface Asset Tag-Tool
 
-Surface-Ressourcen-Tag ist ein Befehlszeilen-Interface-Dienstprogramm, mit dem Sie einen zugewiesenen Ressourcen-Tag-Wert für Surface-Geräte anzeigen, zuweisen und ändern können. Es funktioniert auf Surface pro 3 und auf allen neueren Surface-Geräten.
+Surface Asset Tag ist ein Befehlszeilenschnittstellen-Hilfsprogramm (CLI), mit dem Sie einen zugewiesenen Ressourcentagwert für Surface-Geräte anzeigen, zuweisen und ändern können. Es funktioniert auf Surface Pro 3 und allen neueren Surface-Geräten.
 
-##  <a name="system-requirements"></a>Systemanforderungen
+## <a name="system-requirements"></a>Systemanforderungen
 
-- Surface pro 3 oder höher
+- Surface Pro 3 oder höher
 
 - UEFI-Firmwareversion 3.9.150.0 oder höher
 
-##  <a name="using-surface-asset-tag-"></a>Verwenden der Surface-Ressourcenkategorie 
+## <a name="using-surface-asset-tag"></a>Verwenden des Surface Asset-Tags
 
-So führen Sie eine DGM-Anlagen Kategorie aus:
+So führen Sie das Surface Asset-Tag aus:
 
-1.  Laden Sie auf dem Surface-Gerät **Surface Asset Tag.zip** aus dem [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=46703)herunter, extrahieren Sie die ZIP-Datei, und speichern Sie AssetTag.exe im gewünschten Ordner (in diesem Beispiel C:\\assets).
+1. Laden Sie auf dem Surface-Gerät **surface Asset Tag.zip** aus dem Microsoft Download [Center](https://www.microsoft.com/download/details.aspx?id=46703)herunter, extrahieren Sie die ZIP-Datei, und speichern Sie AssetTag.exe im gewünschten Ordner (in diesem Beispiel C:\\assets).
 
     > [!NOTE]
-    > Verwenden Sie für Surface pro X die Anwendung mit dem Namen **AssetTag_x86** in der ZIP-Datei. 
+    > Verwenden Sie für Surface Pro X die Anwendung mit dem Namen **AssetTag_x86** in der ZIP-Datei.
 
-2.  Öffnen Sie eine Befehlskonsole als Administrator, und führen Sie AssetTag.exe aus, und geben Sie den vollständigen Pfad zum Tool ein.
+2. Öffnen Sie eine Befehlskonsole als Administrator, und führen Sie AssetTag.exe aus, und geben Sie den vollständigen Pfad zum Tool ein.
 
-3.  Oberfläche neu starten
+3. Starten Sie Surface neu.
 
-###  <a name="asset-tag-tool-commands"></a>Befehle für das Element-Tag-Tool   
-In den folgenden Beispielen wird AssetTag.exe in einem Verzeichnis auf einem lokalen Computer (C:\assets) gespeichert. 
+    > [!NOTE]
+    > Nach dem Festlegen des Ressourcentags ist ein zweiter Neustart erforderlich, bevor er in WMI angezeigt wird.
 
-Führen Sie AssetTag-g aus, um die vorgeschlagene Inventar Kategorie zu erhalten.
+### <a name="asset-tag-tool-commands"></a>Ressourcentag-Toolbefehle
 
-**Beispiel**
+In den folgenden Beispielen wird AssetTag.exe in einem Verzeichnis auf einem lokalen Computer (C:\Assets) gespeichert.
 
-   ```
- C:\assets\AssetTag.exe -g
-  ```
- 
- Führen Sie AssetTag-s aus, um die vorgeschlagene Ressourcenkategorie zu löschen.
- 
- **Beispiel**
- 
-   ```
+Um das vorgeschlagene Asset-Tag abzurufen, führen Sie **AssetTag -g**aus:
+
+```console
+C:\assets\AssetTag.exe -g
+```
+
+Um das vorgeschlagene Asset-Tag zu löschen, führen Sie **AssetTag -s aus:**
+
+```console
 C:\assets\AssetTag.exe -s
-  ```
-Führen Sie AssetTag-s testassettag12 aus, um die vorgeschlagene Ressourcenkategorie einzurichten.
+```
 
-**Beispiel**
+Um das vorgeschlagene Objekttag festzulegen, führen Sie **"AssetTag -s testassettag12" aus:**
 
 ```
 C:\assets\AssetTag.exe -s testassettag12
 ```
 
 >[!NOTE]
->Der Wert für das Elementtag muss zwischen 1 und 36 Zeichen enthalten. Gültige Zeichen sind a-z, a-z, 0-9, Punkt (.) und Bindestrich (-).
+>Der Wert des Objekttags muss zwischen 1 und 36 Zeichen enthalten. Gültige Zeichen sind A-Z, a-z, 0-9, Punkt (.) und Bindestrich (-).
 
+## <a name="managing-asset-tags"></a>Verwalten von Ressourcentags
 
-##  <a name="managing-asset-tags"></a>Verwalten von Inventar Kategorien
+You can view the existing asset tag in the UEFI settings under Device Information (**Control Panel > Recovery > Advanced Startup > Restart now**.)
 
-Sie können die vorhandene Objektkategorie in den UEFI-Einstellungen unter Geräteinformationen anzeigen (**Systemsteuerung > Wiederherstellung > Advanced Startup > jetzt neu starten**.)
+Die folgende Abbildung zeigt die Ergebnisse der Ausführung des Ressourcentag-Tools auf Surface Go.
 
-Die folgende Abbildung zeigt die Ergebnisse der Ausführung des Asset-Tag-Tools auf Surface go.
+![Ergebnisse der Ausführung des Surface Asset Tag-Tools auf Surface Go.](images/assettag-fig1.png)
 
-![Ergebnisse des laufenden Surface-Asset-Tag-Tools auf Surface go.
-](images/assettag-fig1.png)
+> **Abbildung1.** Ergebnisse der Ausführung des Surface Asset Tag-Tools auf Surface Go
 
-> **Abbildung1.** Ergebnisse des laufenden Surface-Asset-Tag-Tools auf Surface go
+Alternativ können Sie WMI verwenden, um das vorhandene Objekttag auf einem Gerät abfragt:
 
-Alternativ können Sie mithilfe von WMI die vorhandene Objektkategorie auf einem Gerät Abfragen:
+(Get-WmiObject -query "Select * from Win32_SystemEnclosure")
 
-(Get-WMIObject-Query "Select * from Win32_SystemEnclosure")
+### <a name="example"></a>Beispiel
 
-**Beispiel**
-
-   ```
-C:\Windows\System32> (Get-WmiObject -query “Select * from Win32_SystemEnclosure”)
-  ```
+```console
+C:\Windows\System32> (Get-WmiObject -query "Select * from Win32_SystemEnclosure")
+```
   
-###  <a name="using-powershell"></a>Mithilfe von PowerShell
+### <a name="using-powershell"></a>Mithilfe von PowerShell
 
-Mit dem folgenden Skript können Sie den vorgeschlagenen Wert abrufen und Fehler interpretieren.
+Sie können das nachstehende Skript verwenden, um den vorgeschlagenen Wert abzurufen und Fehler zu interpretieren.
 
- ```
+```powershell
 AssetTag -g \> $asset\_tag 2\> $error\_message  
 $asset\_tag\_return\_code = $LASTEXITCODE  
-$asset\_tag = $asset\_tag.Trim(“\`r\`n”)
+$asset\_tag = $asset\_tag.Trim("\`r\`n")
 
 if ($asset\_tag\_return\_code -eq 0) {  
-Write-Output (“Good Tag = ” + $asset\_tag)  
+Write-Output ("Good Tag = " + $asset\_tag)  
 } else {  
 Write-Output (  
-“Failure: Code = ” + $asset\_tag\_return\_code +  
-“Tag = ” + $asset\_tag +  
-“Message = ” + $error\_message)
+"Failure: Code = " + $asset\_tag\_return\_code +  
+"Tag = " + $asset\_tag +  
+"Message = " + $error\_message)
 
 }
- ```
+```
